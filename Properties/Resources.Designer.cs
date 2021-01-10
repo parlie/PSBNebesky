@@ -61,11 +61,42 @@ namespace PSBNebesky.Properties {
         }
         
         /// <summary>
-        ///   Vyhledá lokalizovaný řetězec podobný ssdasdas.
+        ///   Vyhledává lokalizovaný prostředek typu System.Byte[].
         /// </summary>
-        internal static string test {
+        internal static byte[] Coves_Light {
             get {
-                return ResourceManager.GetString("test", resourceCulture);
+                object obj = ResourceManager.GetObject("Coves_Light", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap czech_republic {
+            get {
+                object obj = ResourceManager.GetObject("czech-republic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap czech_republic1 {
+            get {
+                object obj = ResourceManager.GetObject("czech-republic1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap united_kingdom {
+            get {
+                object obj = ResourceManager.GetObject("united-kingdom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

@@ -14,36 +14,23 @@ namespace PSBNebesky
         [STAThread]
         static void Main()
         {
-            SetLanguage(Language.English);
+            SetLanguage();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+           
         }
 
-        public enum Language
-        {
-            Čeština,
-            English
-        }
-
-        public static void SetLanguage(Language language) //Ĺanguage changing method
+        /// <summary>
+        /// Slouží pro prvnotní nastavení jazyka na výchozí - v mém případě je výchozí jazyk vždy čestina. Nelze použít metodu Form1.ChangeLanguage, neboť Program.cs je při spuštění konstruován
+        /// dříve než Form1.cs - metoda ChangeLanguage je tedy nedostupná.
+        /// </summary>
+        public static void SetLanguage()
         {
             System.Globalization.CultureInfo cultureInfo;
-            switch (language)
-            {
-                case Language.Čeština:
-                    cultureInfo = new System.Globalization.CultureInfo("cs");
-                    System.Globalization.CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
-                    System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
-                    break;
-                case Language.English:
-                    cultureInfo = new System.Globalization.CultureInfo("en");
-                    System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
-                    System.Globalization.CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
-                    break;
-                default:
-                    break;
-            }
+            cultureInfo = new System.Globalization.CultureInfo("cs");
+            System.Globalization.CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
         }
     }
 }

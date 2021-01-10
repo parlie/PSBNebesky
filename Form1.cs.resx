@@ -120,7 +120,28 @@
   <data name="buttonIntake.Text" xml:space="preserve">
     <value>Vložit peníze</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
+  <data name="mainPage.Name" xml:space="preserve">
     <value>Dobrý den</value>
+  </data>
+  <data name="transactionHistoryPage.Name" xml:space="preserve">
+    <value>Historie transakcí</value>
+  </data>
+  <data name="signInPage.Name" xml:space="preserve">
+    <value>Vítejte</value>
+  </data>
+  <data name="moneyIntakePage.Name" xml:space="preserve">
+    <value>Vložit hotovost</value>
+  </data>
+  <data name="moneyWithdrawlPage.Name" xml:space="preserve">
+    <value>Výběr hotovosti</value>
+  </data>
+  <data name="newTransactionPage.Name" xml:space="preserve">
+    <value>Nová transakce</value>
+  </data>
+  <data name="generalErrorTitle" xml:space="preserve">
+    <value>Neočekávaná chyba</value>
+  </data>
+  <data name="serverFailedConnectionError" xml:space="preserve">
+    <value>Nastala neočekávaná chyba ve spojení se serverem, kontaktujte prosím zákaznické centrum.</value>
   </data>
 </root>
