@@ -140,6 +140,90 @@
   <data name="&gt;&gt;boxLog.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonLeave.Name" xml:space="preserve">
+    <value>buttonLeave</value>
+  </data>
+  <data name="&gt;&gt;buttonLeave.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonLeave.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;buttonLeave.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.Name" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;buttonEnglish.Name" xml:space="preserve">
+    <value>buttonEnglish</value>
+  </data>
+  <data name="&gt;&gt;buttonEnglish.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonEnglish.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;buttonEnglish.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;buttonCzech.Name" xml:space="preserve">
+    <value>buttonCzech</value>
+  </data>
+  <data name="&gt;&gt;buttonCzech.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonCzech.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;buttonCzech.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="mainPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="mainPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1121, 558</value>
+  </data>
+  <data name="mainPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="mainPage.Text" xml:space="preserve">
+    <value>MainPage</value>
+  </data>
+  <data name="&gt;&gt;mainPage.Name" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;mainPage.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mainPage.Parent" xml:space="preserve">
+    <value>mainControl</value>
+  </data>
+  <data name="&gt;&gt;mainPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="buttonLeave.Location" type="System.Drawing.Point, System.Drawing">
     <value>1013, 497</value>
   </data>
@@ -169,10 +253,82 @@
     <value>mainPage</value>
   </data>
   <data name="&gt;&gt;buttonLeave.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="metroPanel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;buttonTransactionHistory.Name" xml:space="preserve">
+    <value>buttonTransactionHistory</value>
+  </data>
+  <data name="&gt;&gt;buttonTransactionHistory.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonTransactionHistory.Parent" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;buttonTransactionHistory.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonNewTransaction.Name" xml:space="preserve">
+    <value>buttonNewTransaction</value>
+  </data>
+  <data name="&gt;&gt;buttonNewTransaction.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonNewTransaction.Parent" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;buttonNewTransaction.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;buttonWith.Name" xml:space="preserve">
+    <value>buttonWith</value>
+  </data>
+  <data name="&gt;&gt;buttonWith.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonWith.Parent" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;buttonWith.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;buttonIntake.Name" xml:space="preserve">
+    <value>buttonIntake</value>
+  </data>
+  <data name="&gt;&gt;buttonIntake.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonIntake.Parent" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;buttonIntake.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="metroPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 356</value>
+  </data>
+  <data name="metroPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="metroPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>791, 199</value>
+  </data>
+  <data name="metroPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.Name" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="buttonTransactionHistory.Location" type="System.Drawing.Point, System.Drawing">
     <value>595, 4</value>
@@ -286,102 +442,6 @@ transakcí</value>
   <data name="&gt;&gt;buttonIntake.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="metroPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 356</value>
-  </data>
-  <data name="metroPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="metroPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>791, 199</value>
-  </data>
-  <data name="metroPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;metroPanel1.Name" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;metroPanel1.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroPanel1.Parent" xml:space="preserve">
-    <value>mainPage</value>
-  </data>
-  <data name="&gt;&gt;metroPanel1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="buttonEnglish.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="buttonEnglish.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1054, 3</value>
-  </data>
-  <data name="buttonEnglish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
-  </data>
-  <data name="buttonEnglish.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;buttonEnglish.Name" xml:space="preserve">
-    <value>buttonEnglish</value>
-  </data>
-  <data name="&gt;&gt;buttonEnglish.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;buttonEnglish.Parent" xml:space="preserve">
-    <value>mainPage</value>
-  </data>
-  <data name="&gt;&gt;buttonEnglish.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="buttonCzech.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="buttonCzech.Location" type="System.Drawing.Point, System.Drawing">
-    <value>984, 3</value>
-  </data>
-  <data name="buttonCzech.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
-  </data>
-  <data name="buttonCzech.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;buttonCzech.Name" xml:space="preserve">
-    <value>buttonCzech</value>
-  </data>
-  <data name="&gt;&gt;buttonCzech.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;buttonCzech.Parent" xml:space="preserve">
-    <value>mainPage</value>
-  </data>
-  <data name="&gt;&gt;buttonCzech.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="mainPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="mainPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1121, 558</value>
-  </data>
-  <data name="mainPage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="mainPage.Text" xml:space="preserve">
-    <value>MainPage</value>
-  </data>
-  <data name="&gt;&gt;mainPage.Name" xml:space="preserve">
-    <value>mainPage</value>
-  </data>
-  <data name="&gt;&gt;mainPage.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;mainPage.Parent" xml:space="preserve">
-    <value>mainControl</value>
-  </data>
-  <data name="&gt;&gt;mainPage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="metroTile1.Location" type="System.Drawing.Point, System.Drawing">
     <value>420, 442</value>
   </data>
@@ -485,7 +545,7 @@ transakcí</value>
     <value>5</value>
   </data>
   <data name="signInLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>DejaVu Sans, 40pt</value>
+    <value>Microsoft Sans Serif, 40pt</value>
   </data>
   <data name="signInLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -500,8 +560,8 @@ transakcí</value>
     <value>2</value>
   </data>
   <data name="signInLabel.Text" xml:space="preserve">
-    <value>Pro příhlášení do systému, prosím
-přiložte Vaší kartu, nebo využíjte přihlašovací údaje.
+    <value>Pro přihlášení do systému přiložte Vaší kartu,
+nebo využíjte přihlašovací údaje.
 </value>
   </data>
   <data name="&gt;&gt;signInLabel.Name" xml:space="preserve">
@@ -538,19 +598,7 @@ přiložte Vaší kartu, nebo využíjte přihlašovací údaje.
     <value>mainControl</value>
   </data>
   <data name="&gt;&gt;signInPage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 183</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>button2</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;button2.Name" xml:space="preserve">
     <value>button2</value>
@@ -589,6 +637,18 @@ přiložte Vaší kartu, nebo využíjte přihlašovací údaje.
     <value>mainControl</value>
   </data>
   <data name="&gt;&gt;transactionHistoryPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositLabel.Name" xml:space="preserve">
+    <value>moneyDepositLabel</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositLabel.Parent" xml:space="preserve">
+    <value>moneyIntakePage</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositLabel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="moneyIntakePage.Location" type="System.Drawing.Point, System.Drawing">
@@ -687,6 +747,33 @@ přiložte Vaší kartu, nebo využíjte přihlašovací údaje.
   <data name="&gt;&gt;mainControl.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>571, 183</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>transactionHistoryPage</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="consoleButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>1102, 13</value>
   </data>
@@ -744,6 +831,9 @@ přiložte Vaší kartu, nebo využíjte přihlašovací údaje.
   <data name="testServer.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 8.25pt, style=Bold</value>
   </data>
+  <data name="testServer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="testServer.Location" type="System.Drawing.Point, System.Drawing">
     <value>1147, 622</value>
   </data>
@@ -768,6 +858,114 @@ přiložte Vaší kartu, nebo využíjte přihlašovací údaje.
   <data name="&gt;&gt;testServer.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="moneyDepositLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="moneyDepositLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="moneyDepositLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 18</value>
+  </data>
+  <data name="moneyDepositLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>530, 13</value>
+  </data>
+  <data name="moneyDepositLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="moneyDepositLabel.Text" xml:space="preserve">
+    <value>Pro vložení hotovosti na Váš účet zvolte požadovanou částku, nebo zadejte vlastní částku.</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositLabel.Name" xml:space="preserve">
+    <value>moneyDepositLabel</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositLabel.Parent" xml:space="preserve">
+    <value>moneyIntakePage</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonEnglish.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="buttonEnglish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1054, 3</value>
+  </data>
+  <data name="buttonEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
+  </data>
+  <data name="buttonEnglish.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;buttonEnglish.Name" xml:space="preserve">
+    <value>buttonEnglish</value>
+  </data>
+  <data name="&gt;&gt;buttonEnglish.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonEnglish.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;buttonEnglish.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="buttonCzech.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="buttonCzech.Location" type="System.Drawing.Point, System.Drawing">
+    <value>984, 3</value>
+  </data>
+  <data name="buttonCzech.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
+  </data>
+  <data name="buttonCzech.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;buttonCzech.Name" xml:space="preserve">
+    <value>buttonCzech</value>
+  </data>
+  <data name="&gt;&gt;buttonCzech.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonCzech.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;buttonCzech.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 72pt, style=Bold</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 108</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 135</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>TEST</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -779,6 +977,9 @@ přiložte Vaší kartu, nebo využíjte přihlašovací údaje.
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 4, 2, 4</value>

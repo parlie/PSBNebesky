@@ -37,8 +37,6 @@
             this.buttonNewTransaction = new MetroFramework.Controls.MetroTile();
             this.buttonWith = new MetroFramework.Controls.MetroTile();
             this.buttonIntake = new MetroFramework.Controls.MetroTile();
-            this.buttonEnglish = new MetroFramework.Controls.MetroTile();
-            this.buttonCzech = new MetroFramework.Controls.MetroTile();
             this.mainControl = new MetroFramework.Controls.MetroTabControl();
             this.signInPage = new MetroFramework.Controls.MetroTabPage();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
@@ -54,11 +52,16 @@
             this.consoleButton = new MetroFramework.Controls.MetroButton();
             this.exitSimulator = new System.Windows.Forms.Button();
             this.testServer = new System.Windows.Forms.Button();
+            this.moneyDepositLabel = new System.Windows.Forms.Label();
+            this.buttonEnglish = new MetroFramework.Controls.MetroTile();
+            this.buttonCzech = new MetroFramework.Controls.MetroTile();
+            this.label1 = new System.Windows.Forms.Label();
             this.mainPage.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             this.mainControl.SuspendLayout();
             this.signInPage.SuspendLayout();
             this.transactionHistoryPage.SuspendLayout();
+            this.moneyIntakePage.SuspendLayout();
             this.SuspendLayout();
             // 
             // boxLog
@@ -69,6 +72,7 @@
             // 
             // mainPage
             // 
+            this.mainPage.Controls.Add(this.label1);
             this.mainPage.Controls.Add(this.buttonLeave);
             this.mainPage.Controls.Add(this.metroPanel1);
             this.mainPage.Controls.Add(this.buttonEnglish);
@@ -139,43 +143,17 @@
             this.buttonIntake.UseSelectable = true;
             this.buttonIntake.Click += new System.EventHandler(this.buttonIntake_Click);
             // 
-            // buttonEnglish
-            // 
-            this.buttonEnglish.ActiveControl = null;
-            resources.ApplyResources(this.buttonEnglish, "buttonEnglish");
-            this.buttonEnglish.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonEnglish.Name = "buttonEnglish";
-            this.buttonEnglish.TileImage = global::PSBNebesky.Properties.Resources.united_kingdom;
-            this.buttonEnglish.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonEnglish.UseCustomBackColor = true;
-            this.buttonEnglish.UseSelectable = true;
-            this.buttonEnglish.UseTileImage = true;
-            this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
-            // 
-            // buttonCzech
-            // 
-            this.buttonCzech.ActiveControl = null;
-            resources.ApplyResources(this.buttonCzech, "buttonCzech");
-            this.buttonCzech.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonCzech.Name = "buttonCzech";
-            this.buttonCzech.TileImage = global::PSBNebesky.Properties.Resources.czech_republic1;
-            this.buttonCzech.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonCzech.UseCustomBackColor = true;
-            this.buttonCzech.UseSelectable = true;
-            this.buttonCzech.UseTileImage = true;
-            this.buttonCzech.Click += new System.EventHandler(this.buttonCzech_Click);
-            // 
             // mainControl
             // 
-            this.mainControl.Controls.Add(this.mainPage);
             this.mainControl.Controls.Add(this.signInPage);
+            this.mainControl.Controls.Add(this.mainPage);
             this.mainControl.Controls.Add(this.transactionHistoryPage);
             this.mainControl.Controls.Add(this.moneyIntakePage);
             this.mainControl.Controls.Add(this.moneyWithdrawlPage);
             this.mainControl.Controls.Add(this.newTransactionPage);
             resources.ApplyResources(this.mainControl, "mainControl");
             this.mainControl.Name = "mainControl";
-            this.mainControl.SelectedIndex = 1;
+            this.mainControl.SelectedIndex = 0;
             this.mainControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.mainControl.UseSelectable = true;
             // 
@@ -248,6 +226,7 @@
             // 
             // moneyIntakePage
             // 
+            this.moneyIntakePage.Controls.Add(this.moneyDepositLabel);
             this.moneyIntakePage.HorizontalScrollbarBarColor = true;
             this.moneyIntakePage.HorizontalScrollbarHighlightOnWheel = false;
             this.moneyIntakePage.HorizontalScrollbarSize = 10;
@@ -301,6 +280,42 @@
             this.testServer.UseVisualStyleBackColor = true;
             this.testServer.Click += new System.EventHandler(this.button1_Click);
             // 
+            // moneyDepositLabel
+            // 
+            resources.ApplyResources(this.moneyDepositLabel, "moneyDepositLabel");
+            this.moneyDepositLabel.Name = "moneyDepositLabel";
+            // 
+            // buttonEnglish
+            // 
+            this.buttonEnglish.ActiveControl = null;
+            resources.ApplyResources(this.buttonEnglish, "buttonEnglish");
+            this.buttonEnglish.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonEnglish.Name = "buttonEnglish";
+            this.buttonEnglish.TileImage = global::PSBNebesky.Properties.Resources.united_kingdom;
+            this.buttonEnglish.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonEnglish.UseCustomBackColor = true;
+            this.buttonEnglish.UseSelectable = true;
+            this.buttonEnglish.UseTileImage = true;
+            this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
+            // 
+            // buttonCzech
+            // 
+            this.buttonCzech.ActiveControl = null;
+            resources.ApplyResources(this.buttonCzech, "buttonCzech");
+            this.buttonCzech.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonCzech.Name = "buttonCzech";
+            this.buttonCzech.TileImage = global::PSBNebesky.Properties.Resources.czech_republic1;
+            this.buttonCzech.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonCzech.UseCustomBackColor = true;
+            this.buttonCzech.UseSelectable = true;
+            this.buttonCzech.UseTileImage = true;
+            this.buttonCzech.Click += new System.EventHandler(this.buttonCzech_Click);
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -314,11 +329,14 @@
             this.Name = "Form1";
             this.Style = MetroFramework.MetroColorStyle.Brown;
             this.mainPage.ResumeLayout(false);
+            this.mainPage.PerformLayout();
             this.metroPanel1.ResumeLayout(false);
             this.mainControl.ResumeLayout(false);
             this.signInPage.ResumeLayout(false);
             this.signInPage.PerformLayout();
             this.transactionHistoryPage.ResumeLayout(false);
+            this.moneyIntakePage.ResumeLayout(false);
+            this.moneyIntakePage.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -349,6 +367,8 @@
         private System.Windows.Forms.TextBox signInUserBox;
         private MetroFramework.Controls.MetroTile metroTile1;
         private System.Windows.Forms.Button testServer;
+        private System.Windows.Forms.Label moneyDepositLabel;
+        private System.Windows.Forms.Label label1;
     }
 }
 

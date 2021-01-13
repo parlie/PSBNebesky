@@ -61,16 +61,6 @@ namespace PSBNebesky.Properties {
         }
         
         /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Byte[].
-        /// </summary>
-        internal static byte[] Coves_Light {
-            get {
-                object obj = ResourceManager.GetObject("Coves_Light", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap czech_republic {

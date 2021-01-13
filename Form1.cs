@@ -12,6 +12,10 @@ using System.Collections.Generic;
 using System.Security;
 using BCrypt.Net;
 using BCrypt;
+using System.Drawing.Text;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Reflection;
 
 namespace PSBNebesky
 {
@@ -20,10 +24,13 @@ namespace PSBNebesky
         MetroColorStyle MainStyle;
         public ComponentResourceManager resources = new ComponentResourceManager(typeof(Form1));
         ServerComunicator comunicator = new ServerComunicator();
+        PrivateFontCollection pfc = new PrivateFontCollection();
 
         public Form1()
         {
             InitializeComponent();
+            AddFontFromResource(pfc, "DejaVuSansMono.ttf");
+            
             ButtonSetup();
             HideAllExcept(mainPage);
             OnStart();
@@ -48,6 +55,27 @@ namespace PSBNebesky
 
 
         #region HotFix
+
+
+
+        private static void AddFontFromResource(PrivateFontCollection privateFontCollection, string fontResourceName)
+        {
+            var fontBytes = GetFontResourceBytes(Assembly.GetExecutingAssembly(), fontResourceName);
+            var fontData = Marshal.AllocCoTaskMem(fontBytes.Length);
+            Marshal.Copy(fontBytes, 0, fontData, fontBytes.Length);
+            privateFontCollection.AddMemoryFont(fontData, fontBytes.Length);
+        }
+
+        private static byte[] GetFontResourceBytes(Assembly assembly, string fontResourceName)
+        {
+            var resourceStream = assembly.GetManifestResourceStream($"PSBNebesky.Resources.{fontResourceName}");
+            if (resourceStream == null)
+                throw new Exception(string.Format("Unable to find font '{0}' in embedded resources.", fontResourceName));
+            var fontBytes = new byte[resourceStream.Length];
+            resourceStream.Read(fontBytes, 0, (int)resourceStream.Length);
+            resourceStream.Close();
+            return fontBytes;
+        }
 
         /// <summary>
         /// Metoda nastaví velikost okna, znemožní uživateli měnit velikost okna a nastaví jazyk na češtinu
@@ -84,7 +112,7 @@ namespace PSBNebesky
                                             (c as MetroTile).TileTextFontSize = MetroTileTextSize.Tall;
                                             (c as MetroTile).TileTextFontWeight = MetroTileTextWeight.Bold;
                                             (c as MetroTile).TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-                                            (c as MetroTile).Font = new System.Drawing.Font("Coves", 18);
+                                            (c as MetroTile).Font = new System.Drawing.Font(pfc.Families[0], 18);
                                         }
                                     }
                                 }
@@ -93,7 +121,7 @@ namespace PSBNebesky
                                     (item as MetroTile).TileTextFontSize = MetroTileTextSize.Tall;
                                     (item as MetroTile).TileTextFontWeight = MetroTileTextWeight.Bold;
                                     (item as MetroTile).TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                                    (item as MetroTile).Font = new System.Drawing.Font("Coves", 18);
+                                    (item as MetroTile).Font = new System.Drawing.Font(pfc.Families[0], 18);
                                 }
                                 else if (item is TextBox)
                                 {
@@ -102,14 +130,18 @@ namespace PSBNebesky
                                         if ((item as TextBox).Name.Contains("Pass"))
                                         {
                                             (item as TextBox).TextAlign = HorizontalAlignment.Center;
-                                            (item as TextBox).Font = new System.Drawing.Font("Coves", 20);
+                                            (item as TextBox).Font = new System.Drawing.Font(pfc.Families[0], 20);
                                         }
                                         else
                                         {
                                             (item as TextBox).TextAlign = HorizontalAlignment.Center;
-                                            (item as TextBox).Font = new System.Drawing.Font("Coves", 20);
+                                            (item as TextBox).Font = new System.Drawing.Font(pfc.Families[0], 20);
                                         }
                                     }
+                                }
+                                else if (item is Label)
+                                {
+                                    (item as Label).Font = new System.Drawing.Font(pfc.Families[0], 40);
                                 }
                             }
                         }
@@ -119,7 +151,7 @@ namespace PSBNebesky
         }
 
         /// <summary>
-        /// Meto pro změnu barvy ovládacích prvků
+        /// Metoda pro změnu barvy ovládacích prvků
         /// </summary>
         /// <param name="style">MetroColorStyle enumerator</param>
         private void ChangeColor(MetroColorStyle style)
