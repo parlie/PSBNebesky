@@ -368,10 +368,6 @@ namespace PSBNebesky
             NoHighlight();
         }
 
-        private void exitSimulator_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(1);
-        }
 
         private void signInButton_Click(object sender, EventArgs e)
         {
@@ -386,6 +382,16 @@ namespace PSBNebesky
                 Console.WriteLine(i);
             }
             NoHighlight();
+        }
+
+        private void exitSimulator_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            comunicator.TestConnection();
         }
     }
 }

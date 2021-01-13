@@ -35,7 +35,7 @@ namespace PSBNebesky
             try
             {
                 await socket.ConnectAsync(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 49152));
-                byte[] b = new byte[256];
+                socket.Send(e.GetBytes("welp"));
                 
             }
             catch
@@ -76,5 +76,10 @@ namespace PSBNebesky
         {
 
         }    
+
+        public void TestConnection()
+        {
+            socket.Send(e.GetBytes("I hope someone who should be here clicked that button, if youre customer, then well... Somethings wrong!"));
+        }
     }
 }

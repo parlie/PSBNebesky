@@ -22,8 +22,8 @@ namespace PSBNebesky
         }
 
         /// <summary>
-        /// Slouží pro prvnotní nastavení jazyka na výchozí - v mém případě je výchozí jazyk vždy čestina. Nelze použít metodu Form1.ChangeLanguage, neboť Program.cs je při spuštění konstruován
-        /// dříve než Form1.cs - metoda ChangeLanguage je tedy nedostupná.
+        /// Slouží pro prvnotní nastavení jazyka na výchozí - v mém případě je výchozí jazyk vždy čestina. Nelze použít metodu Form1.ChangeLanguage,
+        /// neboť Program.cs je při spuštění konstruován dříve než Form1.cs - metoda ChangeLanguage je tedy nedostupná.
         /// </summary>
         public static void SetLanguage()
         {

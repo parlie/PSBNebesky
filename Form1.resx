@@ -138,7 +138,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;boxLog.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="buttonLeave.Location" type="System.Drawing.Point, System.Drawing">
     <value>1013, 497</value>
@@ -380,7 +380,7 @@ transakcí</value>
     <value>mainControl</value>
   </data>
   <data name="&gt;&gt;mainPage.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="metroTile1.Location" type="System.Drawing.Point, System.Drawing">
     <value>420, 442</value>
@@ -407,7 +407,7 @@ transakcí</value>
     <value>signInPage</value>
   </data>
   <data name="&gt;&gt;metroTile1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="signInUserBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>420, 274</value>
@@ -538,7 +538,7 @@ přiložte Vaší kartu, nebo využíjte přihlašovací údaje.
     <value>mainControl</value>
   </data>
   <data name="&gt;&gt;signInPage.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>571, 183</value>
@@ -685,7 +685,7 @@ přiložte Vaší kartu, nebo využíjte přihlašovací údaje.
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mainControl.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="consoleButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>1102, 13</value>
@@ -709,7 +709,7 @@ přiložte Vaší kartu, nebo využíjte přihlašovací údaje.
     <value>$this</value>
   </data>
   <data name="&gt;&gt;consoleButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="exitSimulator.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 8.25pt, style=Bold</value>
@@ -739,6 +739,33 @@ přiložte Vaší kartu, nebo využíjte přihlašovací údaje.
     <value>$this</value>
   </data>
   <data name="&gt;&gt;exitSimulator.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="testServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="testServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1147, 622</value>
+  </data>
+  <data name="testServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 23</value>
+  </data>
+  <data name="testServer.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="testServer.Text" xml:space="preserve">
+    <value>Test server connection</value>
+  </data>
+  <data name="&gt;&gt;testServer.Name" xml:space="preserve">
+    <value>testServer</value>
+  </data>
+  <data name="&gt;&gt;testServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;testServer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;testServer.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

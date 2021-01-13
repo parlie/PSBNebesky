@@ -41,6 +41,7 @@
             this.buttonCzech = new MetroFramework.Controls.MetroTile();
             this.mainControl = new MetroFramework.Controls.MetroTabControl();
             this.signInPage = new MetroFramework.Controls.MetroTabPage();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.signInUserBox = new System.Windows.Forms.TextBox();
             this.signInPassBox = new System.Windows.Forms.TextBox();
             this.signInButton = new MetroFramework.Controls.MetroTile();
@@ -52,7 +53,7 @@
             this.newTransactionPage = new MetroFramework.Controls.MetroTabPage();
             this.consoleButton = new MetroFramework.Controls.MetroButton();
             this.exitSimulator = new System.Windows.Forms.Button();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.testServer = new System.Windows.Forms.Button();
             this.mainPage.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             this.mainControl.SuspendLayout();
@@ -166,8 +167,8 @@
             // 
             // mainControl
             // 
-            this.mainControl.Controls.Add(this.signInPage);
             this.mainControl.Controls.Add(this.mainPage);
+            this.mainControl.Controls.Add(this.signInPage);
             this.mainControl.Controls.Add(this.transactionHistoryPage);
             this.mainControl.Controls.Add(this.moneyIntakePage);
             this.mainControl.Controls.Add(this.moneyWithdrawlPage);
@@ -193,6 +194,13 @@
             this.signInPage.VerticalScrollbarBarColor = true;
             this.signInPage.VerticalScrollbarHighlightOnWheel = false;
             this.signInPage.VerticalScrollbarSize = 10;
+            // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            resources.ApplyResources(this.metroTile1, "metroTile1");
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.UseSelectable = true;
             // 
             // signInUserBox
             // 
@@ -286,18 +294,19 @@
             this.exitSimulator.UseVisualStyleBackColor = true;
             this.exitSimulator.Click += new System.EventHandler(this.exitSimulator_Click);
             // 
-            // metroTile1
+            // testServer
             // 
-            this.metroTile1.ActiveControl = null;
-            resources.ApplyResources(this.metroTile1, "metroTile1");
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.UseSelectable = true;
+            resources.ApplyResources(this.testServer, "testServer");
+            this.testServer.Name = "testServer";
+            this.testServer.UseVisualStyleBackColor = true;
+            this.testServer.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.testServer);
             this.Controls.Add(this.exitSimulator);
             this.Controls.Add(this.consoleButton);
             this.Controls.Add(this.mainControl);
@@ -339,6 +348,7 @@
         private System.Windows.Forms.TextBox signInPassBox;
         private System.Windows.Forms.TextBox signInUserBox;
         private MetroFramework.Controls.MetroTile metroTile1;
+        private System.Windows.Forms.Button testServer;
     }
 }
 
