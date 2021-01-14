@@ -16,6 +16,7 @@ using System.Drawing.Text;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Reflection;
+using System.Threading.Tasks;
 
 namespace PSBNebesky
 {
@@ -30,12 +31,11 @@ namespace PSBNebesky
         {
             InitializeComponent();
             AddFontFromResource(pfc, "DejaVuSansMono.ttf");
-            
-            ButtonSetup();
+            ControlSetup();
             HideAllExcept(mainPage);
             OnStart();
             ChangeColor(MetroColorStyle.Teal);
-            comunicator.InitializeConnectionToServer(this);
+          //  comunicator.InitializeConnectionToServer(this);
         }
 
         #region Variables
@@ -57,7 +57,11 @@ namespace PSBNebesky
         #region HotFix
 
 
-
+        /// <summary>
+        /// Přidá zvolený font ze zdrojů do seznamu vlastních fontů
+        /// </summary>
+        /// <param name="privateFontCollection">Kolekce fontů</param>
+        /// <param name="fontResourceName">Název zdroje</param>
         private static void AddFontFromResource(PrivateFontCollection privateFontCollection, string fontResourceName)
         {
             var fontBytes = GetFontResourceBytes(Assembly.GetExecutingAssembly(), fontResourceName);
@@ -66,6 +70,12 @@ namespace PSBNebesky
             privateFontCollection.AddMemoryFont(fontData, fontBytes.Length);
         }
 
+        /// <summary>
+        /// Vrátí velikost zdroje fontu z aktualního sestavení
+        /// </summary>
+        /// <param name="assembly">Aktuální sestavení</param>
+        /// <param name="fontResourceName">Název zdroje</param>
+        /// <returns></returns>
         private static byte[] GetFontResourceBytes(Assembly assembly, string fontResourceName)
         {
             var resourceStream = assembly.GetManifestResourceStream($"PSBNebesky.Resources.{fontResourceName}");
@@ -78,9 +88,9 @@ namespace PSBNebesky
         }
 
         /// <summary>
-        /// Metoda nastaví velikost okna, znemožní uživateli měnit velikost okna a nastaví jazyk na češtinu
+        /// Nastaví velikost okna, znemožní uživateli měnit velikost okna a potvrdí jazyk na češtinu
         /// </summary>
-        private async void OnStart()
+        private void OnStart()
         {
             this.Size = new System.Drawing.Size(defaultWindowSizeW, this.Size.Height);
             this.SizeGripStyle = SizeGripStyle.Hide;
@@ -88,9 +98,9 @@ namespace PSBNebesky
         }
 
         /// <summary>
-        /// Metoda nastaví font, velikost fontu, barvu a pozici textu pro každý prvek na obrazovce
+        /// Nastaví font, velikost fontu, barvu a pozici textu pro každý prvek na obrazovce
         /// </summary>
-        public void ButtonSetup()
+        public void ControlSetup()
         {
             metroPanel1.Select();
             foreach (Control main in this.Controls)
@@ -142,6 +152,43 @@ namespace PSBNebesky
                                 else if (item is Label)
                                 {
                                     (item as Label).Font = new System.Drawing.Font(pfc.Families[0], 40);
+                                    (item as Label).TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                                }
+                                else if (item is FlowLayoutPanel)
+                                {
+                                    foreach (Control items in item.Controls)
+                                    {
+                                        if(items is MetroPanel)
+                                        {
+                                            foreach (var mp in items.Controls)
+                                            {
+                                                if(mp is TextBox)
+                                                {
+                                                    if((mp as TextBox).Name.Contains("CustomValue"))
+                                                    {
+                                                        (mp as TextBox).Font = new System.Drawing.Font(pfc.Families[0], 50);
+                                                        (mp as TextBox).TextAlign = HorizontalAlignment.Center;
+                                                    }
+                                                }
+                                                else if(mp is MetroTile)
+                                                {
+                                                    (mp as MetroTile).TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                                                    (mp as MetroTile).Font = new System.Drawing.Font(pfc.Families[0], 50);
+                                                    (mp as MetroTile).TileTextFontWeight = MetroTileTextWeight.Bold;
+                                                    (mp as MetroTile).TileTextFontSize = MetroTileTextSize.Tall;
+                                                }
+
+                                            }
+                                        }
+                                        else if (items is MetroTile)
+                                        {
+                                            (items as MetroTile).TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                                            (items as MetroTile).Font = new System.Drawing.Font(pfc.Families[0], 60);
+                                            (items as MetroTile).TileTextFontWeight = MetroTileTextWeight.Bold;
+                                            (items as MetroTile).TileTextFontSize = MetroTileTextSize.Tall;
+                                        }
+
+                                    }
                                 }
                             }
                         }
@@ -151,7 +198,7 @@ namespace PSBNebesky
         }
 
         /// <summary>
-        /// Metoda pro změnu barvy ovládacích prvků
+        /// ZMění barvu ovládacích prvků
         /// </summary>
         /// <param name="style">MetroColorStyle enumerator</param>
         private void ChangeColor(MetroColorStyle style)
@@ -199,6 +246,38 @@ namespace PSBNebesky
                                 {
                                     (button as MetroTextBox).Style = style;
                                 }
+                                else if (button is TextBox)
+                                {
+                                    (button as TextBox).ForeColor = style.ToColor();
+                                }
+                                else if (button is FlowLayoutPanel)
+                                {
+                                    foreach (Control items in button.Controls)
+                                    {
+                                        if (items is MetroPanel)
+                                        {
+                                            foreach (var mp in items.Controls)
+                                            {
+                                                if (mp is TextBox)
+                                                {
+                                                    if ((mp as TextBox).Name.Contains("CustomValue"))
+                                                    {
+                                                        (mp as TextBox).ForeColor = style.ToColor();
+                                                    }
+                                                }
+                                                else if (mp is MetroTile)
+                                                {
+                                                    (mp as MetroTile).Style = style;
+                                                }
+                                            }
+                                        }
+                                        else if (items is MetroTile)
+                                        {
+                                            (items as MetroTile).Style = style;
+                                        }
+
+                                    }
+                                }
                             }
                             
                         }
@@ -242,9 +321,9 @@ namespace PSBNebesky
                     break;
             }
             ApplyResources(resources, this.Controls);
-            this.Text = resources.GetString("mainPage.Name");
+            this.Text = resources.GetString($"{mainControl.SelectedTab.Name}.Text");
             FixTitle();
-            ButtonSetup();
+            ControlSetup();
             
         }
 
@@ -260,7 +339,7 @@ namespace PSBNebesky
                 resources.ApplyResources(c, c.Name);
                 ApplyResources(resources, c.Controls);
             }
-            ButtonSetup();
+            ControlSetup();
         }
 
         /// <summary> 
@@ -300,29 +379,134 @@ namespace PSBNebesky
         /// <param name="page"></param>
         private void HideAllExcept(MetroTabPage page)
         {
-            mainControl.ShowTab(mainPage);
-            mainControl.ShowTab(signInPage);
-            mainControl.ShowTab(transactionHistoryPage);
-            mainControl.ShowTab(moneyIntakePage);
+            mainControl.ShowTab(page);
+            mainControl.SelectTab(page);
+            //this.Text = resources.GetString(page.Name + ".Text");
             foreach (MetroTabPage slide in mainControl.TabPages)
             {
-                if(slide == page)
-                {
-                    mainControl.ShowTab(slide);
-                    mainControl.SelectTab(slide);
-                    this.Text = resources.GetString(slide.Name + ".Name");
-                }
-                else if(slide != page)
+                if(slide != page)
                 {
                     mainControl.HideTab(slide);
                 }
             }
             ChangeColor(MainStyle);
             ChangeLanguage(Language.Default);
-            FixTitle();
+            //FixTitle();
             page.Text = "";
         }
         #endregion 
+
+
+
+
+
+
+
+
+        #region Debug
+
+        private void consoleButton_Click(object sender, EventArgs e)
+        {
+            if (!console)
+            {
+                tip.SetToolTip(consoleButton, "Skrýt ladění");
+                this.Size = new System.Drawing.Size(biggerWindowSizeW, this.Size.Height);
+                console = true;
+                consoleButton.Text = "<<";
+                NoHighlight();
+            }
+            else
+            {
+                tip.SetToolTip(consoleButton,"Zobrazit ladění");
+                this.Size = new System.Drawing.Size(defaultWindowSizeW, this.Size.Height);
+                console = false;
+                NoHighlight();
+                consoleButton.Text = ">>";
+            }
+        }
+
+        private bool isTooltip = false;
+        private void consoleButton_Enter(object sender, EventArgs e)
+        {
+            if(!isTooltip)
+            {
+                tip.SetToolTip(consoleButton, "Zobrazit ladění");
+                isTooltip = true;
+            }
+            NoHighlight();
+        }
+
+        private void exitSimulator_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            comunicator.TestConnection();
+        }
+
+            #region contextStrip
+
+        private void menuStripSignIn_Click(object sender, EventArgs e)
+        {
+            HideAllExcept(signInPage);
+        }
+
+        private void menuStripMainPage_Click(object sender, EventArgs e)
+        {
+            HideAllExcept(mainPage);
+        }
+
+        private void menuStripMOneyDeposit_Click(object sender, EventArgs e)
+        {
+            HideAllExcept(moneyIntakePage);
+        }
+
+        private void menuStripMoneyWithdrawl_Click(object sender, EventArgs e)
+        {
+            HideAllExcept(moneyWithdrawlPage);
+        }
+
+        private void menuStripTransactionHistory_Click(object sender, EventArgs e)
+        {
+            HideAllExcept(transactionHistoryPage);
+        }
+
+        private void menuStripNewTransaction_Click(object sender, EventArgs e)
+        {
+            HideAllExcept(newTransactionPage);
+        }
+
+        #endregion
+
+        #endregion
+
+        #region Sign in
+
+        private void signInButton_Click(object sender, EventArgs e)
+        {
+            SecureString secureString = new SecureString();
+            foreach (char item in BCrypt.Net.BCrypt.HashPassword(signInPassBox.Text, 11))
+            {
+                secureString.AppendChar(item);
+            }
+            Console.WriteLine(secureString.ToString());
+            for (int i = 0; i < secureString.Length; i++)
+            {
+                Console.WriteLine(i);
+            }
+            NoHighlight();
+        }
+
+        private void signInNewUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion
+
+        #region Main page
 
         private void buttonIntake_Click(object sender, EventArgs e)
         {
@@ -369,61 +553,88 @@ namespace PSBNebesky
 
         }
 
-        private void consoleButton_Click(object sender, EventArgs e)
+        #endregion
+
+        #region Money Deposit
+
+        private void metroTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!console)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
-                tip.SetToolTip(consoleButton, "Skrýt ladění");
-                this.Size = new System.Drawing.Size(biggerWindowSizeW, this.Size.Height);
-                console = true;
-                consoleButton.Text = "<<";
-                NoHighlight();
+                e.Handled = true;
             }
-            else
-            {
-                tip.SetToolTip(consoleButton,"Zobrazit ladění");
-                this.Size = new System.Drawing.Size(defaultWindowSizeW, this.Size.Height);
-                console = false;
-                NoHighlight();
-                consoleButton.Text = ">>";
-            }
+        } //Omezuje vstup do pole pro vlastní částku pouze na celá čísla
+
+        private void moneyDeposit200Tile_Click(object sender, EventArgs e)
+        {
+            NoHighlight();
         }
 
-        private bool isTooltip = false;
-        private void consoleButton_Enter(object sender, EventArgs e)
+        private void moneyDeposit500Tile_Click(object sender, EventArgs e)
         {
-            if(!isTooltip)
-            {
-                tip.SetToolTip(consoleButton, "Zobrazit ladění");
-                isTooltip = true;
-            }
+            NoHighlight();
+        }
+
+        private void moneyDeposit1000Tile_Click(object sender, EventArgs e)
+        {
+            NoHighlight();
+        }
+
+        private void moneyDeposti5000Tile_Click(object sender, EventArgs e)
+        {
+            NoHighlight();
+        }
+
+        private void moneyDepositCustomTile_Click(object sender, EventArgs e)
+        {
+            NoHighlight();
+        }
+
+        private void moneyDepositBack_Click(object sender, EventArgs e)
+        {
+            NoHighlight();
+            moneyDepositCustomValue.Text = null;
+            HideAllExcept(mainPage);
+        }
+
+        #endregion
+
+        #region Money Withdrawal
+
+        private void moneyWithdrawlBack_Click(object sender, EventArgs e)
+        {
+            NoHighlight();
+            HideAllExcept(mainPage);
+        }
+
+        private void moneyWithdrawl200Tile_Click(object sender, EventArgs e)
+        {
+            NoHighlight();
+        }
+
+        private void moneyWithdrawl500Tile_Click(object sender, EventArgs e)
+        {
+            NoHighlight();
+        }
+
+        private void moneyWithdrawl1000Tile_Click(object sender, EventArgs e)
+        {
+            NoHighlight();
+        }
+
+        private void moneyWithdrawl5000Tile_Click(object sender, EventArgs e)
+        {
+            NoHighlight();
+        }
+
+        private void moneyWithdrawlCustomTile_Click(object sender, EventArgs e)
+        {
             NoHighlight();
         }
 
 
-        private void signInButton_Click(object sender, EventArgs e)
-        {
-            SecureString secureString = new SecureString();
-            foreach (char item in BCrypt.Net.BCrypt.HashPassword(signInPassBox.Text, 11))
-            {
-                secureString.AppendChar(item);
-            }
-            Console.WriteLine(secureString.ToString());
-            for (int i = 0; i < secureString.Length; i++)
-            {
-                Console.WriteLine(i);
-            }
-            NoHighlight();
-        }
 
-        private void exitSimulator_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(1);
-        }
+        #endregion
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            comunicator.TestConnection();
-        }
     }
 }

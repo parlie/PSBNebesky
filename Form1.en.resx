@@ -143,6 +143,34 @@ deposit</value>
   <data name="buttonIntake.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
   </data>
+  <data name="moneyWithdrawlBack.Text" xml:space="preserve">
+    <value>BACK</value>
+  </data>
+  <data name="moneyWithdrawlCustomTile.Text" xml:space="preserve">
+    <value>Withdrawl</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 39</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>To withdrawl funds from Your 
+account, please select desired 
+amount or input custom one.</value>
+  </data>
+  <data name="moneyDepositBack.Text" xml:space="preserve">
+    <value>BACK</value>
+  </data>
+  <data name="moneyDepositCustomTile.Text" xml:space="preserve">
+    <value>Deposit</value>
+  </data>
+  <data name="moneyDepositLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 39</value>
+  </data>
+  <data name="moneyDepositLabel.Text" xml:space="preserve">
+    <value>To deposit funds to Your account,
+please select desired amount
+or input custom one.</value>
+  </data>
   <data name="signInLabel.Text" xml:space="preserve">
     <value>To sign into the ATM please
 use your credit/debit card or Sign in with your credentials</value>
