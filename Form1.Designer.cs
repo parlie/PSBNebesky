@@ -99,13 +99,12 @@
             // 
             // boxLog
             // 
-            resources.ApplyResources(this.boxLog, "boxLog");
             this.boxLog.FormattingEnabled = true;
+            resources.ApplyResources(this.boxLog, "boxLog");
             this.boxLog.Name = "boxLog";
             // 
             // mainPage
             // 
-            resources.ApplyResources(this.mainPage, "mainPage");
             this.mainPage.Controls.Add(this.buttonLeave);
             this.mainPage.Controls.Add(this.metroPanel1);
             this.mainPage.Controls.Add(this.buttonEnglish);
@@ -113,6 +112,7 @@
             this.mainPage.HorizontalScrollbarBarColor = true;
             this.mainPage.HorizontalScrollbarHighlightOnWheel = false;
             this.mainPage.HorizontalScrollbarSize = 10;
+            resources.ApplyResources(this.mainPage, "mainPage");
             this.mainPage.Name = "mainPage";
             this.mainPage.VerticalScrollbarBarColor = true;
             this.mainPage.VerticalScrollbarHighlightOnWheel = false;
@@ -120,8 +120,8 @@
             // 
             // buttonLeave
             // 
-            resources.ApplyResources(this.buttonLeave, "buttonLeave");
             this.buttonLeave.ActiveControl = null;
+            resources.ApplyResources(this.buttonLeave, "buttonLeave");
             this.buttonLeave.Name = "buttonLeave";
             this.buttonLeave.UseSelectable = true;
             this.buttonLeave.Click += new System.EventHandler(this.buttonLeave_Click);
@@ -145,40 +145,40 @@
             // 
             // buttonTransactionHistory
             // 
-            resources.ApplyResources(this.buttonTransactionHistory, "buttonTransactionHistory");
             this.buttonTransactionHistory.ActiveControl = null;
+            resources.ApplyResources(this.buttonTransactionHistory, "buttonTransactionHistory");
             this.buttonTransactionHistory.Name = "buttonTransactionHistory";
             this.buttonTransactionHistory.UseSelectable = true;
             this.buttonTransactionHistory.Click += new System.EventHandler(this.buttonTransactionHistory_Click);
             // 
             // buttonNewTransaction
             // 
-            resources.ApplyResources(this.buttonNewTransaction, "buttonNewTransaction");
             this.buttonNewTransaction.ActiveControl = null;
+            resources.ApplyResources(this.buttonNewTransaction, "buttonNewTransaction");
             this.buttonNewTransaction.Name = "buttonNewTransaction";
             this.buttonNewTransaction.UseSelectable = true;
             this.buttonNewTransaction.Click += new System.EventHandler(this.buttonNewTransaction_Click);
             // 
             // buttonWith
             // 
-            resources.ApplyResources(this.buttonWith, "buttonWith");
             this.buttonWith.ActiveControl = null;
+            resources.ApplyResources(this.buttonWith, "buttonWith");
             this.buttonWith.Name = "buttonWith";
             this.buttonWith.UseSelectable = true;
             this.buttonWith.Click += new System.EventHandler(this.buttonWith_Click);
             // 
             // buttonIntake
             // 
-            resources.ApplyResources(this.buttonIntake, "buttonIntake");
             this.buttonIntake.ActiveControl = null;
+            resources.ApplyResources(this.buttonIntake, "buttonIntake");
             this.buttonIntake.Name = "buttonIntake";
             this.buttonIntake.UseSelectable = true;
             this.buttonIntake.Click += new System.EventHandler(this.buttonIntake_Click);
             // 
             // buttonEnglish
             // 
-            resources.ApplyResources(this.buttonEnglish, "buttonEnglish");
             this.buttonEnglish.ActiveControl = null;
+            resources.ApplyResources(this.buttonEnglish, "buttonEnglish");
             this.buttonEnglish.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonEnglish.Name = "buttonEnglish";
             this.buttonEnglish.TileImage = global::PSBNebesky.Properties.Resources.united_kingdom;
@@ -190,8 +190,8 @@
             // 
             // buttonCzech
             // 
-            resources.ApplyResources(this.buttonCzech, "buttonCzech");
             this.buttonCzech.ActiveControl = null;
+            resources.ApplyResources(this.buttonCzech, "buttonCzech");
             this.buttonCzech.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonCzech.Name = "buttonCzech";
             this.buttonCzech.TileImage = global::PSBNebesky.Properties.Resources.czech_republic1;
@@ -203,27 +203,27 @@
             // 
             // mainControl
             // 
-            resources.ApplyResources(this.mainControl, "mainControl");
             this.mainControl.Controls.Add(this.mainPage);
             this.mainControl.Controls.Add(this.moneyWithdrawlPage);
             this.mainControl.Controls.Add(this.transactionHistoryPage);
             this.mainControl.Controls.Add(this.moneyIntakePage);
             this.mainControl.Controls.Add(this.signInPage);
             this.mainControl.Controls.Add(this.newTransactionPage);
+            resources.ApplyResources(this.mainControl, "mainControl");
             this.mainControl.Name = "mainControl";
-            this.mainControl.SelectedIndex = 0;
+            this.mainControl.SelectedIndex = 1;
             this.mainControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.mainControl.UseSelectable = true;
             // 
             // moneyWithdrawlPage
             // 
-            resources.ApplyResources(this.moneyWithdrawlPage, "moneyWithdrawlPage");
             this.moneyWithdrawlPage.Controls.Add(this.moneyWithdrawlBack);
             this.moneyWithdrawlPage.Controls.Add(this.flowLayoutPanel2);
             this.moneyWithdrawlPage.Controls.Add(this.label1);
             this.moneyWithdrawlPage.HorizontalScrollbarBarColor = true;
             this.moneyWithdrawlPage.HorizontalScrollbarHighlightOnWheel = false;
             this.moneyWithdrawlPage.HorizontalScrollbarSize = 10;
+            resources.ApplyResources(this.moneyWithdrawlPage, "moneyWithdrawlPage");
             this.moneyWithdrawlPage.Name = "moneyWithdrawlPage";
             this.moneyWithdrawlPage.VerticalScrollbarBarColor = true;
             this.moneyWithdrawlPage.VerticalScrollbarHighlightOnWheel = false;
@@ -231,62 +231,62 @@
             // 
             // moneyWithdrawlBack
             // 
-            resources.ApplyResources(this.moneyWithdrawlBack, "moneyWithdrawlBack");
             this.moneyWithdrawlBack.ActiveControl = null;
+            resources.ApplyResources(this.moneyWithdrawlBack, "moneyWithdrawlBack");
             this.moneyWithdrawlBack.Name = "moneyWithdrawlBack";
             this.moneyWithdrawlBack.UseSelectable = true;
             this.moneyWithdrawlBack.Click += new System.EventHandler(this.moneyWithdrawlBack_Click);
             // 
             // flowLayoutPanel2
             // 
-            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
             this.flowLayoutPanel2.Controls.Add(this.moneyWithdrawl200Tile);
             this.flowLayoutPanel2.Controls.Add(this.moneyWithdrawl500Tile);
             this.flowLayoutPanel2.Controls.Add(this.moneyWithdrawl1000Tile);
             this.flowLayoutPanel2.Controls.Add(this.moneyWithdrawl5000Tile);
             this.flowLayoutPanel2.Controls.Add(this.metroPanel3);
+            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             // 
             // moneyWithdrawl200Tile
             // 
-            resources.ApplyResources(this.moneyWithdrawl200Tile, "moneyWithdrawl200Tile");
             this.moneyWithdrawl200Tile.ActiveControl = null;
+            resources.ApplyResources(this.moneyWithdrawl200Tile, "moneyWithdrawl200Tile");
             this.moneyWithdrawl200Tile.Name = "moneyWithdrawl200Tile";
             this.moneyWithdrawl200Tile.UseSelectable = true;
             this.moneyWithdrawl200Tile.Click += new System.EventHandler(this.moneyWithdrawl200Tile_Click);
             // 
             // moneyWithdrawl500Tile
             // 
-            resources.ApplyResources(this.moneyWithdrawl500Tile, "moneyWithdrawl500Tile");
             this.moneyWithdrawl500Tile.ActiveControl = null;
+            resources.ApplyResources(this.moneyWithdrawl500Tile, "moneyWithdrawl500Tile");
             this.moneyWithdrawl500Tile.Name = "moneyWithdrawl500Tile";
             this.moneyWithdrawl500Tile.UseSelectable = true;
             this.moneyWithdrawl500Tile.Click += new System.EventHandler(this.moneyWithdrawl500Tile_Click);
             // 
             // moneyWithdrawl1000Tile
             // 
-            resources.ApplyResources(this.moneyWithdrawl1000Tile, "moneyWithdrawl1000Tile");
             this.moneyWithdrawl1000Tile.ActiveControl = null;
+            resources.ApplyResources(this.moneyWithdrawl1000Tile, "moneyWithdrawl1000Tile");
             this.moneyWithdrawl1000Tile.Name = "moneyWithdrawl1000Tile";
             this.moneyWithdrawl1000Tile.UseSelectable = true;
             this.moneyWithdrawl1000Tile.Click += new System.EventHandler(this.moneyWithdrawl1000Tile_Click);
             // 
             // moneyWithdrawl5000Tile
             // 
-            resources.ApplyResources(this.moneyWithdrawl5000Tile, "moneyWithdrawl5000Tile");
             this.moneyWithdrawl5000Tile.ActiveControl = null;
+            resources.ApplyResources(this.moneyWithdrawl5000Tile, "moneyWithdrawl5000Tile");
             this.moneyWithdrawl5000Tile.Name = "moneyWithdrawl5000Tile";
             this.moneyWithdrawl5000Tile.UseSelectable = true;
             this.moneyWithdrawl5000Tile.Click += new System.EventHandler(this.moneyWithdrawl5000Tile_Click);
             // 
             // metroPanel3
             // 
-            resources.ApplyResources(this.metroPanel3, "metroPanel3");
             this.metroPanel3.Controls.Add(this.moneyWithdrawlCustomValue);
             this.metroPanel3.Controls.Add(this.moneyWithdrawlCustomTile);
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel3.HorizontalScrollbarSize = 10;
+            resources.ApplyResources(this.metroPanel3, "metroPanel3");
             this.metroPanel3.Name = "metroPanel3";
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
@@ -300,8 +300,8 @@
             // 
             // moneyWithdrawlCustomTile
             // 
-            resources.ApplyResources(this.moneyWithdrawlCustomTile, "moneyWithdrawlCustomTile");
             this.moneyWithdrawlCustomTile.ActiveControl = null;
+            resources.ApplyResources(this.moneyWithdrawlCustomTile, "moneyWithdrawlCustomTile");
             this.moneyWithdrawlCustomTile.Name = "moneyWithdrawlCustomTile";
             this.moneyWithdrawlCustomTile.UseSelectable = true;
             this.moneyWithdrawlCustomTile.Click += new System.EventHandler(this.moneyWithdrawlCustomTile_Click);
@@ -314,8 +314,8 @@
             // 
             // transactionHistoryPage
             // 
-            resources.ApplyResources(this.transactionHistoryPage, "transactionHistoryPage");
             this.transactionHistoryPage.Controls.Add(this.button2);
+            resources.ApplyResources(this.transactionHistoryPage, "transactionHistoryPage");
             this.transactionHistoryPage.HorizontalScrollbarBarColor = true;
             this.transactionHistoryPage.HorizontalScrollbarHighlightOnWheel = false;
             this.transactionHistoryPage.HorizontalScrollbarSize = 10;
@@ -332,13 +332,13 @@
             // 
             // moneyIntakePage
             // 
-            resources.ApplyResources(this.moneyIntakePage, "moneyIntakePage");
             this.moneyIntakePage.Controls.Add(this.moneyDepositBack);
             this.moneyIntakePage.Controls.Add(this.flowLayoutPanel1);
             this.moneyIntakePage.Controls.Add(this.moneyDepositLabel);
             this.moneyIntakePage.HorizontalScrollbarBarColor = true;
             this.moneyIntakePage.HorizontalScrollbarHighlightOnWheel = false;
             this.moneyIntakePage.HorizontalScrollbarSize = 10;
+            resources.ApplyResources(this.moneyIntakePage, "moneyIntakePage");
             this.moneyIntakePage.Name = "moneyIntakePage";
             this.moneyIntakePage.VerticalScrollbarBarColor = true;
             this.moneyIntakePage.VerticalScrollbarHighlightOnWheel = false;
@@ -346,62 +346,62 @@
             // 
             // moneyDepositBack
             // 
-            resources.ApplyResources(this.moneyDepositBack, "moneyDepositBack");
             this.moneyDepositBack.ActiveControl = null;
+            resources.ApplyResources(this.moneyDepositBack, "moneyDepositBack");
             this.moneyDepositBack.Name = "moneyDepositBack";
             this.moneyDepositBack.UseSelectable = true;
             this.moneyDepositBack.Click += new System.EventHandler(this.moneyDepositBack_Click);
             // 
             // flowLayoutPanel1
             // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Controls.Add(this.moneyDeposit200Tile);
             this.flowLayoutPanel1.Controls.Add(this.moneyDeposit500Tile);
             this.flowLayoutPanel1.Controls.Add(this.moneyDeposit1000Tile);
             this.flowLayoutPanel1.Controls.Add(this.moneyDeposti5000Tile);
             this.flowLayoutPanel1.Controls.Add(this.metroPanel2);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // moneyDeposit200Tile
             // 
-            resources.ApplyResources(this.moneyDeposit200Tile, "moneyDeposit200Tile");
             this.moneyDeposit200Tile.ActiveControl = null;
+            resources.ApplyResources(this.moneyDeposit200Tile, "moneyDeposit200Tile");
             this.moneyDeposit200Tile.Name = "moneyDeposit200Tile";
             this.moneyDeposit200Tile.UseSelectable = true;
             this.moneyDeposit200Tile.Click += new System.EventHandler(this.moneyDeposit200Tile_Click);
             // 
             // moneyDeposit500Tile
             // 
-            resources.ApplyResources(this.moneyDeposit500Tile, "moneyDeposit500Tile");
             this.moneyDeposit500Tile.ActiveControl = null;
+            resources.ApplyResources(this.moneyDeposit500Tile, "moneyDeposit500Tile");
             this.moneyDeposit500Tile.Name = "moneyDeposit500Tile";
             this.moneyDeposit500Tile.UseSelectable = true;
             this.moneyDeposit500Tile.Click += new System.EventHandler(this.moneyDeposit500Tile_Click);
             // 
             // moneyDeposit1000Tile
             // 
-            resources.ApplyResources(this.moneyDeposit1000Tile, "moneyDeposit1000Tile");
             this.moneyDeposit1000Tile.ActiveControl = null;
+            resources.ApplyResources(this.moneyDeposit1000Tile, "moneyDeposit1000Tile");
             this.moneyDeposit1000Tile.Name = "moneyDeposit1000Tile";
             this.moneyDeposit1000Tile.UseSelectable = true;
             this.moneyDeposit1000Tile.Click += new System.EventHandler(this.moneyDeposit1000Tile_Click);
             // 
             // moneyDeposti5000Tile
             // 
-            resources.ApplyResources(this.moneyDeposti5000Tile, "moneyDeposti5000Tile");
             this.moneyDeposti5000Tile.ActiveControl = null;
+            resources.ApplyResources(this.moneyDeposti5000Tile, "moneyDeposti5000Tile");
             this.moneyDeposti5000Tile.Name = "moneyDeposti5000Tile";
             this.moneyDeposti5000Tile.UseSelectable = true;
             this.moneyDeposti5000Tile.Click += new System.EventHandler(this.moneyDeposti5000Tile_Click);
             // 
             // metroPanel2
             // 
-            resources.ApplyResources(this.metroPanel2, "metroPanel2");
             this.metroPanel2.Controls.Add(this.moneyDepositCustomValue);
             this.metroPanel2.Controls.Add(this.moneyDepositCustomTile);
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel2.HorizontalScrollbarSize = 10;
+            resources.ApplyResources(this.metroPanel2, "metroPanel2");
             this.metroPanel2.Name = "metroPanel2";
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
@@ -415,8 +415,8 @@
             // 
             // moneyDepositCustomTile
             // 
-            resources.ApplyResources(this.moneyDepositCustomTile, "moneyDepositCustomTile");
             this.moneyDepositCustomTile.ActiveControl = null;
+            resources.ApplyResources(this.moneyDepositCustomTile, "moneyDepositCustomTile");
             this.moneyDepositCustomTile.Name = "moneyDepositCustomTile";
             this.moneyDepositCustomTile.UseSelectable = true;
             this.moneyDepositCustomTile.Click += new System.EventHandler(this.moneyDepositCustomTile_Click);
@@ -429,7 +429,6 @@
             // 
             // signInPage
             // 
-            resources.ApplyResources(this.signInPage, "signInPage");
             this.signInPage.Controls.Add(this.signInNewUser);
             this.signInPage.Controls.Add(this.signInUserBox);
             this.signInPage.Controls.Add(this.signInPassBox);
@@ -438,6 +437,7 @@
             this.signInPage.HorizontalScrollbarBarColor = true;
             this.signInPage.HorizontalScrollbarHighlightOnWheel = false;
             this.signInPage.HorizontalScrollbarSize = 10;
+            resources.ApplyResources(this.signInPage, "signInPage");
             this.signInPage.Name = "signInPage";
             this.signInPage.VerticalScrollbarBarColor = true;
             this.signInPage.VerticalScrollbarHighlightOnWheel = false;
@@ -445,8 +445,8 @@
             // 
             // signInNewUser
             // 
-            resources.ApplyResources(this.signInNewUser, "signInNewUser");
             this.signInNewUser.ActiveControl = null;
+            resources.ApplyResources(this.signInNewUser, "signInNewUser");
             this.signInNewUser.Name = "signInNewUser";
             this.signInNewUser.UseSelectable = true;
             this.signInNewUser.Click += new System.EventHandler(this.signInNewUser_Click);
@@ -464,25 +464,25 @@
             // 
             // signInButton
             // 
-            resources.ApplyResources(this.signInButton, "signInButton");
             this.signInButton.ActiveControl = null;
+            resources.ApplyResources(this.signInButton, "signInButton");
             this.signInButton.Name = "signInButton";
             this.signInButton.UseSelectable = true;
             this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
             // 
             // signInLabel
             // 
-            resources.ApplyResources(this.signInLabel, "signInLabel");
             this.signInLabel.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.signInLabel, "signInLabel");
             this.signInLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.signInLabel.Name = "signInLabel";
             // 
             // newTransactionPage
             // 
-            resources.ApplyResources(this.newTransactionPage, "newTransactionPage");
             this.newTransactionPage.HorizontalScrollbarBarColor = true;
             this.newTransactionPage.HorizontalScrollbarHighlightOnWheel = false;
             this.newTransactionPage.HorizontalScrollbarSize = 10;
+            resources.ApplyResources(this.newTransactionPage, "newTransactionPage");
             this.newTransactionPage.Name = "newTransactionPage";
             this.newTransactionPage.VerticalScrollbarBarColor = true;
             this.newTransactionPage.VerticalScrollbarHighlightOnWheel = false;
@@ -512,14 +512,13 @@
             // 
             // button1
             // 
-            resources.ApplyResources(this.button1, "button1");
             this.button1.ContextMenuStrip = this.contextMenuStrip1;
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // contextMenuStrip1
             // 
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuStripSignIn,
             this.menuStripMainPage,
@@ -528,41 +527,42 @@
             this.menuStripTransactionHistory,
             this.menuStripNewTransaction});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // menuStripSignIn
             // 
-            resources.ApplyResources(this.menuStripSignIn, "menuStripSignIn");
             this.menuStripSignIn.Name = "menuStripSignIn";
+            resources.ApplyResources(this.menuStripSignIn, "menuStripSignIn");
             this.menuStripSignIn.Click += new System.EventHandler(this.menuStripSignIn_Click);
             // 
             // menuStripMainPage
             // 
-            resources.ApplyResources(this.menuStripMainPage, "menuStripMainPage");
             this.menuStripMainPage.Name = "menuStripMainPage";
+            resources.ApplyResources(this.menuStripMainPage, "menuStripMainPage");
             this.menuStripMainPage.Click += new System.EventHandler(this.menuStripMainPage_Click);
             // 
             // menuStripMOneyDeposit
             // 
-            resources.ApplyResources(this.menuStripMOneyDeposit, "menuStripMOneyDeposit");
             this.menuStripMOneyDeposit.Name = "menuStripMOneyDeposit";
+            resources.ApplyResources(this.menuStripMOneyDeposit, "menuStripMOneyDeposit");
             this.menuStripMOneyDeposit.Click += new System.EventHandler(this.menuStripMOneyDeposit_Click);
             // 
             // menuStripMoneyWithdrawl
             // 
-            resources.ApplyResources(this.menuStripMoneyWithdrawl, "menuStripMoneyWithdrawl");
             this.menuStripMoneyWithdrawl.Name = "menuStripMoneyWithdrawl";
+            resources.ApplyResources(this.menuStripMoneyWithdrawl, "menuStripMoneyWithdrawl");
             this.menuStripMoneyWithdrawl.Click += new System.EventHandler(this.menuStripMoneyWithdrawl_Click);
             // 
             // menuStripTransactionHistory
             // 
-            resources.ApplyResources(this.menuStripTransactionHistory, "menuStripTransactionHistory");
             this.menuStripTransactionHistory.Name = "menuStripTransactionHistory";
+            resources.ApplyResources(this.menuStripTransactionHistory, "menuStripTransactionHistory");
             this.menuStripTransactionHistory.Click += new System.EventHandler(this.menuStripTransactionHistory_Click);
             // 
             // menuStripNewTransaction
             // 
-            resources.ApplyResources(this.menuStripNewTransaction, "menuStripNewTransaction");
             this.menuStripNewTransaction.Name = "menuStripNewTransaction";
+            resources.ApplyResources(this.menuStripNewTransaction, "menuStripNewTransaction");
             this.menuStripNewTransaction.Click += new System.EventHandler(this.menuStripNewTransaction_Click);
             // 
             // Form1

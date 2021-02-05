@@ -118,375 +118,541 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="moneyDepositCustomValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="boxLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1147, 13</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="exitSimulator.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="exitSimulator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>WindowsDefaultLocation</value>
-  </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawlBack.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="boxLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 342</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="testServer.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawlBack.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;buttonNewTransaction.Name" xml:space="preserve">
-    <value>buttonNewTransaction</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposit1000Tile.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="moneyIntakePage.Text" xml:space="preserve">
-    <value>MoneyIntake</value>
-  </data>
-  <data name="&gt;&gt;buttonCzech.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;menuStripSignIn.Name" xml:space="preserve">
-    <value>menuStripSignIn</value>
-  </data>
-  <data name="&gt;&gt;newTransactionPage.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="boxLog.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="buttonNewTransaction.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;boxLog.Name" xml:space="preserve">
+    <value>boxLog</value>
   </data>
-  <data name="moneyWithdrawl500Tile.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;boxLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1630, 687</value>
+  <data name="&gt;&gt;boxLog.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="buttonEnglish.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;metroPanel1.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;exitSimulator.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="moneyDeposit1000Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="signInButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 386</value>
-  </data>
-  <data name="&gt;&gt;buttonLeave.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="signInButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 50</value>
-  </data>
-  <data name="&gt;&gt;moneyDepositLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonWith.Text" xml:space="preserve">
-    <value>Výběr peněz</value>
-  </data>
-  <data name="&gt;&gt;buttonTransactionHistory.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawlCustomValue.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;signInUserBox.Name" xml:space="preserve">
-    <value>signInUserBox</value>
-  </data>
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1118, 200</value>
-  </data>
-  <data name="menuStripNewTransaction.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 183</value>
-  </data>
-  <data name="&gt;&gt;newTransactionPage.Name" xml:space="preserve">
-    <value>newTransactionPage</value>
-  </data>
-  <data name="moneyWithdrawlBack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1000, 297</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawlCustomTile.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;buttonNewTransaction.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;moneyDepositLabel.Name" xml:space="preserve">
-    <value>moneyDepositLabel</value>
-  </data>
-  <data name="testServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 23</value>
-  </data>
-  <data name="moneyDeposit1000Tile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 190</value>
-  </data>
-  <data name="moneyWithdrawl1000Tile.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;boxLog.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="mainControl.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="buttonLeave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1013, 497</value>
   </data>
-  <data name="signInUserBox.MaxLength" type="System.Int32, mscorlib">
-    <value>14</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonLeave.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="metroPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 190</value>
-  </data>
-  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;menuStripTransactionHistory.Name" xml:space="preserve">
-    <value>menuStripTransactionHistory</value>
-  </data>
-  <data name="&gt;&gt;mainPage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="signInPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1121, 558</value>
-  </data>
-  <data name="&gt;&gt;buttonWith.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="buttonTransactionHistory.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposit1000Tile.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="moneyDepositBack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>999, 301</value>
-  </data>
-  <data name="&gt;&gt;buttonEnglish.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="menuStripMainPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
-  </data>
-  <data name="menuStripMOneyDeposit.Text" xml:space="preserve">
-    <value>Money deposit</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposit1000Tile.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="buttonWith.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="signInPassBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 330</value>
-  </data>
-  <data name="&gt;&gt;signInNewUser.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposit500Tile.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;transactionHistoryPage.Parent" xml:space="preserve">
-    <value>mainControl</value>
-  </data>
-  <data name="&gt;&gt;menuStripMoneyWithdrawl.Name" xml:space="preserve">
-    <value>menuStripMoneyWithdrawl</value>
-  </data>
-  <data name="&gt;&gt;menuStripSignIn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="metroPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 190</value>
-  </data>
-  <data name="&gt;&gt;moneyIntakePage.Parent" xml:space="preserve">
-    <value>mainControl</value>
-  </data>
-  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 354</value>
-  </data>
-  <data name="&gt;&gt;signInButton.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="moneyWithdrawlPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1121, 558</value>
-  </data>
-  <data name="&gt;&gt;consoleButton.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;signInLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="moneyDepositLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;moneyDepositLabel.Parent" xml:space="preserve">
-    <value>moneyIntakePage</value>
+  <data name="buttonLeave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 54</value>
   </data>
   <data name="buttonLeave.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;moneyWithdrawlCustomTile.Name" xml:space="preserve">
-    <value>moneyWithdrawlCustomTile</value>
+  <data name="buttonLeave.Text" xml:space="preserve">
+    <value>Odejít</value>
   </data>
-  <data name="&gt;&gt;testServer.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="buttonLeave.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;moneyWithdrawl1000Tile.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonLeave.Name" xml:space="preserve">
+    <value>buttonLeave</value>
+  </data>
+  <data name="&gt;&gt;buttonLeave.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonLeave.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;buttonLeave.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="metroPanel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="buttonTransactionHistory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 4</value>
+  </data>
+  <data name="buttonTransactionHistory.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="buttonTransactionHistory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 190</value>
+  </data>
+  <data name="buttonTransactionHistory.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonTransactionHistory.Text" xml:space="preserve">
+    <value>Historie
+transakcí</value>
+  </data>
+  <data name="&gt;&gt;buttonTransactionHistory.Name" xml:space="preserve">
+    <value>buttonTransactionHistory</value>
+  </data>
+  <data name="&gt;&gt;buttonTransactionHistory.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonTransactionHistory.Parent" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;buttonTransactionHistory.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonNewTransaction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>399, 4</value>
+  </data>
+  <data name="buttonNewTransaction.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="buttonNewTransaction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 190</value>
+  </data>
+  <data name="buttonNewTransaction.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonNewTransaction.Text" xml:space="preserve">
+    <value>Nová transakce</value>
+  </data>
+  <data name="&gt;&gt;buttonNewTransaction.Name" xml:space="preserve">
+    <value>buttonNewTransaction</value>
+  </data>
+  <data name="&gt;&gt;buttonNewTransaction.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonNewTransaction.Parent" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;buttonNewTransaction.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonWith.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 4</value>
+  </data>
+  <data name="buttonWith.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="buttonWith.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 190</value>
+  </data>
+  <data name="buttonWith.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="buttonWith.Text" xml:space="preserve">
+    <value>Výběr peněz</value>
+  </data>
+  <data name="buttonWith.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;buttonWith.Name" xml:space="preserve">
+    <value>buttonWith</value>
+  </data>
+  <data name="&gt;&gt;buttonWith.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonWith.Parent" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;buttonWith.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="buttonIntake.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 4</value>
+  </data>
+  <data name="buttonIntake.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="buttonIntake.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 190</value>
+  </data>
+  <data name="buttonIntake.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonIntake.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;buttonIntake.Name" xml:space="preserve">
+    <value>buttonIntake</value>
+  </data>
+  <data name="&gt;&gt;buttonIntake.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonIntake.Parent" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;buttonIntake.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="metroPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 356</value>
+  </data>
+  <data name="metroPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="metroPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>790, 200</value>
+  </data>
+  <data name="metroPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.Name" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonEnglish.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="buttonEnglish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1054, 3</value>
+  </data>
+  <data name="buttonEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
+  </data>
+  <data name="buttonEnglish.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;buttonEnglish.Name" xml:space="preserve">
+    <value>buttonEnglish</value>
+  </data>
+  <data name="&gt;&gt;buttonEnglish.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonEnglish.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;buttonEnglish.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="buttonCzech.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="buttonCzech.Location" type="System.Drawing.Point, System.Drawing">
+    <value>984, 3</value>
+  </data>
+  <data name="buttonCzech.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
+  </data>
+  <data name="buttonCzech.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;buttonCzech.Name" xml:space="preserve">
+    <value>buttonCzech</value>
+  </data>
+  <data name="&gt;&gt;buttonCzech.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonCzech.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;buttonCzech.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="mainPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="mainPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1121, 558</value>
+  </data>
+  <data name="mainPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="mainPage.Text" xml:space="preserve">
+    <value>MainPage</value>
+  </data>
+  <data name="&gt;&gt;mainPage.Name" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;mainPage.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mainPage.Parent" xml:space="preserve">
+    <value>mainControl</value>
+  </data>
+  <data name="&gt;&gt;mainPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="moneyWithdrawlBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>999, 301</value>
+  </data>
+  <data name="moneyWithdrawlBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 54</value>
+  </data>
+  <data name="moneyWithdrawlBack.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="moneyWithdrawlBack.Text" xml:space="preserve">
+    <value>ZPĚT</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawlBack.Name" xml:space="preserve">
+    <value>moneyWithdrawlBack</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawlBack.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawlBack.Parent" xml:space="preserve">
+    <value>moneyWithdrawlPage</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawlBack.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="moneyWithdrawl200Tile.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 5</value>
   </data>
-  <data name="signInButton.Text" xml:space="preserve">
-    <value>Přihlásit</value>
+  <data name="moneyWithdrawl200Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
-  <data name="&gt;&gt;signInLabel.Name" xml:space="preserve">
-    <value>signInLabel</value>
+  <data name="moneyWithdrawl200Tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 190</value>
   </data>
-  <data name="moneyIntakePage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1121, 558</value>
+  <data name="moneyWithdrawl200Tile.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="moneyWithdrawlCustomValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="moneyWithdrawl200Tile.Text" xml:space="preserve">
+    <value>200</value>
   </data>
-  <data name="moneyWithdrawlBack.Text" xml:space="preserve">
-    <value>ZPĚT</value>
+  <data name="&gt;&gt;moneyWithdrawl200Tile.Name" xml:space="preserve">
+    <value>moneyWithdrawl200Tile</value>
   </data>
-  <data name="&gt;&gt;moneyWithdrawl5000Tile.Parent" xml:space="preserve">
+  <data name="&gt;&gt;moneyWithdrawl200Tile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawl200Tile.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;moneyIntakePage.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;moneyWithdrawl200Tile.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;signInLabel.Parent" xml:space="preserve">
-    <value>signInPage</value>
+  <data name="moneyWithdrawl500Tile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 5</value>
   </data>
-  <data name="moneyDepositLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
+  <data name="moneyWithdrawl500Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
-  <data name="metroPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>790, 200</value>
+  <data name="moneyWithdrawl500Tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 190</value>
   </data>
-  <data name="&gt;&gt;moneyWithdrawlBack.Name" xml:space="preserve">
-    <value>moneyWithdrawlBack</value>
-  </data>
-  <data name="exitSimulator.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1147, 651</value>
-  </data>
-  <data name="&gt;&gt;buttonCzech.ZOrder" xml:space="preserve">
+  <data name="moneyWithdrawl500Tile.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;moneyWithdrawlCustomTile.Type" xml:space="preserve">
+  <data name="moneyWithdrawl500Tile.Text" xml:space="preserve">
+    <value>500</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawl500Tile.Name" xml:space="preserve">
+    <value>moneyWithdrawl500Tile</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawl500Tile.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;moneyWithdrawl500Tile.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;moneyWithdrawl500Tile.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;signInNewUser.Type" xml:space="preserve">
+  <data name="moneyWithdrawl1000Tile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 5</value>
+  </data>
+  <data name="moneyWithdrawl1000Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="moneyWithdrawl1000Tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 190</value>
+  </data>
+  <data name="moneyWithdrawl1000Tile.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="moneyWithdrawl1000Tile.Text" xml:space="preserve">
+    <value>1000</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawl1000Tile.Name" xml:space="preserve">
+    <value>moneyWithdrawl1000Tile</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawl1000Tile.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawl1000Tile.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawl1000Tile.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="moneyWithdrawl5000Tile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>605, 5</value>
+  </data>
+  <data name="moneyWithdrawl5000Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="moneyWithdrawl5000Tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 190</value>
+  </data>
+  <data name="moneyWithdrawl5000Tile.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="moneyWithdrawl5000Tile.Text" xml:space="preserve">
     <value>5000</value>
   </data>
-  <data name="signInPassBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 20</value>
+  <data name="&gt;&gt;moneyWithdrawl5000Tile.Name" xml:space="preserve">
+    <value>moneyWithdrawl5000Tile</value>
   </data>
-  <data name="&gt;&gt;moneyDepositLabel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;moneyWithdrawl5000Tile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawl5000Tile.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawl5000Tile.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="moneyWithdrawlCustomValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="moneyWithdrawlCustomValue.MaxLength" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="moneyWithdrawlCustomValue.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="moneyWithdrawlCustomValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 90</value>
+  </data>
+  <data name="moneyWithdrawlCustomValue.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawlCustomValue.Name" xml:space="preserve">
+    <value>moneyWithdrawlCustomValue</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawlCustomValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawlCustomValue.Parent" xml:space="preserve">
+    <value>metroPanel3</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawlCustomValue.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="moneyWithdrawlCustomTile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 97</value>
+  </data>
+  <data name="moneyWithdrawlCustomTile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 90</value>
+  </data>
+  <data name="moneyWithdrawlCustomTile.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="moneyWithdrawlCustomTile.Text" xml:space="preserve">
+    <value>Vybrat</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawlCustomTile.Name" xml:space="preserve">
+    <value>moneyWithdrawlCustomTile</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawlCustomTile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawlCustomTile.Parent" xml:space="preserve">
+    <value>metroPanel3</value>
+  </data>
+  <data name="&gt;&gt;moneyWithdrawlCustomTile.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="metroPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>805, 5</value>
+  </data>
+  <data name="metroPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="metroPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 190</value>
+  </data>
+  <data name="metroPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;metroPanel3.Name" xml:space="preserve">
+    <value>metroPanel3</value>
+  </data>
+  <data name="&gt;&gt;metroPanel3.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroPanel3.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;metroPanel3.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;moneyWithdrawlPage.Parent" xml:space="preserve">
-    <value>mainControl</value>
+  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 358</value>
   </data>
-  <data name="mainControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 74</value>
+  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1118, 200</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="buttonTransactionHistory.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
   </data>
-  <data name="menuStripTransactionHistory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
+  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;moneyDepositBack.Parent" xml:space="preserve">
-    <value>moneyIntakePage</value>
+  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
+    <value>moneyWithdrawlPage</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 39.75pt, style=Bold</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 23</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>858, 183</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Pro výběr hotovosti z Vášeho účtu
+ zvolte požadovanou částku, 
+nebo zadejte částku vlastní.</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>moneyWithdrawlPage</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="signInPassBox.MaxLength" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="moneyWithdrawlPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
   </data>
-  <data name="&gt;&gt;signInButton.Parent" xml:space="preserve">
-    <value>signInPage</value>
-  </data>
-  <data name="buttonTransactionHistory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>595, 4</value>
-  </data>
-  <data name="moneyDepositLabel.Text" xml:space="preserve">
-    <value>Pro vložení hotovosti na Váš účet
- zvolte požadovanou částku, 
-nebo zadejte částku vlastní.</value>
-  </data>
-  <data name="signInLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1130, 198</value>
-  </data>
-  <data name="&gt;&gt;menuStripMainPage.Name" xml:space="preserve">
-    <value>menuStripMainPage</value>
-  </data>
-  <data name="&gt;&gt;transactionHistoryPage.Name" xml:space="preserve">
-    <value>transactionHistoryPage</value>
-  </data>
-  <data name="testServer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="newTransactionPage.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="moneyWithdrawlPage.Size" type="System.Drawing.Size, System.Drawing">
     <value>1121, 558</value>
-  </data>
-  <data name="&gt;&gt;moneyDepositBack.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="buttonIntake.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 190</value>
-  </data>
-  <data name="buttonNewTransaction.Location" type="System.Drawing.Point, System.Drawing">
-    <value>399, 4</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
-    <value>moneyIntakePage</value>
-  </data>
-  <data name="&gt;&gt;moneyDepositCustomValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="moneyWithdrawlPage.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -494,960 +660,797 @@ nebo zadejte částku vlastní.</value>
   <data name="moneyWithdrawlPage.Text" xml:space="preserve">
     <value>MoneyWithdrawl</value>
   </data>
-  <data name="moneyDeposti5000Tile.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl200Tile.Name" xml:space="preserve">
-    <value>moneyWithdrawl200Tile</value>
-  </data>
-  <data name="&gt;&gt;menuStripMoneyWithdrawl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonNewTransaction.Text" xml:space="preserve">
-    <value>Nová transakce</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 4, 2, 4</value>
-  </data>
-  <data name="buttonIntake.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 4</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
-    <value>contextMenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStripMOneyDeposit.Name" xml:space="preserve">
-    <value>menuStripMOneyDeposit</value>
-  </data>
-  <data name="mainPage.Text" xml:space="preserve">
-    <value>MainPage</value>
-  </data>
-  <data name="buttonNewTransaction.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="buttonIntake.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;mainControl.Name" xml:space="preserve">
-    <value>mainControl</value>
-  </data>
-  <data name="&gt;&gt;boxLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="menuStripTransactionHistory.Text" xml:space="preserve">
-    <value>Transaction history</value>
-  </data>
-  <data name="moneyWithdrawl5000Tile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>605, 5</value>
-  </data>
-  <data name="&gt;&gt;buttonEnglish.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="buttonTransactionHistory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 190</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl200Tile.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;buttonLeave.Parent" xml:space="preserve">
-    <value>mainPage</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl1000Tile.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="transactionHistoryPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1121, 558</value>
-  </data>
-  <data name="transactionHistoryPage.Text" xml:space="preserve">
-    <value> TransactionHistory</value>
-  </data>
-  <data name="moneyWithdrawl200Tile.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="exitSimulator.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="moneyDepositBack.Text" xml:space="preserve">
-    <value>ZPĚT</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposit200Tile.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;menuStripTransactionHistory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="moneyDeposit1000Tile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 5</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl5000Tile.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;signInPassBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl500Tile.Name" xml:space="preserve">
-    <value>moneyWithdrawl500Tile</value>
-  </data>
-  <data name="moneyDeposti5000Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="&gt;&gt;consoleButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 39</value>
-  </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>23, 71, 23, 20</value>
-  </data>
-  <data name="signInButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="moneyWithdrawl500Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="buttonWith.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposit200Tile.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;moneyDepositBack.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="moneyDeposit200Tile.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;metroPanel1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="moneyDepositBack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 54</value>
-  </data>
-  <data name="&gt;&gt;signInUserBox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="moneyWithdrawl1000Tile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 190</value>
-  </data>
-  <data name="newTransactionPage.Text" xml:space="preserve">
-    <value>NewTransaction</value>
-  </data>
-  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 136</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="buttonIntake.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawlCustomTile.Parent" xml:space="preserve">
-    <value>metroPanel3</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl200Tile.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawlCustomValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="moneyWithdrawl500Tile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 5</value>
-  </data>
-  <data name="&gt;&gt;metroPanel2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
-    <value>moneyWithdrawlPage</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Pro výběr hotovosti z Vášeho účtu
- zvolte požadovanou částku, 
-nebo zadejte částku vlastní.</value>
-  </data>
-  <data name="moneyDeposti5000Tile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>605, 5</value>
-  </data>
-  <data name="menuStripMainPage.Text" xml:space="preserve">
-    <value>Main page</value>
-  </data>
-  <data name="moneyWithdrawlCustomTile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 90</value>
-  </data>
-  <data name="buttonEnglish.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1054, 3</value>
-  </data>
-  <data name="metroPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 356</value>
-  </data>
-  <data name="buttonNewTransaction.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 190</value>
-  </data>
-  <data name="moneyDepositCustomValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 90</value>
-  </data>
-  <data name="transactionHistoryPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="&gt;&gt;moneyIntakePage.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="buttonTransactionHistory.Text" xml:space="preserve">
-    <value>Historie
-transakcí</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposit500Tile.Name" xml:space="preserve">
-    <value>moneyDeposit500Tile</value>
-  </data>
-  <data name="&gt;&gt;metroPanel3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;buttonEnglish.Name" xml:space="preserve">
-    <value>buttonEnglish</value>
-  </data>
-  <data name="boxLog.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl200Tile.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="signInLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;signInLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainControl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="newTransactionPage.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposit1000Tile.Name" xml:space="preserve">
-    <value>moneyDeposit1000Tile</value>
-  </data>
-  <data name="&gt;&gt;buttonTransactionHistory.Name" xml:space="preserve">
-    <value>buttonTransactionHistory</value>
-  </data>
-  <data name="signInPage.Text" xml:space="preserve">
-    <value>SignIn</value>
-  </data>
-  <data name="&gt;&gt;buttonIntake.Name" xml:space="preserve">
-    <value>buttonIntake</value>
-  </data>
-  <data name="boxLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1147, 13</value>
-  </data>
-  <data name="moneyDepositCustomValue.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="moneyDepositCustomValue.MaxLength" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;metroPanel1.Parent" xml:space="preserve">
-    <value>mainPage</value>
-  </data>
-  <data name="buttonCzech.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
-  </data>
-  <data name="signInNewUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 50</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;mainPage.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="moneyIntakePage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="signInLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 40pt</value>
-  </data>
-  <data name="&gt;&gt;boxLog.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="menuStripMOneyDeposit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
-  </data>
-  <data name="&gt;&gt;boxLog.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;buttonNewTransaction.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl5000Tile.Name" xml:space="preserve">
-    <value>moneyWithdrawl5000Tile</value>
-  </data>
-  <data name="moneyDepositCustomTile.Text" xml:space="preserve">
-    <value>Vložit</value>
-  </data>
-  <data name="moneyWithdrawl1000Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="testServer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;signInUserBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonLeave.Text" xml:space="preserve">
-    <value>Odejít</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposti5000Tile.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;mainPage.Parent" xml:space="preserve">
-    <value>mainControl</value>
-  </data>
-  <data name="&gt;&gt;transactionHistoryPage.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="moneyWithdrawl200Tile.Text" xml:space="preserve">
-    <value>200</value>
-  </data>
-  <data name="&gt;&gt;moneyDepositCustomTile.Name" xml:space="preserve">
-    <value>moneyDepositCustomTile</value>
-  </data>
-  <data name="&gt;&gt;metroPanel2.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposit200Tile.Name" xml:space="preserve">
-    <value>moneyDeposit200Tile</value>
-  </data>
-  <data name="&gt;&gt;testServer.Name" xml:space="preserve">
-    <value>testServer</value>
-  </data>
-  <data name="&gt;&gt;testServer.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="transactionHistoryPage.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Coves, 12pt</value>
-  </data>
-  <data name="signInUserBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 20</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl500Tile.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="buttonIntake.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="moneyWithdrawlCustomValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 90</value>
-  </data>
-  <data name="&gt;&gt;buttonIntake.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="buttonCzech.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="moneyDeposit500Tile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 5</value>
-  </data>
-  <data name="moneyDepositCustomTile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 90</value>
-  </data>
-  <data name="&gt;&gt;metroPanel2.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposti5000Tile.Name" xml:space="preserve">
-    <value>moneyDeposti5000Tile</value>
-  </data>
-  <data name="moneyWithdrawlCustomValue.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;metroPanel3.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;buttonIntake.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="signInNewUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 442</value>
-  </data>
-  <data name="moneyWithdrawlCustomValue.MaxLength" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1118, 200</value>
-  </data>
-  <data name="moneyWithdrawlCustomTile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 97</value>
-  </data>
-  <data name="signInNewUser.Text" xml:space="preserve">
-    <value>Nový uživatel</value>
-  </data>
-  <data name="metroPanel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="signInPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="moneyIntakePage.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposit500Tile.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;moneyIntakePage.Name" xml:space="preserve">
-    <value>moneyIntakePage</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;buttonIntake.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="moneyWithdrawl200Tile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 190</value>
-  </data>
-  <data name="&gt;&gt;metroPanel3.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="moneyDepositCustomTile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 97</value>
-  </data>
-  <data name="moneyDepositLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="metroPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>805, 5</value>
-  </data>
-  <data name="&gt;&gt;moneyDepositCustomValue.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="moneyWithdrawlCustomTile.Text" xml:space="preserve">
-    <value>Vybrat</value>
-  </data>
-  <data name="&gt;&gt;exitSimulator.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposit200Tile.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="moneyWithdrawlBack.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="moneyWithdrawl500Tile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 190</value>
-  </data>
-  <data name="&gt;&gt;moneyDepositBack.Name" xml:space="preserve">
-    <value>moneyDepositBack</value>
-  </data>
-  <data name="moneyWithdrawl200Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="signInNewUser.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>transactionHistoryPage</value>
-  </data>
-  <data name="&gt;&gt;buttonLeave.Name" xml:space="preserve">
-    <value>buttonLeave</value>
-  </data>
-  <data name="metroPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="consoleButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 5</value>
-  </data>
-  <data name="&gt;&gt;buttonTransactionHistory.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;exitSimulator.Name" xml:space="preserve">
-    <value>exitSimulator</value>
-  </data>
-  <data name="&gt;&gt;consoleButton.Name" xml:space="preserve">
-    <value>consoleButton</value>
-  </data>
   <data name="&gt;&gt;moneyWithdrawlPage.Name" xml:space="preserve">
     <value>moneyWithdrawlPage</value>
   </data>
-  <data name="buttonEnglish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;moneyDepositCustomTile.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="transactionHistoryPage.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="moneyDepositLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 9</value>
-  </data>
-  <data name="&gt;&gt;menuStripMOneyDeposit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;signInNewUser.Name" xml:space="preserve">
-    <value>signInNewUser</value>
-  </data>
-  <data name="&gt;&gt;metroPanel1.Name" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="newTransactionPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="&gt;&gt;buttonTransactionHistory.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="moneyWithdrawl5000Tile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 190</value>
-  </data>
-  <data name="moneyDeposti5000Tile.Text" xml:space="preserve">
-    <value>5000</value>
-  </data>
-  <data name="testServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1147, 622</value>
-  </data>
-  <data name="moneyDeposit500Tile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 190</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl1000Tile.Name" xml:space="preserve">
-    <value>moneyWithdrawl1000Tile</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="exitSimulator.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="consoleButton.Text" xml:space="preserve">
-    <value>&gt;&gt;</value>
-  </data>
-  <data name="&gt;&gt;signInPage.Type" xml:space="preserve">
+  <data name="&gt;&gt;moneyWithdrawlPage.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="moneyDepositCustomValue.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;moneyWithdrawlPage.Parent" xml:space="preserve">
+    <value>mainControl</value>
   </data>
-  <data name="moneyWithdrawlCustomTile.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;moneyWithdrawlPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>571, 183</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
     <value>button2</value>
   </data>
-  <data name="&gt;&gt;metroPanel2.Name" xml:space="preserve">
-    <value>metroPanel2</value>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
   </data>
-  <data name="moneyDepositCustomTile.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>transactionHistoryPage</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="buttonCzech.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
+  <data name="transactionHistoryPage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Coves, 12pt</value>
   </data>
-  <data name="&gt;&gt;signInPassBox.Parent" xml:space="preserve">
-    <value>signInPage</value>
+  <data name="transactionHistoryPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
   </data>
-  <data name="moneyWithdrawl1000Tile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 5</value>
+  <data name="transactionHistoryPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1121, 558</value>
   </data>
-  <data name="&gt;&gt;newTransactionPage.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="transactionHistoryPage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="moneyWithdrawl500Tile.Text" xml:space="preserve">
-    <value>500</value>
+  <data name="transactionHistoryPage.Text" xml:space="preserve">
+    <value> TransactionHistory</value>
   </data>
-  <data name="&gt;&gt;signInButton.Name" xml:space="preserve">
-    <value>signInButton</value>
-  </data>
-  <data name="&gt;&gt;exitSimulator.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;moneyDepositCustomTile.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl500Tile.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="moneyDeposit500Tile.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;mainControl.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabControl, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;signInPassBox.Name" xml:space="preserve">
-    <value>signInPassBox</value>
-  </data>
-  <data name="testServer.Text" xml:space="preserve">
-    <value>Otestovat spojení serveru</value>
+  <data name="&gt;&gt;transactionHistoryPage.Name" xml:space="preserve">
+    <value>transactionHistoryPage</value>
   </data>
   <data name="&gt;&gt;transactionHistoryPage.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt, style=Bold</value>
+  <data name="&gt;&gt;transactionHistoryPage.Parent" xml:space="preserve">
+    <value>mainControl</value>
   </data>
-  <data name="&gt;&gt;metroPanel3.Name" xml:space="preserve">
-    <value>metroPanel3</value>
+  <data name="&gt;&gt;transactionHistoryPage.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="testServer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="moneyDepositBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>999, 301</value>
   </data>
-  <data name="menuStripMoneyWithdrawl.Text" xml:space="preserve">
-    <value>Money withdrawl</value>
+  <data name="moneyDepositBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 54</value>
   </data>
-  <data name="metroPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+  <data name="moneyDepositBack.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="moneyDeposit200Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+  <data name="moneyDepositBack.Text" xml:space="preserve">
+    <value>ZPĚT</value>
   </data>
-  <data name="&gt;&gt;mainControl.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;moneyDepositBack.Name" xml:space="preserve">
+    <value>moneyDepositBack</value>
   </data>
-  <data name="signInPassBox.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="buttonCzech.Location" type="System.Drawing.Point, System.Drawing">
-    <value>984, 3</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposit500Tile.Type" xml:space="preserve">
+  <data name="&gt;&gt;moneyDepositBack.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="exitSimulator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 23</value>
+  <data name="&gt;&gt;moneyDepositBack.Parent" xml:space="preserve">
+    <value>moneyIntakePage</value>
   </data>
-  <data name="buttonEnglish.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;buttonCzech.Name" xml:space="preserve">
-    <value>buttonCzech</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawlCustomValue.Parent" xml:space="preserve">
-    <value>metroPanel3</value>
-  </data>
-  <data name="moneyWithdrawl5000Tile.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;signInUserBox.Parent" xml:space="preserve">
-    <value>signInPage</value>
-  </data>
-  <data name="moneyDepositLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 39</value>
-  </data>
-  <data name="moneyDeposit200Tile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 190</value>
-  </data>
-  <data name="moneyWithdrawl5000Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+  <data name="&gt;&gt;moneyDepositBack.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="moneyDeposit200Tile.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 5</value>
   </data>
-  <data name="consoleButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1102, 13</value>
+  <data name="moneyDeposit200Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 23</value>
+  <data name="moneyDeposit200Tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 190</value>
   </data>
-  <data name="consoleButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 23</value>
+  <data name="moneyDeposit200Tile.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;menuStripNewTransaction.Name" xml:space="preserve">
-    <value>menuStripNewTransaction</value>
+  <data name="moneyDeposit200Tile.Text" xml:space="preserve">
+    <value>200</value>
   </data>
-  <data name="&gt;&gt;testServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;moneyDeposit200Tile.Name" xml:space="preserve">
+    <value>moneyDeposit200Tile</value>
   </data>
-  <data name="signInUserBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 274</value>
+  <data name="&gt;&gt;moneyDeposit200Tile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;moneyWithdrawlPage.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  <data name="&gt;&gt;moneyDeposit200Tile.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;buttonEnglish.Parent" xml:space="preserve">
-    <value>mainPage</value>
+  <data name="&gt;&gt;moneyDeposit200Tile.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="mainControl.ItemSize" type="System.Drawing.Size, System.Drawing">
-    <value>1129, 34</value>
-  </data>
-  <data name="buttonLeave.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;newTransactionPage.Parent" xml:space="preserve">
-    <value>mainControl</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawlBack.Parent" xml:space="preserve">
-    <value>moneyWithdrawlPage</value>
-  </data>
-  <data name="buttonLeave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 54</value>
-  </data>
-  <data name="&gt;&gt;buttonNewTransaction.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;buttonWith.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawlCustomValue.Name" xml:space="preserve">
-    <value>moneyWithdrawlCustomValue</value>
+  <data name="moneyDeposit500Tile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 5</value>
   </data>
   <data name="moneyDeposit500Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="menuStripSignIn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
+  <data name="moneyDeposit500Tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 190</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1147, 593</value>
+  <data name="moneyDeposit500Tile.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="moneyDeposit500Tile.Text" xml:space="preserve">
+    <value>500</value>
+  </data>
+  <data name="&gt;&gt;moneyDeposit500Tile.Name" xml:space="preserve">
+    <value>moneyDeposit500Tile</value>
+  </data>
+  <data name="&gt;&gt;moneyDeposit500Tile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;moneyDeposit500Tile.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;moneyDeposit500Tile.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="moneyDeposit1000Tile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 5</value>
+  </data>
+  <data name="moneyDeposit1000Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="moneyDeposit1000Tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 190</value>
+  </data>
+  <data name="moneyDeposit1000Tile.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="moneyDeposit1000Tile.Text" xml:space="preserve">
+    <value>1000</value>
+  </data>
+  <data name="&gt;&gt;moneyDeposit1000Tile.Name" xml:space="preserve">
+    <value>moneyDeposit1000Tile</value>
+  </data>
+  <data name="&gt;&gt;moneyDeposit1000Tile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;moneyDeposit1000Tile.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;moneyDeposit1000Tile.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="moneyDeposti5000Tile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>605, 5</value>
+  </data>
+  <data name="moneyDeposti5000Tile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="moneyDeposti5000Tile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 190</value>
+  </data>
+  <data name="moneyDeposti5000Tile.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+  <data name="moneyDeposti5000Tile.Text" xml:space="preserve">
+    <value>5000</value>
+  </data>
+  <data name="&gt;&gt;moneyDeposti5000Tile.Name" xml:space="preserve">
+    <value>moneyDeposti5000Tile</value>
+  </data>
+  <data name="&gt;&gt;moneyDeposti5000Tile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;moneyDeposti5000Tile.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;moneyDeposti5000Tile.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 13</value>
+  <data name="moneyDepositCustomValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="metroPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="moneyDepositCustomValue.MaxLength" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="moneyWithdrawlBack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 54</value>
+  <data name="moneyDepositCustomValue.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="menuStripNewTransaction.Text" xml:space="preserve">
-    <value>New transaction</value>
+  <data name="moneyDepositCustomValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 90</value>
+  </data>
+  <data name="moneyDepositCustomValue.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositCustomValue.Name" xml:space="preserve">
+    <value>moneyDepositCustomValue</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositCustomValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositCustomValue.Parent" xml:space="preserve">
+    <value>metroPanel2</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositCustomValue.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="moneyDepositCustomTile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 97</value>
+  </data>
+  <data name="moneyDepositCustomTile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 90</value>
+  </data>
+  <data name="moneyDepositCustomTile.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="moneyDepositCustomTile.Text" xml:space="preserve">
+    <value>Vložit</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositCustomTile.Name" xml:space="preserve">
+    <value>moneyDepositCustomTile</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositCustomTile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositCustomTile.Parent" xml:space="preserve">
+    <value>metroPanel2</value>
   </data>
   <data name="&gt;&gt;moneyDepositCustomTile.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="exitSimulator.Text" xml:space="preserve">
-    <value>Ukončit simulátor</value>
+  <data name="metroPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>805, 5</value>
   </data>
-  <data name="&gt;&gt;menuStripMainPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="metroPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="metroPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 190</value>
+  </data>
+  <data name="metroPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.Name" xml:space="preserve">
+    <value>metroPanel2</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 358</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1118, 200</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>moneyIntakePage</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="moneyDepositLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="moneyDepositLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="moneyDepositLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="moneyDepositLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 9</value>
+  </data>
+  <data name="moneyDepositLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 39</value>
+  </data>
+  <data name="moneyDepositLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="moneyDepositLabel.Text" xml:space="preserve">
+    <value>Pro vložení hotovosti na Váš účet
+ zvolte požadovanou částku, 
+nebo zadejte částku vlastní.</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositLabel.Name" xml:space="preserve">
+    <value>moneyDepositLabel</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositLabel.Parent" xml:space="preserve">
+    <value>moneyIntakePage</value>
+  </data>
+  <data name="&gt;&gt;moneyDepositLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="moneyIntakePage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="moneyIntakePage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1121, 558</value>
+  </data>
+  <data name="moneyIntakePage.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="moneyIntakePage.Text" xml:space="preserve">
+    <value>MoneyIntake</value>
+  </data>
+  <data name="&gt;&gt;moneyIntakePage.Name" xml:space="preserve">
+    <value>moneyIntakePage</value>
+  </data>
+  <data name="&gt;&gt;moneyIntakePage.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;moneyIntakePage.Parent" xml:space="preserve">
+    <value>mainControl</value>
+  </data>
+  <data name="&gt;&gt;moneyIntakePage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="signInNewUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 442</value>
+  </data>
+  <data name="signInNewUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 50</value>
+  </data>
+  <data name="signInNewUser.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="signInNewUser.Text" xml:space="preserve">
+    <value>Nový uživatel</value>
+  </data>
+  <data name="signInNewUser.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;signInNewUser.Name" xml:space="preserve">
+    <value>signInNewUser</value>
+  </data>
+  <data name="&gt;&gt;signInNewUser.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;signInNewUser.Parent" xml:space="preserve">
+    <value>signInPage</value>
+  </data>
+  <data name="&gt;&gt;signInNewUser.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="signInUserBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 274</value>
+  </data>
+  <data name="signInUserBox.MaxLength" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="signInUserBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 20</value>
+  </data>
+  <data name="signInUserBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;signInUserBox.Name" xml:space="preserve">
+    <value>signInUserBox</value>
+  </data>
+  <data name="&gt;&gt;signInUserBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;signInUserBox.Parent" xml:space="preserve">
+    <value>signInPage</value>
+  </data>
+  <data name="&gt;&gt;signInUserBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="signInPassBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 330</value>
+  </data>
+  <data name="signInPassBox.MaxLength" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="signInPassBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 20</value>
+  </data>
+  <data name="signInPassBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;signInPassBox.Name" xml:space="preserve">
+    <value>signInPassBox</value>
+  </data>
+  <data name="&gt;&gt;signInPassBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;signInPassBox.Parent" xml:space="preserve">
+    <value>signInPage</value>
+  </data>
+  <data name="&gt;&gt;signInPassBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="signInButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 386</value>
+  </data>
+  <data name="signInButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 50</value>
+  </data>
+  <data name="signInButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="signInButton.Text" xml:space="preserve">
+    <value>Přihlásit</value>
+  </data>
+  <data name="signInButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;signInButton.Name" xml:space="preserve">
+    <value>signInButton</value>
+  </data>
+  <data name="&gt;&gt;signInButton.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;signInButton.Parent" xml:space="preserve">
+    <value>signInPage</value>
+  </data>
+  <data name="&gt;&gt;signInButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="signInLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 40pt</value>
+  </data>
+  <data name="signInLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="signInLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-5, 14</value>
+  </data>
+  <data name="signInLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1130, 198</value>
+  </data>
+  <data name="signInLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="signInLabel.Text" xml:space="preserve">
     <value>Pro přihlášení do systému přiložte Vaší kartu,
 nebo využíjte přihlašovací údaje.
 </value>
   </data>
-  <data name="&gt;&gt;signInPage.Name" xml:space="preserve">
-    <value>signInPage</value>
+  <data name="&gt;&gt;signInLabel.Name" xml:space="preserve">
+    <value>signInLabel</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>moneyWithdrawlPage</value>
-  </data>
-  <data name="&gt;&gt;buttonWith.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;buttonLeave.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="moneyWithdrawlPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawlPage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;signInLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="buttonWith.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="mainPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1121, 558</value>
-  </data>
-  <data name="&gt;&gt;signInNewUser.Parent" xml:space="preserve">
+  <data name="&gt;&gt;signInLabel.Parent" xml:space="preserve">
     <value>signInPage</value>
   </data>
-  <data name="moneyDeposit500Tile.Text" xml:space="preserve">
-    <value>500</value>
-  </data>
-  <data name="buttonLeave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1013, 497</value>
-  </data>
-  <data name="&gt;&gt;buttonCzech.Parent" xml:space="preserve">
-    <value>mainPage</value>
-  </data>
-  <data name="buttonLeave.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposti5000Tile.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="menuStripSignIn.Text" xml:space="preserve">
-    <value>Sign in</value>
-  </data>
-  <data name="&gt;&gt;menuStripNewTransaction.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="menuStripMoneyWithdrawl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
-  </data>
-  <data name="mainControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1129, 600</value>
-  </data>
-  <data name="moneyWithdrawlCustomValue.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="moneyDepositBack.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;signInLabel.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="moneyDeposit1000Tile.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="signInPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
   </data>
-  <data name="&gt;&gt;signInPage.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="moneyDeposti5000Tile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 190</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl1000Tile.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;moneyDepositCustomValue.Name" xml:space="preserve">
-    <value>moneyDepositCustomValue</value>
-  </data>
-  <data name="signInLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;buttonWith.Name" xml:space="preserve">
-    <value>buttonWith</value>
-  </data>
-  <data name="boxLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 342</value>
-  </data>
-  <data name="mainPage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 358</value>
-  </data>
-  <data name="&gt;&gt;signInPage.Parent" xml:space="preserve">
-    <value>mainControl</value>
-  </data>
-  <data name="&gt;&gt;boxLog.Name" xml:space="preserve">
-    <value>boxLog</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
-  </data>
-  <data name="&gt;&gt;moneyWithdrawl5000Tile.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="moneyWithdrawl1000Tile.Text" xml:space="preserve">
-    <value>1000</value>
-  </data>
-  <data name="&gt;&gt;signInButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="buttonWith.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 4</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Přejít na...</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonWith.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 190</value>
+  <data name="signInPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1121, 558</value>
   </data>
   <data name="signInPage.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="signInButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="signInPage.Text" xml:space="preserve">
+    <value>SignIn</value>
   </data>
-  <data name="metroPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="&gt;&gt;signInPage.Name" xml:space="preserve">
+    <value>signInPage</value>
   </data>
-  <data name="&gt;&gt;mainPage.Name" xml:space="preserve">
-    <value>mainPage</value>
+  <data name="&gt;&gt;signInPage.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="mainPage.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;signInPage.Parent" xml:space="preserve">
+    <value>mainControl</value>
+  </data>
+  <data name="&gt;&gt;signInPage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="newTransactionPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 38</value>
   </data>
-  <data name="moneyDepositLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="newTransactionPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1121, 558</value>
   </data>
-  <data name="&gt;&gt;signInPassBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="newTransactionPage.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="metroPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>805, 5</value>
+  <data name="newTransactionPage.Text" xml:space="preserve">
+    <value>NewTransaction</value>
   </data>
-  <data name="moneyDeposit1000Tile.Text" xml:space="preserve">
-    <value>1000</value>
+  <data name="&gt;&gt;newTransactionPage.Name" xml:space="preserve">
+    <value>newTransactionPage</value>
+  </data>
+  <data name="&gt;&gt;newTransactionPage.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;newTransactionPage.Parent" xml:space="preserve">
+    <value>mainControl</value>
+  </data>
+  <data name="&gt;&gt;newTransactionPage.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="mainControl.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>1129, 34</value>
+  </data>
+  <data name="mainControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 74</value>
+  </data>
+  <data name="mainControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1129, 600</value>
+  </data>
+  <data name="mainControl.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;mainControl.Name" xml:space="preserve">
+    <value>mainControl</value>
+  </data>
+  <data name="&gt;&gt;mainControl.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabControl, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;mainControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainControl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="consoleButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1102, 13</value>
+  </data>
+  <data name="consoleButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 23</value>
+  </data>
+  <data name="consoleButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="consoleButton.Text" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
+  <data name="&gt;&gt;consoleButton.Name" xml:space="preserve">
+    <value>consoleButton</value>
+  </data>
+  <data name="&gt;&gt;consoleButton.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;consoleButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;consoleButton.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="exitSimulator.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="exitSimulator.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="exitSimulator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="exitSimulator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1147, 651</value>
+  </data>
+  <data name="exitSimulator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 23</value>
+  </data>
+  <data name="exitSimulator.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="exitSimulator.Text" xml:space="preserve">
+    <value>Ukončit simulátor</value>
+  </data>
+  <data name="&gt;&gt;exitSimulator.Name" xml:space="preserve">
+    <value>exitSimulator</value>
+  </data>
+  <data name="&gt;&gt;exitSimulator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exitSimulator.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;exitSimulator.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="testServer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="testServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="testServer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="testServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1147, 622</value>
+  </data>
+  <data name="testServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 23</value>
+  </data>
+  <data name="testServer.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="testServer.Text" xml:space="preserve">
+    <value>Otestovat spojení serveru</value>
+  </data>
+  <data name="&gt;&gt;testServer.Name" xml:space="preserve">
+    <value>testServer</value>
+  </data>
+  <data name="&gt;&gt;testServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;testServer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;testServer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="menuStripSignIn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
+  </data>
+  <data name="menuStripSignIn.Text" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="menuStripMainPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
+  </data>
+  <data name="menuStripMainPage.Text" xml:space="preserve">
+    <value>Main page</value>
+  </data>
+  <data name="menuStripMOneyDeposit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
+  </data>
+  <data name="menuStripMOneyDeposit.Text" xml:space="preserve">
+    <value>Money deposit</value>
+  </data>
+  <data name="menuStripMoneyWithdrawl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
+  </data>
+  <data name="menuStripMoneyWithdrawl.Text" xml:space="preserve">
+    <value>Money withdrawl</value>
+  </data>
+  <data name="menuStripTransactionHistory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
+  </data>
+  <data name="menuStripTransactionHistory.Text" xml:space="preserve">
+    <value>Transaction history</value>
+  </data>
+  <data name="menuStripNewTransaction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
+  </data>
+  <data name="menuStripNewTransaction.Text" xml:space="preserve">
+    <value>New transaction</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 136</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;moneyDepositCustomValue.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1147, 593</value>
   </data>
-  <data name="moneyDeposit200Tile.Text" xml:space="preserve">
-    <value>200</value>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 23</value>
   </data>
-  <data name="&gt;&gt;moneyWithdrawl500Tile.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="signInUserBox.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Přejít na...</value>
   </data>
-  <data name="metroPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
   </data>
-  <data name="signInLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-5, 14</value>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="signInNewUser.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="metroPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="&gt;&gt;moneyDeposti5000Tile.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1630, 687</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 4, 2, 4</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>23, 71, 23, 20</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>WindowsDefaultLocation</value>
+  </data>
+  <data name="&gt;&gt;menuStripSignIn.Name" xml:space="preserve">
+    <value>menuStripSignIn</value>
+  </data>
+  <data name="&gt;&gt;menuStripSignIn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStripMainPage.Name" xml:space="preserve">
+    <value>menuStripMainPage</value>
+  </data>
+  <data name="&gt;&gt;menuStripMainPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStripMOneyDeposit.Name" xml:space="preserve">
+    <value>menuStripMOneyDeposit</value>
+  </data>
+  <data name="&gt;&gt;menuStripMOneyDeposit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStripMoneyWithdrawl.Name" xml:space="preserve">
+    <value>menuStripMoneyWithdrawl</value>
+  </data>
+  <data name="&gt;&gt;menuStripMoneyWithdrawl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStripTransactionHistory.Name" xml:space="preserve">
+    <value>menuStripTransactionHistory</value>
+  </data>
+  <data name="&gt;&gt;menuStripTransactionHistory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStripNewTransaction.Name" xml:space="preserve">
+    <value>menuStripNewTransaction</value>
+  </data>
+  <data name="&gt;&gt;menuStripNewTransaction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
 </root>

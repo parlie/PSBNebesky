@@ -35,7 +35,7 @@ namespace PSBNebesky
             HideAllExcept(mainPage);
             OnStart();
             ChangeColor(MetroColorStyle.Teal);
-          //  comunicator.InitializeConnectionToServer(this);
+            comunicator.InitializeConnectionToServer(this);
         }
 
         #region Variables
