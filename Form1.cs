@@ -17,6 +17,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Reflection;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace PSBNebesky
 {
@@ -27,21 +28,25 @@ namespace PSBNebesky
         ServerComunicator comunicator = new ServerComunicator();
         PrivateFontCollection pfc = new PrivateFontCollection();
 
+        List<Control> controlsList = new List<Control>();
+
         public Form1()
         {
-            InitializeComponent();
-            AddFontFromResource(pfc, "DejaVuSansMono.ttf");
+            InitializeComponent(); //Tvorba aplikace a prvků ovládání
+            AddFontFromResource(pfc, "DejaVuSansMono.ttf"); //Načtení zabaleného fontu
+            LoadControls(); //Optimalizace práce s ovládacími prvky - namísto načítání prvků při každě změně rozložení jsou prvky uloženy do seznamu ze kterého se dá libovolně číst
             ControlSetup();
-            HideAllExcept(mainPage);
+            HideAllExcept(mainPage); //Zobrazí pouze požadovanou stránku prostředí
             OnStart();
-            ChangeColor(MetroColorStyle.Teal);
-            comunicator.InitializeConnectionToServer(this);
+            SetStyle(MetroColorStyle.Teal);
+            //comunicator.InitializeConnectionToServer(this);
         }
 
         #region Variables
         private bool console = false;
         private int defaultWindowSizeW = 1146;
         private int biggerWindowSizeW = 1497;
+        private bool defaultLanguage = true;
         ToolTip tip = new ToolTip();
 
         private enum Language
@@ -53,9 +58,7 @@ namespace PSBNebesky
 
         #endregion
 
-
         #region HotFix
-
 
         /// <summary>
         /// Přidá zvolený font ze zdrojů do seznamu vlastních fontů
@@ -88,13 +91,72 @@ namespace PSBNebesky
         }
 
         /// <summary>
-        /// Nastaví velikost okna, znemožní uživateli měnit velikost okna a potvrdí jazyk na češtinu
+        /// Nastaví velikost okna, znemožní uživateli měnit velikost okna
         /// </summary>
         private void OnStart()
         {
             this.Size = new System.Drawing.Size(defaultWindowSizeW, this.Size.Height);
             this.SizeGripStyle = SizeGripStyle.Hide;
-            buttonCzech.Enabled = false;
+        }
+
+        public void LoadControls()
+        {
+            foreach(Control item in this.Controls)
+            {
+               if(item is MetroTabControl)
+                {
+                    foreach (Control tab in item.Controls)
+                    {
+                        foreach (Control c in tab.Controls)
+                        {
+                            if (!(c is MetroScrollBar))
+                            {
+                                if(c is MetroPanel)
+                                {
+                                    foreach (Control panelC in c.Controls)
+                                    {
+                                        if (!(panelC is MetroScrollBar))
+                                        {
+                                            Console.WriteLine("Panel: ".PadRight(11) + panelC.Name.PadRight(30) + " | ".PadRight(8) + panelC.GetType());
+                                            controlsList.Add(panelC);
+                                        }
+                                    }
+                                }
+                                else if(c is FlowLayoutPanel)
+                                {
+                                    foreach (Control flowC in c.Controls)
+                                    {
+                                        if(!(flowC is MetroPanel))
+                                        {
+                                            if (!(flowC is MetroScrollBar))
+                                            {
+                                                Console.WriteLine("Flow: ".PadRight(11) + flowC.Name.PadRight(30) + " | ".PadRight(8) + flowC.GetType());
+                                                controlsList.Add(flowC);
+                                            }
+                                        }
+                                        else
+                                        {
+                                            foreach (Control flowPanelC in flowC.Controls)
+                                            {
+                                                if(!(flowPanelC is MetroScrollBar))
+                                                {
+                                                    Console.WriteLine("FlowPanel: " + flowPanelC.Name.PadRight(30) + " | ".PadRight(8) + flowPanelC.GetType());
+                                                    controlsList.Add(flowPanelC);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Page: ".PadRight(11) + c.Name.PadRight(30) + " | ".PadRight(8) + c.GetType());
+                                    controlsList.Add(c);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -103,7 +165,46 @@ namespace PSBNebesky
         public void ControlSetup()
         {
             metroPanel1.Select();
-            foreach (Control main in this.Controls)
+            foreach (Control item in controlsList)
+            {
+                if(item is MetroTile)
+                {
+                    if(item.Name.Contains("Deposit") || item.Name.Contains("Withdrawl") || item.Name.Contains("Leave"))
+                    {
+                        (item as MetroTile).TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                        (item as MetroTile).Font = new System.Drawing.Font(pfc.Families[0], 50);
+                        (item as MetroTile).TileTextFontWeight = MetroTileTextWeight.Bold;
+                        (item as MetroTile).TileTextFontSize = MetroTileTextSize.Tall;
+                    }
+                    else
+                    {
+                        (item as MetroTile).TileTextFontSize = MetroTileTextSize.Tall;
+                        (item as MetroTile).TileTextFontWeight = MetroTileTextWeight.Bold;
+                        (item as MetroTile).TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+                        (item as MetroTile).Font = new System.Drawing.Font(pfc.Families[0], 18);
+                    }
+                }
+                else if(item is Label)
+                {
+                    (item as Label).Font = new System.Drawing.Font(pfc.Families[0], 40);
+                    (item as Label).TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                }
+                else if(item is TextBox)
+                {
+                    if (item.Name.Contains("signIn"))
+                    {
+                        (item as TextBox).TextAlign = HorizontalAlignment.Center;
+                        (item as TextBox).Font = new System.Drawing.Font(pfc.Families[0], 20);
+                    }
+                    else if (item.Name.Contains("CustomValue"))
+                    {
+                        (item as TextBox).Font = new System.Drawing.Font(pfc.Families[0], 50);
+                        (item as TextBox).TextAlign = HorizontalAlignment.Center;
+                    }
+                }
+            }
+            #region old-unoptimised
+            /*foreach (Control main in this.Controls)
             {
                 if (main is MetroTabControl)
                 {
@@ -194,96 +295,114 @@ namespace PSBNebesky
                         }
                     }
                 }
-            }
+            }*/
+            #endregion
         }
 
         /// <summary>
         /// ZMění barvu ovládacích prvků
         /// </summary>
         /// <param name="style">MetroColorStyle enumerator</param>
-        private void ChangeColor(MetroColorStyle style)
+        private void SetStyle(MetroColorStyle style)
         {
             MainStyle = style;
             Style = style; //Sets form color
-            foreach (Control main in this.Controls)
+            foreach (Control item in controlsList)
             {
-                if(main is MetroTile)
+                if(item is MetroTile)
                 {
-                    (main as MetroTile).Style = style;
+                    (item as MetroTile).Style = style;
                 }
-                if(main is MetroTabControl)
+                else if(item is Label)
                 {
-                    (main as MetroTabControl).Style = style;
-                    foreach (Control item in main.Controls)
-                    {
-                        if(item is MetroTabPage)
-                        {
-                            foreach (Control button in item.Controls)
-                            {
-                                if(button is MetroTile)
-                                {
-                                    (button as MetroTile).Style = style;
-                                }
-                                else if(button is MetroPanel)
-                                {
-                                    foreach (Control content in button.Controls)
-                                    {
-                                        if(content is MetroTile)
-                                        {
-                                            (content as MetroTile).Style = style;
-                                        }
-                                    }
-                                }
-                                else if (button is Label)
-                                {
-                                    (button as Label).ForeColor = style.ToColor();
-                                }
-                                else if (button is MetroTile)
-                                {
-                                    (button as MetroTile).Style = style;
-                                }
-                                else if (button is MetroTextBox)
-                                {
-                                    (button as MetroTextBox).Style = style;
-                                }
-                                else if (button is TextBox)
-                                {
-                                    (button as TextBox).ForeColor = style.ToColor();
-                                }
-                                else if (button is FlowLayoutPanel)
-                                {
-                                    foreach (Control items in button.Controls)
-                                    {
-                                        if (items is MetroPanel)
-                                        {
-                                            foreach (var mp in items.Controls)
-                                            {
-                                                if (mp is TextBox)
-                                                {
-                                                    if ((mp as TextBox).Name.Contains("CustomValue"))
-                                                    {
-                                                        (mp as TextBox).ForeColor = style.ToColor();
-                                                    }
-                                                }
-                                                else if (mp is MetroTile)
-                                                {
-                                                    (mp as MetroTile).Style = style;
-                                                }
-                                            }
-                                        }
-                                        else if (items is MetroTile)
-                                        {
-                                            (items as MetroTile).Style = style;
-                                        }
-
-                                    }
-                                }
-                            }
-                            
-                        }
-                    }
+                    (item as Label).ForeColor = style.ToColor();
+                }
+                else if(item is TextBox)
+                {
+                    (item as TextBox).ForeColor = style.ToColor();
                 }
             }
+            #region old-unoptimised
+              /* foreach (Control main in this.Controls)
+               {
+                   if(main is MetroTile)
+                   {
+                       (main as MetroTile).Style = style;
+                   }
+                   if(main is MetroTabControl)
+                   {
+                       (main as MetroTabControl).Style = style;
+                       foreach (Control item in main.Controls)
+                       {
+                           if(item is MetroTabPage)
+                           {
+                               foreach (Control button in item.Controls)
+                               {
+                                   if(button is MetroTile)
+                                   {
+                                       (button as MetroTile).Style = style;
+                                   }
+                                   else if(button is MetroPanel)
+                                   {
+                                       foreach (Control content in button.Controls)
+                                       {
+                                           if(content is MetroTile)
+                                           {
+                                               (content as MetroTile).Style = style;
+                                           }
+                                       }
+                                   }
+                                   else if (button is Label)
+                                   {
+                                       (button as Label).ForeColor = style.ToColor();
+                                   }
+                                   else if (button is MetroTile)
+                                   {
+                                       (button as MetroTile).Style = style;
+                                   }
+                                   else if (button is MetroTextBox)
+                                   {
+                                       (button as MetroTextBox).Style = style;
+                                   }
+                                   else if (button is TextBox)
+                                   {
+                                       (button as TextBox).ForeColor = style.ToColor();
+                                   }
+                                   else if (button is FlowLayoutPanel)
+                                   {
+                                       foreach (Control items in button.Controls)
+                                       {
+                                           if (items is MetroPanel)
+                                           {
+                                               foreach (var mp in items.Controls)
+                                               {
+                                                   if (mp is TextBox)
+                                                   {
+                                                       if ((mp as TextBox).Name.Contains("CustomValue"))
+                                                       {
+                                                           (mp as TextBox).ForeColor = style.ToColor();
+                                                       }
+                                                   }
+                                                   else if (mp is MetroTile)
+                                                   {
+                                                       (mp as MetroTile).Style = style;
+                                                   }
+                                               }
+                                           }
+                                           else if (items is MetroTile)
+                                           {
+                                               (items as MetroTile).Style = style;
+                                           }
+
+                                       }
+                                   }
+                               }
+
+                           }
+                       }
+                   }
+               }*/
+            #endregion
         }
 
         /// <summary>
@@ -292,7 +411,7 @@ namespace PSBNebesky
         private void NoHighlight()
         {
             Thread.Sleep(125);
-            metroPanel1.Select();
+            mainControl.Select();
         }
 
         /// <summary>
@@ -321,10 +440,6 @@ namespace PSBNebesky
                     break;
             }
             ApplyResources(resources, this.Controls);
-            this.Text = resources.GetString($"{mainControl.SelectedTab.Name}.Text");
-            FixTitle();
-            ControlSetup();
-            
         }
 
         /// <summary>
@@ -339,16 +454,7 @@ namespace PSBNebesky
                 resources.ApplyResources(c, c.Name);
                 ApplyResources(resources, c.Controls);
             }
-            ControlSetup();
-        }
-
-        /// <summary> 
-        /// Záplata na chybu ve WFA, která způsobí že nelze změnit titulek aplikace
-        /// </summary>
-        private void FixTitle()
-        {
-            this.Size = new System.Drawing.Size(this.Size.Width + 1, this.Size.Height);
-            this.Size = new System.Drawing.Size(this.Size.Width - 1, this.Size.Height);
+           // ControlSetup();
         }
 
         /// <summary>
@@ -389,22 +495,13 @@ namespace PSBNebesky
                     mainControl.HideTab(slide);
                 }
             }
-            ChangeColor(MainStyle);
             ChangeLanguage(Language.Default);
-            //FixTitle();
             page.Text = "";
         }
+
         #endregion 
 
-
-
-
-
-
-
-
         #region Debug
-
         private void consoleButton_Click(object sender, EventArgs e)
         {
             if (!console)
@@ -425,17 +522,6 @@ namespace PSBNebesky
             }
         }
 
-        private bool isTooltip = false;
-        private void consoleButton_Enter(object sender, EventArgs e)
-        {
-            if(!isTooltip)
-            {
-                tip.SetToolTip(consoleButton, "Zobrazit ladění");
-                isTooltip = true;
-            }
-            NoHighlight();
-        }
-
         private void exitSimulator_Click(object sender, EventArgs e)
         {
             Environment.Exit(1);
@@ -448,37 +534,37 @@ namespace PSBNebesky
 
             #region contextStrip
 
-        private void menuStripSignIn_Click(object sender, EventArgs e)
-        {
-            HideAllExcept(signInPage);
-        }
+            private void menuStripSignIn_Click(object sender, EventArgs e)
+            {
+                HideAllExcept(signInPage);
+            }
 
-        private void menuStripMainPage_Click(object sender, EventArgs e)
-        {
-            HideAllExcept(mainPage);
-        }
+            private void menuStripMainPage_Click(object sender, EventArgs e)
+            {
+                HideAllExcept(mainPage);
+            }
 
-        private void menuStripMOneyDeposit_Click(object sender, EventArgs e)
-        {
-            HideAllExcept(moneyIntakePage);
-        }
+            private void menuStripMOneyDeposit_Click(object sender, EventArgs e)
+            {
+                HideAllExcept(moneyIntakePage);
+            }
 
-        private void menuStripMoneyWithdrawl_Click(object sender, EventArgs e)
-        {
-            HideAllExcept(moneyWithdrawlPage);
-        }
+            private void menuStripMoneyWithdrawl_Click(object sender, EventArgs e)
+            {
+                HideAllExcept(moneyWithdrawlPage);
+            }
 
-        private void menuStripTransactionHistory_Click(object sender, EventArgs e)
-        {
-            HideAllExcept(transactionHistoryPage);
-        }
+            private void menuStripTransactionHistory_Click(object sender, EventArgs e)
+            {
+                HideAllExcept(transactionHistoryPage);
+            }
 
-        private void menuStripNewTransaction_Click(object sender, EventArgs e)
-        {
-            HideAllExcept(newTransactionPage);
-        }
+            private void menuStripNewTransaction_Click(object sender, EventArgs e)
+            {
+                HideAllExcept(newTransactionPage);
+            }
 
-        #endregion
+            #endregion
 
         #endregion
 
@@ -538,19 +624,20 @@ namespace PSBNebesky
             HideAllExcept(signInPage);
         }
 
-        private void buttonCzech_Click(object sender, EventArgs e)
+        private void buttonLanguage_Click(object sender, EventArgs e)
         {
-            LanguageSet(buttonCzech, Language.Čeština);
-            buttonEnglish.Enabled = true;
-            buttonCzech.Enabled = false;
-        }
-
-        private void buttonEnglish_Click(object sender, EventArgs e)
-        {
-            LanguageSet(buttonEnglish, Language.English);
-            buttonEnglish.Enabled = false;
-            buttonCzech.Enabled = true;
-
+            if(defaultLanguage)
+            {
+                LanguageSet(buttonLanguage, Language.English);
+                buttonLanguage.TileImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("czech-republic");
+                defaultLanguage = false;
+            }
+            else
+            {
+                LanguageSet(buttonLanguage, Language.Čeština);
+                buttonLanguage.TileImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("united-kingdom");
+                defaultLanguage = true;
+            }
         }
 
         #endregion

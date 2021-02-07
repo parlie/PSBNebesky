@@ -38,8 +38,7 @@
             this.buttonNewTransaction = new MetroFramework.Controls.MetroTile();
             this.buttonWith = new MetroFramework.Controls.MetroTile();
             this.buttonIntake = new MetroFramework.Controls.MetroTile();
-            this.buttonEnglish = new MetroFramework.Controls.MetroTile();
-            this.buttonCzech = new MetroFramework.Controls.MetroTile();
+            this.buttonLanguage = new MetroFramework.Controls.MetroTile();
             this.mainControl = new MetroFramework.Controls.MetroTabControl();
             this.moneyWithdrawlPage = new MetroFramework.Controls.MetroTabPage();
             this.moneyWithdrawlBack = new MetroFramework.Controls.MetroTile();
@@ -51,16 +50,15 @@
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.moneyWithdrawlCustomValue = new System.Windows.Forms.TextBox();
             this.moneyWithdrawlCustomTile = new MetroFramework.Controls.MetroTile();
-            this.label1 = new System.Windows.Forms.Label();
+            this.moneyWithdrawlLabel = new System.Windows.Forms.Label();
             this.transactionHistoryPage = new MetroFramework.Controls.MetroTabPage();
-            this.button2 = new System.Windows.Forms.Button();
             this.moneyIntakePage = new MetroFramework.Controls.MetroTabPage();
             this.moneyDepositBack = new MetroFramework.Controls.MetroTile();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.moneyDeposit200Tile = new MetroFramework.Controls.MetroTile();
             this.moneyDeposit500Tile = new MetroFramework.Controls.MetroTile();
             this.moneyDeposit1000Tile = new MetroFramework.Controls.MetroTile();
-            this.moneyDeposti5000Tile = new MetroFramework.Controls.MetroTile();
+            this.moneyDeposit5000Tile = new MetroFramework.Controls.MetroTile();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.moneyDepositCustomValue = new System.Windows.Forms.TextBox();
             this.moneyDepositCustomTile = new MetroFramework.Controls.MetroTile();
@@ -75,7 +73,7 @@
             this.consoleButton = new MetroFramework.Controls.MetroButton();
             this.exitSimulator = new System.Windows.Forms.Button();
             this.testServer = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonGoTo = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStripSignIn = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripMainPage = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,7 +87,6 @@
             this.moneyWithdrawlPage.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.metroPanel3.SuspendLayout();
-            this.transactionHistoryPage.SuspendLayout();
             this.moneyIntakePage.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
@@ -107,8 +104,7 @@
             // 
             this.mainPage.Controls.Add(this.buttonLeave);
             this.mainPage.Controls.Add(this.metroPanel1);
-            this.mainPage.Controls.Add(this.buttonEnglish);
-            this.mainPage.Controls.Add(this.buttonCzech);
+            this.mainPage.Controls.Add(this.buttonLanguage);
             this.mainPage.HorizontalScrollbarBarColor = true;
             this.mainPage.HorizontalScrollbarHighlightOnWheel = false;
             this.mainPage.HorizontalScrollbarSize = 10;
@@ -175,37 +171,24 @@
             this.buttonIntake.UseSelectable = true;
             this.buttonIntake.Click += new System.EventHandler(this.buttonIntake_Click);
             // 
-            // buttonEnglish
+            // buttonLanguage
             // 
-            this.buttonEnglish.ActiveControl = null;
-            resources.ApplyResources(this.buttonEnglish, "buttonEnglish");
-            this.buttonEnglish.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonEnglish.Name = "buttonEnglish";
-            this.buttonEnglish.TileImage = global::PSBNebesky.Properties.Resources.united_kingdom;
-            this.buttonEnglish.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonEnglish.UseCustomBackColor = true;
-            this.buttonEnglish.UseSelectable = true;
-            this.buttonEnglish.UseTileImage = true;
-            this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
-            // 
-            // buttonCzech
-            // 
-            this.buttonCzech.ActiveControl = null;
-            resources.ApplyResources(this.buttonCzech, "buttonCzech");
-            this.buttonCzech.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonCzech.Name = "buttonCzech";
-            this.buttonCzech.TileImage = global::PSBNebesky.Properties.Resources.czech_republic1;
-            this.buttonCzech.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonCzech.UseCustomBackColor = true;
-            this.buttonCzech.UseSelectable = true;
-            this.buttonCzech.UseTileImage = true;
-            this.buttonCzech.Click += new System.EventHandler(this.buttonCzech_Click);
+            this.buttonLanguage.ActiveControl = null;
+            resources.ApplyResources(this.buttonLanguage, "buttonLanguage");
+            this.buttonLanguage.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonLanguage.Name = "buttonLanguage";
+            this.buttonLanguage.TileImage = global::PSBNebesky.Properties.Resources.united_kingdom;
+            this.buttonLanguage.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonLanguage.UseCustomBackColor = true;
+            this.buttonLanguage.UseSelectable = true;
+            this.buttonLanguage.UseTileImage = true;
+            this.buttonLanguage.Click += new System.EventHandler(this.buttonLanguage_Click);
             // 
             // mainControl
             // 
-            this.mainControl.Controls.Add(this.mainPage);
-            this.mainControl.Controls.Add(this.moneyWithdrawlPage);
             this.mainControl.Controls.Add(this.transactionHistoryPage);
+            this.mainControl.Controls.Add(this.moneyWithdrawlPage);
+            this.mainControl.Controls.Add(this.mainPage);
             this.mainControl.Controls.Add(this.moneyIntakePage);
             this.mainControl.Controls.Add(this.signInPage);
             this.mainControl.Controls.Add(this.newTransactionPage);
@@ -213,13 +196,14 @@
             this.mainControl.Name = "mainControl";
             this.mainControl.SelectedIndex = 1;
             this.mainControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.mainControl.Style = MetroFramework.MetroColorStyle.Teal;
             this.mainControl.UseSelectable = true;
             // 
             // moneyWithdrawlPage
             // 
             this.moneyWithdrawlPage.Controls.Add(this.moneyWithdrawlBack);
             this.moneyWithdrawlPage.Controls.Add(this.flowLayoutPanel2);
-            this.moneyWithdrawlPage.Controls.Add(this.label1);
+            this.moneyWithdrawlPage.Controls.Add(this.moneyWithdrawlLabel);
             this.moneyWithdrawlPage.HorizontalScrollbarBarColor = true;
             this.moneyWithdrawlPage.HorizontalScrollbarHighlightOnWheel = false;
             this.moneyWithdrawlPage.HorizontalScrollbarSize = 10;
@@ -306,15 +290,14 @@
             this.moneyWithdrawlCustomTile.UseSelectable = true;
             this.moneyWithdrawlCustomTile.Click += new System.EventHandler(this.moneyWithdrawlCustomTile_Click);
             // 
-            // label1
+            // moneyWithdrawlLabel
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.moneyWithdrawlLabel, "moneyWithdrawlLabel");
+            this.moneyWithdrawlLabel.BackColor = System.Drawing.Color.Transparent;
+            this.moneyWithdrawlLabel.Name = "moneyWithdrawlLabel";
             // 
             // transactionHistoryPage
             // 
-            this.transactionHistoryPage.Controls.Add(this.button2);
             resources.ApplyResources(this.transactionHistoryPage, "transactionHistoryPage");
             this.transactionHistoryPage.HorizontalScrollbarBarColor = true;
             this.transactionHistoryPage.HorizontalScrollbarHighlightOnWheel = false;
@@ -323,12 +306,6 @@
             this.transactionHistoryPage.VerticalScrollbarBarColor = true;
             this.transactionHistoryPage.VerticalScrollbarHighlightOnWheel = false;
             this.transactionHistoryPage.VerticalScrollbarSize = 10;
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // moneyIntakePage
             // 
@@ -357,7 +334,7 @@
             this.flowLayoutPanel1.Controls.Add(this.moneyDeposit200Tile);
             this.flowLayoutPanel1.Controls.Add(this.moneyDeposit500Tile);
             this.flowLayoutPanel1.Controls.Add(this.moneyDeposit1000Tile);
-            this.flowLayoutPanel1.Controls.Add(this.moneyDeposti5000Tile);
+            this.flowLayoutPanel1.Controls.Add(this.moneyDeposit5000Tile);
             this.flowLayoutPanel1.Controls.Add(this.metroPanel2);
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -386,13 +363,13 @@
             this.moneyDeposit1000Tile.UseSelectable = true;
             this.moneyDeposit1000Tile.Click += new System.EventHandler(this.moneyDeposit1000Tile_Click);
             // 
-            // moneyDeposti5000Tile
+            // moneyDeposit5000Tile
             // 
-            this.moneyDeposti5000Tile.ActiveControl = null;
-            resources.ApplyResources(this.moneyDeposti5000Tile, "moneyDeposti5000Tile");
-            this.moneyDeposti5000Tile.Name = "moneyDeposti5000Tile";
-            this.moneyDeposti5000Tile.UseSelectable = true;
-            this.moneyDeposti5000Tile.Click += new System.EventHandler(this.moneyDeposti5000Tile_Click);
+            this.moneyDeposit5000Tile.ActiveControl = null;
+            resources.ApplyResources(this.moneyDeposit5000Tile, "moneyDeposit5000Tile");
+            this.moneyDeposit5000Tile.Name = "moneyDeposit5000Tile";
+            this.moneyDeposit5000Tile.UseSelectable = true;
+            this.moneyDeposit5000Tile.Click += new System.EventHandler(this.moneyDeposti5000Tile_Click);
             // 
             // metroPanel2
             // 
@@ -494,7 +471,6 @@
             this.consoleButton.Name = "consoleButton";
             this.consoleButton.UseSelectable = true;
             this.consoleButton.Click += new System.EventHandler(this.consoleButton_Click);
-            this.consoleButton.MouseHover += new System.EventHandler(this.consoleButton_Enter);
             // 
             // exitSimulator
             // 
@@ -510,12 +486,12 @@
             this.testServer.UseVisualStyleBackColor = true;
             this.testServer.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button1
+            // buttonGoTo
             // 
-            this.button1.ContextMenuStrip = this.contextMenuStrip1;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonGoTo.ContextMenuStrip = this.contextMenuStrip1;
+            resources.ApplyResources(this.buttonGoTo, "buttonGoTo");
+            this.buttonGoTo.Name = "buttonGoTo";
+            this.buttonGoTo.UseVisualStyleBackColor = true;
             // 
             // contextMenuStrip1
             // 
@@ -570,14 +546,14 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonGoTo);
             this.Controls.Add(this.testServer);
             this.Controls.Add(this.exitSimulator);
             this.Controls.Add(this.consoleButton);
             this.Controls.Add(this.mainControl);
             this.Controls.Add(this.boxLog);
             this.Name = "Form1";
-            this.Style = MetroFramework.MetroColorStyle.Brown;
+            this.Style = MetroFramework.MetroColorStyle.Teal;
             this.mainPage.ResumeLayout(false);
             this.metroPanel1.ResumeLayout(false);
             this.mainControl.ResumeLayout(false);
@@ -586,7 +562,6 @@
             this.flowLayoutPanel2.ResumeLayout(false);
             this.metroPanel3.ResumeLayout(false);
             this.metroPanel3.PerformLayout();
-            this.transactionHistoryPage.ResumeLayout(false);
             this.moneyIntakePage.ResumeLayout(false);
             this.moneyIntakePage.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -602,8 +577,7 @@
         #endregion
         private System.Windows.Forms.ListBox boxLog;
         private MetroFramework.Controls.MetroTabPage mainPage;
-        private MetroFramework.Controls.MetroTile buttonEnglish;
-        private MetroFramework.Controls.MetroTile buttonCzech;
+        private MetroFramework.Controls.MetroTile buttonLanguage;
         private MetroFramework.Controls.MetroTile buttonLeave;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroTile buttonTransactionHistory;
@@ -614,7 +588,6 @@
         private MetroFramework.Controls.MetroTabPage signInPage;
         private MetroFramework.Controls.MetroTabPage transactionHistoryPage;
         private MetroFramework.Controls.MetroButton consoleButton;
-        private System.Windows.Forms.Button button2;
         private MetroFramework.Controls.MetroTabPage moneyIntakePage;
         private MetroFramework.Controls.MetroTabPage moneyWithdrawlPage;
         private MetroFramework.Controls.MetroTabPage newTransactionPage;
@@ -630,7 +603,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private MetroFramework.Controls.MetroTile moneyDeposit500Tile;
         private MetroFramework.Controls.MetroTile moneyDeposit1000Tile;
-        private MetroFramework.Controls.MetroTile moneyDeposti5000Tile;
+        private MetroFramework.Controls.MetroTile moneyDeposit5000Tile;
         private MetroFramework.Controls.MetroPanel metroPanel2;
         private MetroFramework.Controls.MetroTile moneyDepositCustomTile;
         private System.Windows.Forms.TextBox moneyDepositCustomValue;
@@ -644,8 +617,8 @@
         private MetroFramework.Controls.MetroPanel metroPanel3;
         private System.Windows.Forms.TextBox moneyWithdrawlCustomValue;
         private MetroFramework.Controls.MetroTile moneyWithdrawlCustomTile;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label moneyWithdrawlLabel;
+        private System.Windows.Forms.Button buttonGoTo;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuStripSignIn;
         private System.Windows.Forms.ToolStripMenuItem menuStripMainPage;
