@@ -40,6 +40,48 @@
             this.buttonIntake = new MetroFramework.Controls.MetroTile();
             this.buttonLanguage = new MetroFramework.Controls.MetroTile();
             this.mainControl = new MetroFramework.Controls.MetroTabControl();
+            this.newTransactionPage = new MetroFramework.Controls.MetroTabPage();
+            this.transactionNewBack = new MetroFramework.Controls.MetroTile();
+            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.transactionSendNewTile = new MetroFramework.Controls.MetroTile();
+            this.transactionLoadTemplateTile = new MetroFramework.Controls.MetroTile();
+            this.transactionSaveTemplateTile = new MetroFramework.Controls.MetroTile();
+            this.transactionAmountLabel = new System.Windows.Forms.Label();
+            this.transactionAccountLabel = new System.Windows.Forms.Label();
+            this.transactionNameLabel = new System.Windows.Forms.Label();
+            this.transactionNameTextBox = new System.Windows.Forms.TextBox();
+            this.transactionAmountTextBox = new System.Windows.Forms.TextBox();
+            this.transactionAccountTextBox = new System.Windows.Forms.TextBox();
+            this.moneyIntakePage = new MetroFramework.Controls.MetroTabPage();
+            this.moneyDepositDropDown = new MetroFramework.Controls.MetroTile();
+            this.moneyDepositBack = new MetroFramework.Controls.MetroTile();
+            this.moneyDepositLabel = new System.Windows.Forms.Label();
+            this.transactionHistoryPage = new MetroFramework.Controls.MetroTabPage();
+            this.transactionHistoryList = new System.Windows.Forms.ListView();
+            this.transactionHistoryTableName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.transactionHistoryTableSender = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.transactionHistoryTableReceiver = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.transactionHistoryTableAmount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.transactionHistoryTableTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.transactionHistoryTableSuccess = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.transactionHistoryBack = new MetroFramework.Controls.MetroTile();
+            this.signInPage = new MetroFramework.Controls.MetroTabPage();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.signInPIN = new System.Windows.Forms.TextBox();
+            this.pin7Button = new System.Windows.Forms.Button();
+            this.pin8Button = new System.Windows.Forms.Button();
+            this.pin9Button = new System.Windows.Forms.Button();
+            this.pin4Button = new System.Windows.Forms.Button();
+            this.pin5Button = new System.Windows.Forms.Button();
+            this.pin6Button = new System.Windows.Forms.Button();
+            this.pin1Button = new System.Windows.Forms.Button();
+            this.pin2Button = new System.Windows.Forms.Button();
+            this.pin3Button = new System.Windows.Forms.Button();
+            this.pinClearButton = new System.Windows.Forms.Button();
+            this.pin0Button = new System.Windows.Forms.Button();
+            this.pinOKButton = new System.Windows.Forms.Button();
+            this.signInDropDown = new MetroFramework.Controls.MetroTile();
+            this.signInLabel = new System.Windows.Forms.Label();
             this.moneyWithdrawlPage = new MetroFramework.Controls.MetroTabPage();
             this.moneyWithdrawlBack = new MetroFramework.Controls.MetroTile();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
@@ -51,25 +93,6 @@
             this.moneyWithdrawlCustomValue = new System.Windows.Forms.TextBox();
             this.moneyWithdrawlCustomTile = new MetroFramework.Controls.MetroTile();
             this.moneyWithdrawlLabel = new System.Windows.Forms.Label();
-            this.transactionHistoryPage = new MetroFramework.Controls.MetroTabPage();
-            this.moneyIntakePage = new MetroFramework.Controls.MetroTabPage();
-            this.moneyDepositBack = new MetroFramework.Controls.MetroTile();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.moneyDeposit200Tile = new MetroFramework.Controls.MetroTile();
-            this.moneyDeposit500Tile = new MetroFramework.Controls.MetroTile();
-            this.moneyDeposit1000Tile = new MetroFramework.Controls.MetroTile();
-            this.moneyDeposit5000Tile = new MetroFramework.Controls.MetroTile();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.moneyDepositCustomValue = new System.Windows.Forms.TextBox();
-            this.moneyDepositCustomTile = new MetroFramework.Controls.MetroTile();
-            this.moneyDepositLabel = new System.Windows.Forms.Label();
-            this.signInPage = new MetroFramework.Controls.MetroTabPage();
-            this.signInNewUser = new MetroFramework.Controls.MetroTile();
-            this.signInUserBox = new System.Windows.Forms.TextBox();
-            this.signInPassBox = new System.Windows.Forms.TextBox();
-            this.signInButton = new MetroFramework.Controls.MetroTile();
-            this.signInLabel = new System.Windows.Forms.Label();
-            this.newTransactionPage = new MetroFramework.Controls.MetroTabPage();
             this.consoleButton = new MetroFramework.Controls.MetroButton();
             this.exitSimulator = new System.Windows.Forms.Button();
             this.testServer = new System.Windows.Forms.Button();
@@ -84,13 +107,15 @@
             this.mainPage.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             this.mainControl.SuspendLayout();
+            this.newTransactionPage.SuspendLayout();
+            this.metroPanel2.SuspendLayout();
+            this.moneyIntakePage.SuspendLayout();
+            this.transactionHistoryPage.SuspendLayout();
+            this.signInPage.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.moneyWithdrawlPage.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.metroPanel3.SuspendLayout();
-            this.moneyIntakePage.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.metroPanel2.SuspendLayout();
-            this.signInPage.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -186,18 +211,364 @@
             // 
             // mainControl
             // 
-            this.mainControl.Controls.Add(this.transactionHistoryPage);
             this.mainControl.Controls.Add(this.moneyWithdrawlPage);
-            this.mainControl.Controls.Add(this.mainPage);
-            this.mainControl.Controls.Add(this.moneyIntakePage);
-            this.mainControl.Controls.Add(this.signInPage);
             this.mainControl.Controls.Add(this.newTransactionPage);
+            this.mainControl.Controls.Add(this.moneyIntakePage);
+            this.mainControl.Controls.Add(this.mainPage);
+            this.mainControl.Controls.Add(this.transactionHistoryPage);
+            this.mainControl.Controls.Add(this.signInPage);
             resources.ApplyResources(this.mainControl, "mainControl");
             this.mainControl.Name = "mainControl";
-            this.mainControl.SelectedIndex = 1;
+            this.mainControl.SelectedIndex = 5;
             this.mainControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.mainControl.Style = MetroFramework.MetroColorStyle.Teal;
             this.mainControl.UseSelectable = true;
+            // 
+            // newTransactionPage
+            // 
+            this.newTransactionPage.Controls.Add(this.transactionNewBack);
+            this.newTransactionPage.Controls.Add(this.metroPanel2);
+            this.newTransactionPage.Controls.Add(this.transactionAmountLabel);
+            this.newTransactionPage.Controls.Add(this.transactionAccountLabel);
+            this.newTransactionPage.Controls.Add(this.transactionNameLabel);
+            this.newTransactionPage.Controls.Add(this.transactionNameTextBox);
+            this.newTransactionPage.Controls.Add(this.transactionAmountTextBox);
+            this.newTransactionPage.Controls.Add(this.transactionAccountTextBox);
+            this.newTransactionPage.HorizontalScrollbarBarColor = true;
+            this.newTransactionPage.HorizontalScrollbarHighlightOnWheel = false;
+            this.newTransactionPage.HorizontalScrollbarSize = 10;
+            resources.ApplyResources(this.newTransactionPage, "newTransactionPage");
+            this.newTransactionPage.Name = "newTransactionPage";
+            this.newTransactionPage.VerticalScrollbarBarColor = true;
+            this.newTransactionPage.VerticalScrollbarHighlightOnWheel = false;
+            this.newTransactionPage.VerticalScrollbarSize = 10;
+            // 
+            // transactionNewBack
+            // 
+            this.transactionNewBack.ActiveControl = null;
+            resources.ApplyResources(this.transactionNewBack, "transactionNewBack");
+            this.transactionNewBack.Name = "transactionNewBack";
+            this.transactionNewBack.TabStop = false;
+            this.transactionNewBack.UseSelectable = true;
+            this.transactionNewBack.Click += new System.EventHandler(this.transactionNewBack_Click);
+            // 
+            // metroPanel2
+            // 
+            resources.ApplyResources(this.metroPanel2, "metroPanel2");
+            this.metroPanel2.Controls.Add(this.transactionSendNewTile);
+            this.metroPanel2.Controls.Add(this.transactionLoadTemplateTile);
+            this.metroPanel2.Controls.Add(this.transactionSaveTemplateTile);
+            this.metroPanel2.HorizontalScrollbarBarColor = true;
+            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.HorizontalScrollbarSize = 14;
+            this.metroPanel2.Name = "metroPanel2";
+            this.metroPanel2.Style = MetroFramework.MetroColorStyle.Teal;
+            this.metroPanel2.UseStyleColors = true;
+            this.metroPanel2.VerticalScrollbarBarColor = true;
+            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.VerticalScrollbarSize = 14;
+            // 
+            // transactionSendNewTile
+            // 
+            this.transactionSendNewTile.ActiveControl = null;
+            resources.ApplyResources(this.transactionSendNewTile, "transactionSendNewTile");
+            this.transactionSendNewTile.Name = "transactionSendNewTile";
+            this.transactionSendNewTile.TabStop = false;
+            this.transactionSendNewTile.UseSelectable = true;
+            // 
+            // transactionLoadTemplateTile
+            // 
+            this.transactionLoadTemplateTile.ActiveControl = null;
+            resources.ApplyResources(this.transactionLoadTemplateTile, "transactionLoadTemplateTile");
+            this.transactionLoadTemplateTile.Name = "transactionLoadTemplateTile";
+            this.transactionLoadTemplateTile.TabStop = false;
+            this.transactionLoadTemplateTile.UseSelectable = true;
+            // 
+            // transactionSaveTemplateTile
+            // 
+            this.transactionSaveTemplateTile.ActiveControl = null;
+            resources.ApplyResources(this.transactionSaveTemplateTile, "transactionSaveTemplateTile");
+            this.transactionSaveTemplateTile.Name = "transactionSaveTemplateTile";
+            this.transactionSaveTemplateTile.TabStop = false;
+            this.transactionSaveTemplateTile.UseSelectable = true;
+            // 
+            // transactionAmountLabel
+            // 
+            this.transactionAmountLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.transactionAmountLabel, "transactionAmountLabel");
+            this.transactionAmountLabel.Name = "transactionAmountLabel";
+            // 
+            // transactionAccountLabel
+            // 
+            this.transactionAccountLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.transactionAccountLabel, "transactionAccountLabel");
+            this.transactionAccountLabel.Name = "transactionAccountLabel";
+            // 
+            // transactionNameLabel
+            // 
+            this.transactionNameLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.transactionNameLabel, "transactionNameLabel");
+            this.transactionNameLabel.Name = "transactionNameLabel";
+            // 
+            // transactionNameTextBox
+            // 
+            this.transactionNameTextBox.BackColor = System.Drawing.Color.White;
+            this.transactionNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.transactionNameTextBox, "transactionNameTextBox");
+            this.transactionNameTextBox.Name = "transactionNameTextBox";
+            // 
+            // transactionAmountTextBox
+            // 
+            this.transactionAmountTextBox.BackColor = System.Drawing.Color.White;
+            this.transactionAmountTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.transactionAmountTextBox, "transactionAmountTextBox");
+            this.transactionAmountTextBox.Name = "transactionAmountTextBox";
+            // 
+            // transactionAccountTextBox
+            // 
+            this.transactionAccountTextBox.BackColor = System.Drawing.Color.White;
+            this.transactionAccountTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.transactionAccountTextBox, "transactionAccountTextBox");
+            this.transactionAccountTextBox.Name = "transactionAccountTextBox";
+            // 
+            // moneyIntakePage
+            // 
+            this.moneyIntakePage.Controls.Add(this.moneyDepositDropDown);
+            this.moneyIntakePage.Controls.Add(this.moneyDepositBack);
+            this.moneyIntakePage.Controls.Add(this.moneyDepositLabel);
+            this.moneyIntakePage.HorizontalScrollbarBarColor = true;
+            this.moneyIntakePage.HorizontalScrollbarHighlightOnWheel = false;
+            this.moneyIntakePage.HorizontalScrollbarSize = 10;
+            resources.ApplyResources(this.moneyIntakePage, "moneyIntakePage");
+            this.moneyIntakePage.Name = "moneyIntakePage";
+            this.moneyIntakePage.VerticalScrollbarBarColor = true;
+            this.moneyIntakePage.VerticalScrollbarHighlightOnWheel = false;
+            this.moneyIntakePage.VerticalScrollbarSize = 10;
+            // 
+            // moneyDepositDropDown
+            // 
+            this.moneyDepositDropDown.ActiveControl = null;
+            this.moneyDepositDropDown.AllowDrop = true;
+            resources.ApplyResources(this.moneyDepositDropDown, "moneyDepositDropDown");
+            this.moneyDepositDropDown.Name = "moneyDepositDropDown";
+            this.moneyDepositDropDown.UseSelectable = true;
+            this.moneyDepositDropDown.Click += new System.EventHandler(this.metroTile1_Click);
+            this.moneyDepositDropDown.DragDrop += new System.Windows.Forms.DragEventHandler(this.moneyDepositDropDown_DragDrop);
+            this.moneyDepositDropDown.DragEnter += new System.Windows.Forms.DragEventHandler(this.moneyDepositDropDown_DragEnter);
+            // 
+            // moneyDepositBack
+            // 
+            this.moneyDepositBack.ActiveControl = null;
+            resources.ApplyResources(this.moneyDepositBack, "moneyDepositBack");
+            this.moneyDepositBack.Name = "moneyDepositBack";
+            this.moneyDepositBack.UseSelectable = true;
+            this.moneyDepositBack.Click += new System.EventHandler(this.moneyDepositBack_Click);
+            // 
+            // moneyDepositLabel
+            // 
+            resources.ApplyResources(this.moneyDepositLabel, "moneyDepositLabel");
+            this.moneyDepositLabel.BackColor = System.Drawing.Color.Transparent;
+            this.moneyDepositLabel.Name = "moneyDepositLabel";
+            // 
+            // transactionHistoryPage
+            // 
+            this.transactionHistoryPage.Controls.Add(this.transactionHistoryList);
+            this.transactionHistoryPage.Controls.Add(this.transactionHistoryBack);
+            resources.ApplyResources(this.transactionHistoryPage, "transactionHistoryPage");
+            this.transactionHistoryPage.HorizontalScrollbarBarColor = true;
+            this.transactionHistoryPage.HorizontalScrollbarHighlightOnWheel = false;
+            this.transactionHistoryPage.HorizontalScrollbarSize = 10;
+            this.transactionHistoryPage.Name = "transactionHistoryPage";
+            this.transactionHistoryPage.VerticalScrollbarBarColor = true;
+            this.transactionHistoryPage.VerticalScrollbarHighlightOnWheel = false;
+            this.transactionHistoryPage.VerticalScrollbarSize = 10;
+            // 
+            // transactionHistoryList
+            // 
+            this.transactionHistoryList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.transactionHistoryTableName,
+            this.transactionHistoryTableSender,
+            this.transactionHistoryTableReceiver,
+            this.transactionHistoryTableAmount,
+            this.transactionHistoryTableTime,
+            this.transactionHistoryTableSuccess});
+            this.transactionHistoryList.HideSelection = false;
+            resources.ApplyResources(this.transactionHistoryList, "transactionHistoryList");
+            this.transactionHistoryList.Name = "transactionHistoryList";
+            this.transactionHistoryList.UseCompatibleStateImageBehavior = false;
+            this.transactionHistoryList.View = System.Windows.Forms.View.Details;
+            // 
+            // transactionHistoryTableName
+            // 
+            resources.ApplyResources(this.transactionHistoryTableName, "transactionHistoryTableName");
+            // 
+            // transactionHistoryTableSender
+            // 
+            resources.ApplyResources(this.transactionHistoryTableSender, "transactionHistoryTableSender");
+            // 
+            // transactionHistoryTableReceiver
+            // 
+            resources.ApplyResources(this.transactionHistoryTableReceiver, "transactionHistoryTableReceiver");
+            // 
+            // transactionHistoryTableAmount
+            // 
+            resources.ApplyResources(this.transactionHistoryTableAmount, "transactionHistoryTableAmount");
+            // 
+            // transactionHistoryTableTime
+            // 
+            resources.ApplyResources(this.transactionHistoryTableTime, "transactionHistoryTableTime");
+            // 
+            // transactionHistoryTableSuccess
+            // 
+            resources.ApplyResources(this.transactionHistoryTableSuccess, "transactionHistoryTableSuccess");
+            // 
+            // transactionHistoryBack
+            // 
+            this.transactionHistoryBack.ActiveControl = null;
+            resources.ApplyResources(this.transactionHistoryBack, "transactionHistoryBack");
+            this.transactionHistoryBack.Name = "transactionHistoryBack";
+            this.transactionHistoryBack.UseSelectable = true;
+            this.transactionHistoryBack.Click += new System.EventHandler(this.transactionHistoryBack_Click);
+            // 
+            // signInPage
+            // 
+            this.signInPage.Controls.Add(this.flowLayoutPanel1);
+            this.signInPage.Controls.Add(this.signInDropDown);
+            this.signInPage.Controls.Add(this.signInLabel);
+            this.signInPage.HorizontalScrollbarBarColor = true;
+            this.signInPage.HorizontalScrollbarHighlightOnWheel = false;
+            this.signInPage.HorizontalScrollbarSize = 10;
+            resources.ApplyResources(this.signInPage, "signInPage");
+            this.signInPage.Name = "signInPage";
+            this.signInPage.VerticalScrollbarBarColor = true;
+            this.signInPage.VerticalScrollbarHighlightOnWheel = false;
+            this.signInPage.VerticalScrollbarSize = 10;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.signInPIN);
+            this.flowLayoutPanel1.Controls.Add(this.pin7Button);
+            this.flowLayoutPanel1.Controls.Add(this.pin8Button);
+            this.flowLayoutPanel1.Controls.Add(this.pin9Button);
+            this.flowLayoutPanel1.Controls.Add(this.pin4Button);
+            this.flowLayoutPanel1.Controls.Add(this.pin5Button);
+            this.flowLayoutPanel1.Controls.Add(this.pin6Button);
+            this.flowLayoutPanel1.Controls.Add(this.pin1Button);
+            this.flowLayoutPanel1.Controls.Add(this.pin2Button);
+            this.flowLayoutPanel1.Controls.Add(this.pin3Button);
+            this.flowLayoutPanel1.Controls.Add(this.pinClearButton);
+            this.flowLayoutPanel1.Controls.Add(this.pin0Button);
+            this.flowLayoutPanel1.Controls.Add(this.pinOKButton);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // signInPIN
+            // 
+            resources.ApplyResources(this.signInPIN, "signInPIN");
+            this.signInPIN.Name = "signInPIN";
+            this.signInPIN.UseSystemPasswordChar = true;
+            this.signInPIN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.metroTextBox1_KeyPress);
+            // 
+            // pin7Button
+            // 
+            resources.ApplyResources(this.pin7Button, "pin7Button");
+            this.pin7Button.Name = "pin7Button";
+            this.pin7Button.UseVisualStyleBackColor = true;
+            this.pin7Button.Click += new System.EventHandler(this.pin7Button_Click);
+            // 
+            // pin8Button
+            // 
+            resources.ApplyResources(this.pin8Button, "pin8Button");
+            this.pin8Button.Name = "pin8Button";
+            this.pin8Button.UseVisualStyleBackColor = true;
+            this.pin8Button.Click += new System.EventHandler(this.pin8Button_Click);
+            // 
+            // pin9Button
+            // 
+            resources.ApplyResources(this.pin9Button, "pin9Button");
+            this.pin9Button.Name = "pin9Button";
+            this.pin9Button.UseVisualStyleBackColor = true;
+            this.pin9Button.Click += new System.EventHandler(this.pin9Button_Click);
+            // 
+            // pin4Button
+            // 
+            resources.ApplyResources(this.pin4Button, "pin4Button");
+            this.pin4Button.Name = "pin4Button";
+            this.pin4Button.UseVisualStyleBackColor = true;
+            this.pin4Button.Click += new System.EventHandler(this.pin4Button_Click);
+            // 
+            // pin5Button
+            // 
+            resources.ApplyResources(this.pin5Button, "pin5Button");
+            this.pin5Button.Name = "pin5Button";
+            this.pin5Button.UseVisualStyleBackColor = true;
+            this.pin5Button.Click += new System.EventHandler(this.pin5Button_Click);
+            // 
+            // pin6Button
+            // 
+            resources.ApplyResources(this.pin6Button, "pin6Button");
+            this.pin6Button.Name = "pin6Button";
+            this.pin6Button.UseVisualStyleBackColor = true;
+            this.pin6Button.Click += new System.EventHandler(this.pin6Button_Click);
+            // 
+            // pin1Button
+            // 
+            resources.ApplyResources(this.pin1Button, "pin1Button");
+            this.pin1Button.Name = "pin1Button";
+            this.pin1Button.UseVisualStyleBackColor = true;
+            this.pin1Button.Click += new System.EventHandler(this.pin1Button_Click);
+            // 
+            // pin2Button
+            // 
+            resources.ApplyResources(this.pin2Button, "pin2Button");
+            this.pin2Button.Name = "pin2Button";
+            this.pin2Button.UseVisualStyleBackColor = true;
+            this.pin2Button.Click += new System.EventHandler(this.pin2Button_Click);
+            // 
+            // pin3Button
+            // 
+            resources.ApplyResources(this.pin3Button, "pin3Button");
+            this.pin3Button.Name = "pin3Button";
+            this.pin3Button.UseVisualStyleBackColor = true;
+            this.pin3Button.Click += new System.EventHandler(this.pin3Button_Click);
+            // 
+            // pinClearButton
+            // 
+            resources.ApplyResources(this.pinClearButton, "pinClearButton");
+            this.pinClearButton.Name = "pinClearButton";
+            this.pinClearButton.UseVisualStyleBackColor = true;
+            this.pinClearButton.Click += new System.EventHandler(this.pinClearButton_Click);
+            // 
+            // pin0Button
+            // 
+            resources.ApplyResources(this.pin0Button, "pin0Button");
+            this.pin0Button.Name = "pin0Button";
+            this.pin0Button.UseVisualStyleBackColor = true;
+            this.pin0Button.Click += new System.EventHandler(this.pin0Button_Click);
+            // 
+            // pinOKButton
+            // 
+            resources.ApplyResources(this.pinOKButton, "pinOKButton");
+            this.pinOKButton.Name = "pinOKButton";
+            this.pinOKButton.UseVisualStyleBackColor = true;
+            this.pinOKButton.Click += new System.EventHandler(this.pinOKButton_Click);
+            // 
+            // signInDropDown
+            // 
+            this.signInDropDown.ActiveControl = null;
+            this.signInDropDown.AllowDrop = true;
+            resources.ApplyResources(this.signInDropDown, "signInDropDown");
+            this.signInDropDown.Name = "signInDropDown";
+            this.signInDropDown.UseSelectable = true;
+            this.signInDropDown.DragDrop += new System.Windows.Forms.DragEventHandler(this.signInDropDown_DragDrop);
+            this.signInDropDown.DragEnter += new System.Windows.Forms.DragEventHandler(this.signInDropDown_DragEnter);
+            // 
+            // signInLabel
+            // 
+            this.signInLabel.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.signInLabel, "signInLabel");
+            this.signInLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.signInLabel.Name = "signInLabel";
             // 
             // moneyWithdrawlPage
             // 
@@ -223,6 +594,7 @@
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel2.Controls.Add(this.moneyWithdrawl200Tile);
             this.flowLayoutPanel2.Controls.Add(this.moneyWithdrawl500Tile);
             this.flowLayoutPanel2.Controls.Add(this.moneyWithdrawl1000Tile);
@@ -296,179 +668,11 @@
             this.moneyWithdrawlLabel.BackColor = System.Drawing.Color.Transparent;
             this.moneyWithdrawlLabel.Name = "moneyWithdrawlLabel";
             // 
-            // transactionHistoryPage
-            // 
-            resources.ApplyResources(this.transactionHistoryPage, "transactionHistoryPage");
-            this.transactionHistoryPage.HorizontalScrollbarBarColor = true;
-            this.transactionHistoryPage.HorizontalScrollbarHighlightOnWheel = false;
-            this.transactionHistoryPage.HorizontalScrollbarSize = 10;
-            this.transactionHistoryPage.Name = "transactionHistoryPage";
-            this.transactionHistoryPage.VerticalScrollbarBarColor = true;
-            this.transactionHistoryPage.VerticalScrollbarHighlightOnWheel = false;
-            this.transactionHistoryPage.VerticalScrollbarSize = 10;
-            // 
-            // moneyIntakePage
-            // 
-            this.moneyIntakePage.Controls.Add(this.moneyDepositBack);
-            this.moneyIntakePage.Controls.Add(this.flowLayoutPanel1);
-            this.moneyIntakePage.Controls.Add(this.moneyDepositLabel);
-            this.moneyIntakePage.HorizontalScrollbarBarColor = true;
-            this.moneyIntakePage.HorizontalScrollbarHighlightOnWheel = false;
-            this.moneyIntakePage.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.moneyIntakePage, "moneyIntakePage");
-            this.moneyIntakePage.Name = "moneyIntakePage";
-            this.moneyIntakePage.VerticalScrollbarBarColor = true;
-            this.moneyIntakePage.VerticalScrollbarHighlightOnWheel = false;
-            this.moneyIntakePage.VerticalScrollbarSize = 10;
-            // 
-            // moneyDepositBack
-            // 
-            this.moneyDepositBack.ActiveControl = null;
-            resources.ApplyResources(this.moneyDepositBack, "moneyDepositBack");
-            this.moneyDepositBack.Name = "moneyDepositBack";
-            this.moneyDepositBack.UseSelectable = true;
-            this.moneyDepositBack.Click += new System.EventHandler(this.moneyDepositBack_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.moneyDeposit200Tile);
-            this.flowLayoutPanel1.Controls.Add(this.moneyDeposit500Tile);
-            this.flowLayoutPanel1.Controls.Add(this.moneyDeposit1000Tile);
-            this.flowLayoutPanel1.Controls.Add(this.moneyDeposit5000Tile);
-            this.flowLayoutPanel1.Controls.Add(this.metroPanel2);
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            // 
-            // moneyDeposit200Tile
-            // 
-            this.moneyDeposit200Tile.ActiveControl = null;
-            resources.ApplyResources(this.moneyDeposit200Tile, "moneyDeposit200Tile");
-            this.moneyDeposit200Tile.Name = "moneyDeposit200Tile";
-            this.moneyDeposit200Tile.UseSelectable = true;
-            this.moneyDeposit200Tile.Click += new System.EventHandler(this.moneyDeposit200Tile_Click);
-            // 
-            // moneyDeposit500Tile
-            // 
-            this.moneyDeposit500Tile.ActiveControl = null;
-            resources.ApplyResources(this.moneyDeposit500Tile, "moneyDeposit500Tile");
-            this.moneyDeposit500Tile.Name = "moneyDeposit500Tile";
-            this.moneyDeposit500Tile.UseSelectable = true;
-            this.moneyDeposit500Tile.Click += new System.EventHandler(this.moneyDeposit500Tile_Click);
-            // 
-            // moneyDeposit1000Tile
-            // 
-            this.moneyDeposit1000Tile.ActiveControl = null;
-            resources.ApplyResources(this.moneyDeposit1000Tile, "moneyDeposit1000Tile");
-            this.moneyDeposit1000Tile.Name = "moneyDeposit1000Tile";
-            this.moneyDeposit1000Tile.UseSelectable = true;
-            this.moneyDeposit1000Tile.Click += new System.EventHandler(this.moneyDeposit1000Tile_Click);
-            // 
-            // moneyDeposit5000Tile
-            // 
-            this.moneyDeposit5000Tile.ActiveControl = null;
-            resources.ApplyResources(this.moneyDeposit5000Tile, "moneyDeposit5000Tile");
-            this.moneyDeposit5000Tile.Name = "moneyDeposit5000Tile";
-            this.moneyDeposit5000Tile.UseSelectable = true;
-            this.moneyDeposit5000Tile.Click += new System.EventHandler(this.moneyDeposti5000Tile_Click);
-            // 
-            // metroPanel2
-            // 
-            this.metroPanel2.Controls.Add(this.moneyDepositCustomValue);
-            this.metroPanel2.Controls.Add(this.moneyDepositCustomTile);
-            this.metroPanel2.HorizontalScrollbarBarColor = true;
-            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.metroPanel2, "metroPanel2");
-            this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.VerticalScrollbarBarColor = true;
-            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 10;
-            // 
-            // moneyDepositCustomValue
-            // 
-            resources.ApplyResources(this.moneyDepositCustomValue, "moneyDepositCustomValue");
-            this.moneyDepositCustomValue.Name = "moneyDepositCustomValue";
-            this.moneyDepositCustomValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.metroTextBox1_KeyPress);
-            // 
-            // moneyDepositCustomTile
-            // 
-            this.moneyDepositCustomTile.ActiveControl = null;
-            resources.ApplyResources(this.moneyDepositCustomTile, "moneyDepositCustomTile");
-            this.moneyDepositCustomTile.Name = "moneyDepositCustomTile";
-            this.moneyDepositCustomTile.UseSelectable = true;
-            this.moneyDepositCustomTile.Click += new System.EventHandler(this.moneyDepositCustomTile_Click);
-            // 
-            // moneyDepositLabel
-            // 
-            resources.ApplyResources(this.moneyDepositLabel, "moneyDepositLabel");
-            this.moneyDepositLabel.BackColor = System.Drawing.Color.Transparent;
-            this.moneyDepositLabel.Name = "moneyDepositLabel";
-            // 
-            // signInPage
-            // 
-            this.signInPage.Controls.Add(this.signInNewUser);
-            this.signInPage.Controls.Add(this.signInUserBox);
-            this.signInPage.Controls.Add(this.signInPassBox);
-            this.signInPage.Controls.Add(this.signInButton);
-            this.signInPage.Controls.Add(this.signInLabel);
-            this.signInPage.HorizontalScrollbarBarColor = true;
-            this.signInPage.HorizontalScrollbarHighlightOnWheel = false;
-            this.signInPage.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.signInPage, "signInPage");
-            this.signInPage.Name = "signInPage";
-            this.signInPage.VerticalScrollbarBarColor = true;
-            this.signInPage.VerticalScrollbarHighlightOnWheel = false;
-            this.signInPage.VerticalScrollbarSize = 10;
-            // 
-            // signInNewUser
-            // 
-            this.signInNewUser.ActiveControl = null;
-            resources.ApplyResources(this.signInNewUser, "signInNewUser");
-            this.signInNewUser.Name = "signInNewUser";
-            this.signInNewUser.UseSelectable = true;
-            this.signInNewUser.Click += new System.EventHandler(this.signInNewUser_Click);
-            // 
-            // signInUserBox
-            // 
-            resources.ApplyResources(this.signInUserBox, "signInUserBox");
-            this.signInUserBox.Name = "signInUserBox";
-            // 
-            // signInPassBox
-            // 
-            resources.ApplyResources(this.signInPassBox, "signInPassBox");
-            this.signInPassBox.Name = "signInPassBox";
-            this.signInPassBox.UseSystemPasswordChar = true;
-            // 
-            // signInButton
-            // 
-            this.signInButton.ActiveControl = null;
-            resources.ApplyResources(this.signInButton, "signInButton");
-            this.signInButton.Name = "signInButton";
-            this.signInButton.UseSelectable = true;
-            this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
-            // 
-            // signInLabel
-            // 
-            this.signInLabel.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.signInLabel, "signInLabel");
-            this.signInLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signInLabel.Name = "signInLabel";
-            // 
-            // newTransactionPage
-            // 
-            this.newTransactionPage.HorizontalScrollbarBarColor = true;
-            this.newTransactionPage.HorizontalScrollbarHighlightOnWheel = false;
-            this.newTransactionPage.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.newTransactionPage, "newTransactionPage");
-            this.newTransactionPage.Name = "newTransactionPage";
-            this.newTransactionPage.VerticalScrollbarBarColor = true;
-            this.newTransactionPage.VerticalScrollbarHighlightOnWheel = false;
-            this.newTransactionPage.VerticalScrollbarSize = 10;
-            // 
             // consoleButton
             // 
             resources.ApplyResources(this.consoleButton, "consoleButton");
             this.consoleButton.Name = "consoleButton";
+            this.consoleButton.TabStop = false;
             this.consoleButton.UseSelectable = true;
             this.consoleButton.Click += new System.EventHandler(this.consoleButton_Click);
             // 
@@ -476,6 +680,7 @@
             // 
             resources.ApplyResources(this.exitSimulator, "exitSimulator");
             this.exitSimulator.Name = "exitSimulator";
+            this.exitSimulator.TabStop = false;
             this.exitSimulator.UseVisualStyleBackColor = true;
             this.exitSimulator.Click += new System.EventHandler(this.exitSimulator_Click);
             // 
@@ -483,6 +688,7 @@
             // 
             resources.ApplyResources(this.testServer, "testServer");
             this.testServer.Name = "testServer";
+            this.testServer.TabStop = false;
             this.testServer.UseVisualStyleBackColor = true;
             this.testServer.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -491,6 +697,7 @@
             this.buttonGoTo.ContextMenuStrip = this.contextMenuStrip1;
             resources.ApplyResources(this.buttonGoTo, "buttonGoTo");
             this.buttonGoTo.Name = "buttonGoTo";
+            this.buttonGoTo.TabStop = false;
             this.buttonGoTo.UseVisualStyleBackColor = true;
             // 
             // contextMenuStrip1
@@ -552,23 +759,27 @@
             this.Controls.Add(this.consoleButton);
             this.Controls.Add(this.mainControl);
             this.Controls.Add(this.boxLog);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.mainPage.ResumeLayout(false);
             this.metroPanel1.ResumeLayout(false);
             this.mainControl.ResumeLayout(false);
+            this.newTransactionPage.ResumeLayout(false);
+            this.newTransactionPage.PerformLayout();
+            this.metroPanel2.ResumeLayout(false);
+            this.moneyIntakePage.ResumeLayout(false);
+            this.transactionHistoryPage.ResumeLayout(false);
+            this.signInPage.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.moneyWithdrawlPage.ResumeLayout(false);
             this.moneyWithdrawlPage.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.metroPanel3.ResumeLayout(false);
             this.metroPanel3.PerformLayout();
-            this.moneyIntakePage.ResumeLayout(false);
-            this.moneyIntakePage.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.metroPanel2.ResumeLayout(false);
-            this.metroPanel2.PerformLayout();
-            this.signInPage.ResumeLayout(false);
-            this.signInPage.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -593,20 +804,8 @@
         private MetroFramework.Controls.MetroTabPage newTransactionPage;
         private System.Windows.Forms.Button exitSimulator;
         private System.Windows.Forms.Label signInLabel;
-        private MetroFramework.Controls.MetroTile signInButton;
-        private System.Windows.Forms.TextBox signInPassBox;
-        private System.Windows.Forms.TextBox signInUserBox;
-        private MetroFramework.Controls.MetroTile signInNewUser;
         private System.Windows.Forms.Button testServer;
         private System.Windows.Forms.Label moneyDepositLabel;
-        private MetroFramework.Controls.MetroTile moneyDeposit200Tile;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private MetroFramework.Controls.MetroTile moneyDeposit500Tile;
-        private MetroFramework.Controls.MetroTile moneyDeposit1000Tile;
-        private MetroFramework.Controls.MetroTile moneyDeposit5000Tile;
-        private MetroFramework.Controls.MetroPanel metroPanel2;
-        private MetroFramework.Controls.MetroTile moneyDepositCustomTile;
-        private System.Windows.Forms.TextBox moneyDepositCustomValue;
         private MetroFramework.Controls.MetroTile moneyDepositBack;
         private MetroFramework.Controls.MetroTile moneyWithdrawlBack;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
@@ -626,6 +825,41 @@
         private System.Windows.Forms.ToolStripMenuItem menuStripMoneyWithdrawl;
         private System.Windows.Forms.ToolStripMenuItem menuStripTransactionHistory;
         private System.Windows.Forms.ToolStripMenuItem menuStripNewTransaction;
+        private MetroFramework.Controls.MetroTile moneyDepositDropDown;
+        private MetroFramework.Controls.MetroTile signInDropDown;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.TextBox signInPIN;
+        private System.Windows.Forms.Button pin7Button;
+        private System.Windows.Forms.Button pin8Button;
+        private System.Windows.Forms.Button pin9Button;
+        private System.Windows.Forms.Button pin4Button;
+        private System.Windows.Forms.Button pin5Button;
+        private System.Windows.Forms.Button pin6Button;
+        private System.Windows.Forms.Button pin1Button;
+        private System.Windows.Forms.Button pin3Button;
+        private System.Windows.Forms.Button pinClearButton;
+        private System.Windows.Forms.Button pin0Button;
+        private System.Windows.Forms.Button pinOKButton;
+        private System.Windows.Forms.Button pin2Button;
+        private System.Windows.Forms.TextBox transactionNameTextBox;
+        private System.Windows.Forms.TextBox transactionAmountTextBox;
+        private System.Windows.Forms.TextBox transactionAccountTextBox;
+        private System.Windows.Forms.Label transactionNameLabel;
+        private System.Windows.Forms.Label transactionAmountLabel;
+        private System.Windows.Forms.Label transactionAccountLabel;
+        private MetroFramework.Controls.MetroPanel metroPanel2;
+        private MetroFramework.Controls.MetroTile transactionSendNewTile;
+        private MetroFramework.Controls.MetroTile transactionLoadTemplateTile;
+        private MetroFramework.Controls.MetroTile transactionSaveTemplateTile;
+        private MetroFramework.Controls.MetroTile transactionNewBack;
+        private MetroFramework.Controls.MetroTile transactionHistoryBack;
+        private System.Windows.Forms.ColumnHeader transactionHistoryTableName;
+        private System.Windows.Forms.ColumnHeader transactionHistoryTableSender;
+        private System.Windows.Forms.ColumnHeader transactionHistoryTableReceiver;
+        private System.Windows.Forms.ColumnHeader transactionHistoryTableAmount;
+        private System.Windows.Forms.ColumnHeader transactionHistoryTableTime;
+        private System.Windows.Forms.ColumnHeader transactionHistoryTableSuccess;
+        private System.Windows.Forms.ListView transactionHistoryList;
     }
 }
 

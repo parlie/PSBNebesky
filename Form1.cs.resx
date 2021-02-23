@@ -144,4 +144,10 @@
   <data name="serverFailedConnectionError" xml:space="preserve">
     <value>Nastala neočekávaná chyba ve spojení se serverem, kontaktujte prosím zákaznické centrum.</value>
   </data>
+  <data name="signInDropDown.Text" xml:space="preserve">
+    <value>Přiložte kartu</value>
+  </data>
+  <data name="signInDropDown.Text.Alternative" xml:space="preserve">
+    <value>Zadejte PIN</value>
+  </data>
 </root>

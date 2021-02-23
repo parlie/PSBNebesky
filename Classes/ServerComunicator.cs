@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Security;
-using System.Net.Security;
 using System.Net.Sockets;
 using System.Net;
 using System.ComponentModel;
 using System.Windows.Forms;
-using System.Threading;
-using System.Text.RegularExpressions;
 
 namespace PSBNebesky
 {
@@ -25,7 +19,7 @@ namespace PSBNebesky
             GetUserValidation,
             GetMoneyAmount,
             UserMoneyDeposit,
-            UserMOneyWithdrawal,
+            UserMoneyWithdrawal,
             UserNewTransaction,
             UserTransactionHistory
         };
@@ -52,16 +46,18 @@ namespace PSBNebesky
 
         public void HandleCommandRequest(Command command, List<string> list)
         {
-            SecureString @string = new SecureString();
+            string commandString;
             switch (command)
             {
                 case Command.GetUserValidation:
+                    commandString = $"0,{list[0]},{list[1]}";
+                    SendData(commandString);
                     break;
                 case Command.GetMoneyAmount:
                     break;
                 case Command.UserMoneyDeposit:
                     break;
-                case Command.UserMOneyWithdrawal:
+                case Command.UserMoneyWithdrawal:
                     break;
                 case Command.UserNewTransaction:
                     break;
@@ -72,7 +68,7 @@ namespace PSBNebesky
             }
         }
 
-        private void SendData(SecureString data)
+        private void SendData(string data)
         {
 
         }    

@@ -18,6 +18,9 @@ using System.Runtime.InteropServices;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Drawing;
+using PSBNebesky.Classes;
+using System.Linq;
+using Newtonsoft.Json;
 
 namespace PSBNebesky
 {
@@ -25,7 +28,7 @@ namespace PSBNebesky
     {
         MetroColorStyle MainStyle;
         public ComponentResourceManager resources = new ComponentResourceManager(typeof(Form1));
-        ServerComunicator comunicator = new ServerComunicator();
+        public ServerComunicator comunicator = new ServerComunicator();
         PrivateFontCollection pfc = new PrivateFontCollection();
 
         List<Control> controlsList = new List<Control>();
@@ -36,9 +39,9 @@ namespace PSBNebesky
             AddFontFromResource(pfc, "DejaVuSansMono.ttf"); //Načtení zabaleného fontu
             LoadControls(); //Optimalizace práce s ovládacími prvky - namísto načítání prvků při každě změně rozložení jsou prvky uloženy do seznamu ze kterého se dá libovolně číst
             ControlSetup();
+            SetStyle(MetroColorStyle.Teal);
             HideAllExcept(mainPage); //Zobrazí pouze požadovanou stránku prostředí
             OnStart();
-            SetStyle(MetroColorStyle.Teal);
             //comunicator.InitializeConnectionToServer(this);
         }
 
@@ -48,6 +51,7 @@ namespace PSBNebesky
         private int biggerWindowSizeW = 1497;
         private bool defaultLanguage = true;
         ToolTip tip = new ToolTip();
+        private string cardNumber;
 
         private enum Language
         {
@@ -134,6 +138,10 @@ namespace PSBNebesky
                                                 controlsList.Add(flowC);
                                             }
                                         }
+                                        else if(flowC is FlowLayoutPanel)
+                                        {
+                                            controlsList.Add(flowC);
+                                        }
                                         else
                                         {
                                             foreach (Control flowPanelC in flowC.Controls)
@@ -145,7 +153,19 @@ namespace PSBNebesky
                                                 }
                                             }
                                         }
+                                        
                                     }
+                                }
+                                else if (c is ListView)
+                                {
+                                    controlsList.Add(c);
+                                    Console.WriteLine("------------------------------------------");
+                                    foreach (Control t in c.Controls)
+                                    {
+                                        Console.WriteLine(t.Name.PadRight(60));
+                                        controlsList.Add(t);
+                                    }
+                                    Console.WriteLine("--------------------------------------------");
                                 }
                                 else
                                 {
@@ -186,17 +206,26 @@ namespace PSBNebesky
                 }
                 else if(item is Label)
                 {
-                    (item as Label).Font = new System.Drawing.Font(pfc.Families[0], 40);
-                    (item as Label).TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                    if(item.Name.Contains("transaction"))
+                    {
+                        (item as Label).Font = new System.Drawing.Font(pfc.Families[0], 40);
+                        (item as Label).TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                    }
+                    else
+                    {
+                        (item as Label).Font = new System.Drawing.Font(pfc.Families[0], 40);
+                        (item as Label).TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                    }
                 }
                 else if(item is TextBox)
                 {
                     if (item.Name.Contains("signIn"))
                     {
                         (item as TextBox).TextAlign = HorizontalAlignment.Center;
-                        (item as TextBox).Font = new System.Drawing.Font(pfc.Families[0], 20);
+                        (item as TextBox).Font = new System.Drawing.Font(pfc.Families[0], 45);
+                        (item as TextBox).UseSystemPasswordChar = true;
                     }
-                    else if (item.Name.Contains("CustomValue"))
+                    else /* if (item.Name.Contains("CustomValue"))*/
                     {
                         (item as TextBox).Font = new System.Drawing.Font(pfc.Families[0], 50);
                         (item as TextBox).TextAlign = HorizontalAlignment.Center;
@@ -439,7 +468,7 @@ namespace PSBNebesky
                 default:
                     break;
             }
-            ApplyResources(resources, this.Controls);
+            ApplyResources(resources, controlsList);
         }
 
         /// <summary>
@@ -447,14 +476,20 @@ namespace PSBNebesky
         /// </summary>
         /// <param name="resources">Zdroje jazyka</param>
         /// <param name="controlCollections">Prvky pro změnu jazyka</param>
-        private void ApplyResources(ComponentResourceManager resources, Control.ControlCollection controlCollections)
+        private void ApplyResources(ComponentResourceManager resources, List<Control> controlCollections)
         {
             foreach (Control c in controlCollections)
             {
                 resources.ApplyResources(c, c.Name);
-                ApplyResources(resources, c.Controls);
+                Console.WriteLine(c.ToString().PadRight(70) + "|" + c.Name.PadRight(70)+"|"+c.Text.PadRight(70));
+               // ApplyResources(resources, c.Controls);
             }
-           // ControlSetup();
+            transactionHistoryTableAmount.Text = resources.GetString("transactionHistoryTableAmount.Text");
+            transactionHistoryTableName.Text = resources.GetString("transactionHistoryTableName.Text");
+            transactionHistoryTableReceiver.Text = resources.GetString("transactionHistoryTableReceiver.Text");
+            transactionHistoryTableSender.Text = resources.GetString("transactionHistoryTableSender.Text");
+            transactionHistoryTableSuccess.Text = resources.GetString("transactionHistoryTableSuccess.Text");
+            transactionHistoryTableTime.Text = resources.GetString("transactionHistoryTableTime.Text");
         }
 
         /// <summary>
@@ -486,8 +521,6 @@ namespace PSBNebesky
         private void HideAllExcept(MetroTabPage page)
         {
             mainControl.ShowTab(page);
-            mainControl.SelectTab(page);
-            //this.Text = resources.GetString(page.Name + ".Text");
             foreach (MetroTabPage slide in mainControl.TabPages)
             {
                 if(slide != page)
@@ -495,8 +528,10 @@ namespace PSBNebesky
                     mainControl.HideTab(slide);
                 }
             }
+            mainControl.SelectTab(page);
             ChangeLanguage(Language.Default);
             page.Text = "";
+            mainControl.Select();
         }
 
         #endregion 
@@ -570,24 +605,90 @@ namespace PSBNebesky
 
         #region Sign in
 
-        private void signInButton_Click(object sender, EventArgs e)
+        private void PINAddNumber(int number)
         {
-            SecureString secureString = new SecureString();
-            foreach (char item in BCrypt.Net.BCrypt.HashPassword(signInPassBox.Text, 11))
+            if(signInPIN.Text.Length < 4)
             {
-                secureString.AppendChar(item);
+                signInPIN.Text = signInPIN.Text + number.ToString();
             }
-            Console.WriteLine(secureString.ToString());
-            for (int i = 0; i < secureString.Length; i++)
-            {
-                Console.WriteLine(i);
-            }
-            NoHighlight();
         }
 
-        private void signInNewUser_Click(object sender, EventArgs e)
+        private void pinClearButton_Click(object sender, EventArgs e)
         {
+            signInPIN.Clear();
+        }
 
+        private void pin0Button_Click(object sender, EventArgs e)
+        {
+            PINAddNumber(0);
+        }
+
+        private void pinOKButton_Click(object sender, EventArgs e)
+        {
+            DnDHandler.CardHandler(comunicator, cardNumber, signInPIN.Text);
+            signInPIN.Clear();
+            cardNumber = string.Empty;
+            signInDropDown.Text = resources.GetString("signInDropDown.Text");
+        }
+
+        private void signInDropDown_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] data = (string[])e.Data.GetData(DataFormats.FileDrop);
+            string s = File.ReadAllText(data[0]);
+            Console.WriteLine(s);
+            Card c = JsonConvert.DeserializeObject<Card>(s);
+            cardNumber = Convert.ToInt64(c.number,16).ToString();
+            signInDropDown.Text = resources.GetString("signInDropDown.Text.Alternative");
+        }
+
+        private void signInDropDown_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Move;
+        }
+
+        private void pin1Button_Click(object sender, EventArgs e)
+        {
+            PINAddNumber(1);
+        }
+
+        private void pin2Button_Click(object sender, EventArgs e)
+        {
+            PINAddNumber(2);
+        }
+
+        private void pin3Button_Click(object sender, EventArgs e)
+        {
+            PINAddNumber(3);
+        }
+
+        private void pin4Button_Click(object sender, EventArgs e)
+        {
+            PINAddNumber(4);
+        }
+
+        private void pin5Button_Click(object sender, EventArgs e)
+        {
+            PINAddNumber(5);
+        }
+
+        private void pin6Button_Click(object sender, EventArgs e)
+        {
+            PINAddNumber(6);
+        }
+
+        private void pin7Button_Click(object sender, EventArgs e)
+        {
+            PINAddNumber(7);
+        }
+
+        private void pin8Button_Click(object sender, EventArgs e)
+        {
+            PINAddNumber(8);
+        }
+
+        private void pin9Button_Click(object sender, EventArgs e)
+        {
+            PINAddNumber(9);
         }
 
         #endregion
@@ -643,7 +744,24 @@ namespace PSBNebesky
         #endregion
 
         #region Money Deposit
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            moneyDepositDropDown.Select();
+        }
 
+        private void moneyDepositDropDown_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] data = (string[])e.Data.GetData(DataFormats.FileDrop);
+            foreach (var item in data)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        private void moneyDepositDropDown_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Move;
+        }
         private void metroTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
@@ -680,7 +798,6 @@ namespace PSBNebesky
         private void moneyDepositBack_Click(object sender, EventArgs e)
         {
             NoHighlight();
-            moneyDepositCustomValue.Text = null;
             HideAllExcept(mainPage);
         }
 
@@ -721,7 +838,19 @@ namespace PSBNebesky
 
 
 
+
         #endregion
 
+        private void transactionHistoryBack_Click(object sender, EventArgs e)
+        {
+            NoHighlight();
+            HideAllExcept(mainPage);
+        }
+
+        private void transactionNewBack_Click(object sender, EventArgs e)
+        {
+            NoHighlight();
+            HideAllExcept(mainPage);
+        }
     }
 }
