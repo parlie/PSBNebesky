@@ -19,11 +19,11 @@ namespace PSBNebesky.Classes
         public static Type GetObjectType(this object o)
         {
             string s = o.ToString();
-            if(s.Contains("Money"))
+            if(s.Contains("0"))
             {
                 return Type.Money;
             }
-            else if(s.Contains("Card"))
+            else if(s.Contains("1"))
             {
                 return Type.Card;
             }

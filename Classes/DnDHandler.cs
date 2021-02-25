@@ -17,24 +17,24 @@ namespace PSBNebesky.Classes
             decimal value = 0.00m;
             Money m;
             List<string> localValues = new List<string>();
+            string s;
             foreach(var item in values)
             {
-                if(JsonConvert.DeserializeObject(item).GetObjectType() == Type.Money)
+                s = File.ReadAllText(item);
+                Console.WriteLine(item);
+                if(JsonConvert.DeserializeObject(s).GetObjectType() == Type.Money)
                 {
                     localValues.Add(item);
                 }
             }
             foreach(var item in localValues)
             {
-                m = (Money)JsonConvert.DeserializeObject(item);
+                Console.WriteLine(item);
+                s = File.ReadAllText(item);
+                m = JsonConvert.DeserializeObject<Money>(s);
                 value += m.value;
             }
             return value;
-        }
-
-        public static void CardHandler(ServerComunicator com, string cardNumber, string pin)
-        {
-            com.HandleCommandRequest(ServerComunicator.Command.GetUserValidation, new List<string>() { cardNumber, pin });
         }
     }
 }

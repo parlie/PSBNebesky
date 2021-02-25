@@ -136,17 +136,36 @@ withdrawal</value>
     <value>Money
 deposit</value>
   </data>
+  <data name="signInDropDown.Text" xml:space="preserve">
+    <value>Tap with your card</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="signInLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1130, 170</value>
+  </data>
+  <data name="signInLabel.Text" xml:space="preserve">
+    <value>To sign into the ATM please use your
+credit or debit card</value>
+  </data>
+  <data name="moneyWithdrawlBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="moneyWithdrawlCustomTile.Text" xml:space="preserve">
+    <value>Withdrawl</value>
+  </data>
+  <data name="moneyWithdrawlLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 60pt, style=Bold</value>
+  </data>
+  <data name="moneyWithdrawlLabel.Text" xml:space="preserve">
+    <value>To withdrawl from ATM
+select desired amount 
+or input custom one.</value>
+  </data>
   <data name="transactionNewBack.Text" xml:space="preserve">
     <value>Back</value>
   </data>
   <data name="transactionSendNewTile.Text" xml:space="preserve">
     <value>Submit transaction</value>
-  </data>
-  <data name="transactionLoadTemplateTile.Text" xml:space="preserve">
-    <value>Load template</value>
-  </data>
-  <data name="transactionSaveTemplateTile.Text" xml:space="preserve">
-    <value>Save template</value>
   </data>
   <data name="transactionAmountLabel.Text" xml:space="preserve">
     <value>Amount</value>
@@ -154,14 +173,14 @@ deposit</value>
   <data name="transactionAccountLabel.Text" xml:space="preserve">
     <value>Account</value>
   </data>
-  <data name="transactionNameLabel.Text" xml:space="preserve">
-    <value>Name</value>
-  </data>
   <data name="moneyDepositDropDown.Text" xml:space="preserve">
     <value>Insert banknotes</value>
   </data>
   <data name="moneyDepositBack.Text" xml:space="preserve">
     <value>Back</value>
+  </data>
+  <data name="moneyDepositLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1010, 183</value>
   </data>
   <data name="moneyDepositLabel.Text" xml:space="preserve">
     <value>To deposit funds to Your account,
@@ -188,38 +207,10 @@ please insert banknotes.</value>
   <data name="transactionHistoryBack.Text" xml:space="preserve">
     <value>Back</value>
   </data>
-  <data name="signInDropDown.Text" xml:space="preserve">
-    <value>Tap with your card</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="signInLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1130, 170</value>
-  </data>
-  <data name="signInLabel.Text" xml:space="preserve">
-    <value>To sign into the ATM please use your
-credit or debit card</value>
-  </data>
-  <data name="moneyWithdrawlBack.Text" xml:space="preserve">
-    <value>Back</value>
-  </data>
-  <data name="moneyWithdrawlCustomTile.Text" xml:space="preserve">
-    <value>Withdrawl</value>
-  </data>
-  <data name="moneyWithdrawlLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>586, 183</value>
-  </data>
-  <data name="moneyWithdrawlLabel.Text" xml:space="preserve">
-    <value>To withdrawl from ATM
-select desired amount 
-or input custom one.</value>
-  </data>
   <data name="exitSimulator.Text" xml:space="preserve">
     <value>Exit simulator</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1546, 727</value>
-  </data>
-  <data name="signInDropDown.Text.Alternative" xml:space="preserve">
-    <value>Enter PIN</value>
   </data>
 </root>

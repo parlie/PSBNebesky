@@ -112,6 +112,7 @@
     <Compile Include="Classes\DnDHandler.cs" />
     <Compile Include="Classes\ExtensionMethods.cs" />
     <Compile Include="Classes\Money.cs" />
+    <Compile Include="Classes\MoneyManipulator.cs" />
     <Compile Include="Classes\Type.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
