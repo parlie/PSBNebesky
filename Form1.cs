@@ -21,6 +21,7 @@ using System.Drawing;
 using PSBNebesky.Classes;
 using System.Linq;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace PSBNebesky
 {
@@ -30,17 +31,21 @@ namespace PSBNebesky
         public ComponentResourceManager resources = new ComponentResourceManager(typeof(Form1));
         public ServerComunicator comunicator = new ServerComunicator();
         PrivateFontCollection pfc = new PrivateFontCollection();
-
+        Encoding encoding = Encoding.ASCII;
         List<Control> controlsList = new List<Control>();
+        Thread thread = new Thread(SerialReader.ReadCardFromSerial);
+        public static Form1 mw;
 
         public Form1()
         {
+            mw = this;
             InitializeComponent(); //Tvorba aplikace a prvků ovládání
             AddFontFromResource(pfc, "DejaVuSansMono.ttf"); //Načtení zabaleného fontu
             LoadControls(); //Optimalizace práce s ovládacími prvky - namísto načítání prvků při každě změně rozložení jsou prvky uloženy do seznamu ze kterého se dá libovolně číst
             ControlSetup();
             SetStyle(MetroColorStyle.Teal);
-            HideAllExcept(mainPage); //Zobrazí pouze požadovanou stránku prostředí
+            HideAllExcept(signInPage); //Zobrazí pouze požadovanou stránku prostředí
+            thread.Start(this);
             OnStart();
             comunicator.InitializeConnectionToServer(this);
             Thread t = new Thread(comunicator.Validate);
@@ -53,7 +58,7 @@ namespace PSBNebesky
         private int biggerWindowSizeW = 1497;
         private bool defaultLanguage = true;
         ToolTip tip = new ToolTip();
-        private string cardNumber;
+        public string cardNumber;
 
         private enum Language
         {
@@ -123,7 +128,7 @@ namespace PSBNebesky
                                     {
                                         if (!(panelC is MetroScrollBar))
                                         {
-                                            Console.WriteLine("Panel: ".PadRight(11) + panelC.Name.PadRight(30) + " | ".PadRight(8) + panelC.GetType());
+                                            //Console.WriteLine("Panel: ".PadRight(11) + panelC.Name.PadRight(30) + " | ".PadRight(8) + panelC.GetType());
                                             controlsList.Add(panelC);
                                         }
                                     }
@@ -136,7 +141,7 @@ namespace PSBNebesky
                                         {
                                             if (!(flowC is MetroScrollBar))
                                             {
-                                                Console.WriteLine("Flow: ".PadRight(11) + flowC.Name.PadRight(30) + " | ".PadRight(8) + flowC.GetType());
+                                                //Console.WriteLine("Flow: ".PadRight(11) + flowC.Name.PadRight(30) + " | ".PadRight(8) + flowC.GetType());
                                                 controlsList.Add(flowC);
                                             }
                                         }
@@ -150,7 +155,7 @@ namespace PSBNebesky
                                             {
                                                 if(!(flowPanelC is MetroScrollBar))
                                                 {
-                                                    Console.WriteLine("FlowPanel: " + flowPanelC.Name.PadRight(30) + " | ".PadRight(8) + flowPanelC.GetType());
+                                                    //Console.WriteLine("FlowPanel: " + flowPanelC.Name.PadRight(30) + " | ".PadRight(8) + flowPanelC.GetType());
                                                     controlsList.Add(flowPanelC);
                                                 }
                                             }
@@ -161,17 +166,17 @@ namespace PSBNebesky
                                 else if (c is ListView)
                                 {
                                     controlsList.Add(c);
-                                    Console.WriteLine("------------------------------------------");
+                                    //Console.WriteLine("------------------------------------------");
                                     foreach (Control t in c.Controls)
                                     {
-                                        Console.WriteLine(t.Name.PadRight(60));
+                                        //Console.WriteLine(t.Name.PadRight(60));
                                         controlsList.Add(t);
                                     }
-                                    Console.WriteLine("--------------------------------------------");
+                                    //Console.WriteLine("--------------------------------------------");
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Page: ".PadRight(11) + c.Name.PadRight(30) + " | ".PadRight(8) + c.GetType());
+                                    //Console.WriteLine("Page: ".PadRight(11) + c.Name.PadRight(30) + " | ".PadRight(8) + c.GetType());
                                     controlsList.Add(c);
                                 }
                             }
@@ -198,6 +203,10 @@ namespace PSBNebesky
                         (item as MetroTile).TileTextFontWeight = MetroTileTextWeight.Bold;
                         (item as MetroTile).TileTextFontSize = MetroTileTextSize.Tall;
                     }
+                    else if(item.Name.Contains("Language"))
+                    {
+                        (item as MetroTile).BackColor = System.Drawing.Color.White;
+                    }
                     else
                     {
                         (item as MetroTile).TileTextFontSize = MetroTileTextSize.Tall;
@@ -212,6 +221,11 @@ namespace PSBNebesky
                     {
                         (item as Label).Font = new System.Drawing.Font(pfc.Families[0], 40);
                         (item as Label).TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                    }
+                    else if(item.Name.Contains("Balance"))
+                    {
+                        (item as Label).Font = new System.Drawing.Font(pfc.Families[0], 40);
+                        (item as Label).TextAlign = System.Drawing.ContentAlignment.TopLeft;
                     }
                     else
                     {
@@ -445,29 +459,6 @@ namespace PSBNebesky
             mainControl.Select();
         }
 
-        private void MoneyWithdrawlSuccess()
-        {
-            DialogResult dr = MetroMessageBox.Show(this, resources.GetString("WithdrawlSuccessMessage"),
-                resources.GetString("WithdrawlSuccessMessageTitle"),MessageBoxButtons.OK,MessageBoxIcon.Information);
-            if (dr == DialogResult.OK)
-            {
-                moneyWithdrawlCustomValue.Text = "";
-                HideAllExcept(mainPage);
-            }
-        }
-
-        private void NewTransactionSuccess()
-        {
-            DialogResult dr = MetroMessageBox.Show(this, resources.GetString("TransactionSuccessMessage"),
-                resources.GetString("TransactionSuccessMessageTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-            if(dr == DialogResult.OK)
-            {
-                transactionAccountTextBox.Text = "";
-                transactionAmountTextBox.Text = "";
-                HideAllExcept(mainPage);
-            }
-        }
-
         /// <summary>
         /// Změna jazyka v runtime 
         /// </summary>
@@ -506,7 +497,7 @@ namespace PSBNebesky
             foreach (Control c in controlCollections)
             {
                 resources.ApplyResources(c, c.Name);
-                Console.WriteLine(c.ToString().PadRight(70) + "|" + c.Name.PadRight(70)+"|"+c.Text.PadRight(70));
+                //Console.WriteLine(c.ToString().PadRight(70) + "|" + c.Name.PadRight(70)+"|"+c.Text.PadRight(70));
                // ApplyResources(resources, c.Controls);
             }
             transactionHistoryTableAmount.Text = resources.GetString("transactionHistoryTableAmount.Text");
@@ -650,11 +641,29 @@ namespace PSBNebesky
 
         private void pinOKButton_Click(object sender, EventArgs e)
         {
-            comunicator.HandleCommandRequest(ServerComunicator.Command.GetUserValidation, new List<string>() { cardNumber, signInPIN.Text });
-            signInPIN.Clear();
-            cardNumber = string.Empty;
-            signInDropDown.Text = resources.GetString("signInDropDown.Text");
-            comunicator.HandleCommandRequest(ServerComunicator.Command.GetMoneyAmount, new List<string>() { }); 
+            if (signInPIN.Text.Length == 4)
+            {
+                if (comunicator.HandleCommandRequest(ServerComunicator.Command.GetUserValidation, new List<string>() { cardNumber, signInPIN.Text }).Contains("i0,b1"))
+                {
+                    signInPIN.Clear();
+                    cardNumber = string.Empty;
+                    signInDropDown.Text = resources.GetString("signInDropDown.Text");
+                    string h = comunicator.HandleCommandRequest(ServerComunicator.Command.GetMoneyAmount, new List<string>() { });
+                    if (h.Contains("i1"))
+                    {
+                        HideAllExcept(mainPage);
+                        mainPageBalance.Text = $"{resources.GetString("mainPageBalance")}: {h.Split(',')[1].Replace(encoding.GetString(new byte[1] { 0 }), encoding.GetString(new byte[1] { 32 })).Trim().Dotted()} Kč";
+                    }
+                }
+            }
+        }
+
+        public void SetSignIn(string num)
+        {
+            cardNumber = num;
+            //Form1.ActiveForm
+            signInDropDown.Text = resources.GetString("signInDropDown.Text.Alternative");
+            //thread.Interrupt();
         }
 
         private void signInDropDown_DragDrop(object sender, DragEventArgs e)
@@ -663,10 +672,8 @@ namespace PSBNebesky
             if (JsonConvert.DeserializeObject(File.ReadAllText(data[0])).GetObjectType() == Classes.Type.Card)
             {
                 string s = File.ReadAllText(data[0]);
-                Console.WriteLine(s);
                 Card c = JsonConvert.DeserializeObject<Card>(s);
-                cardNumber = Convert.ToInt64(c.number, 16).ToString();
-                signInDropDown.Text = resources.GetString("signInDropDown.Text.Alternative");
+                SetSignIn(c.number.ToString());
             }
         }
 
@@ -746,7 +753,14 @@ namespace PSBNebesky
         {
             NoHighlight();
             HideAllExcept(transactionHistoryPage);
-            comunicator.HandleCommandRequest(ServerComunicator.Command.UserTransactionHistory,new List<string> { });
+            if(comunicator.HandleCommandRequest(ServerComunicator.Command.UserTransactionHistory,new List<string> { }).Contains("fail"))
+            {
+
+            }
+            else
+            {
+
+            }
         }
 
         private void buttonLeave_Click(object sender, EventArgs e)
@@ -787,13 +801,28 @@ namespace PSBNebesky
             DialogResult dr = MetroMessageBox.Show(this,
                 resources.GetString("MoneyDepositMessage") + Environment.NewLine + Environment.NewLine + value.ToString(),
                 resources.GetString("MoeyDepositMessageTitle"),
-                MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
-            if (dr == DialogResult.OK)
+                MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation);
+            if (dr == DialogResult.Yes)
             {
-                comunicator.HandleCommandRequest(ServerComunicator.Command.UserMoneyDeposit,new List<string>() { value.ToString() });
-                DialogResult drr = MetroMessageBox.Show(this, resources.GetString("MoneyDepositSuccess"), 
-                    resources.GetString("MoneyDepositSuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-                HideAllExcept(mainPage);
+                if(comunicator.HandleCommandRequest(ServerComunicator.Command.UserMoneyDeposit,new List<string>() { value.ToString() }).Contains("i2,b1"))
+                {
+                    DialogResult drr = MetroMessageBox.Show(this, resources.GetString("MoneyDepositSuccess"), 
+                        resources.GetString("MoneyDepositSuccessTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if(drr == DialogResult.OK)
+                    {
+                        string h = comunicator.HandleCommandRequest(ServerComunicator.Command.GetMoneyAmount, new List<string>() { });
+                        if (h.Contains("i1"))
+                        {
+                            HideAllExcept(mainPage);
+                            mainPageBalance.Text = $"{resources.GetString("mainPageBalance")}: {h.Split(',')[1].Replace(encoding.GetString(new byte[1] { 0 }), encoding.GetString(new byte[1] { 32 })).Trim().Dotted()} Kč";
+                        }
+                    }
+                }
+                else
+                {
+                    DialogResult drr = MetroMessageBox.Show(this, resources.GetString("MoneyDepositFail"),
+                        resources.GetString("MoneyDepositFailTitle"), MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                }
             }
         }
 
@@ -809,81 +838,119 @@ namespace PSBNebesky
             }
         } //Omezuje vstup do pole pro vlastní částku pouze na celá čísla
 
-        private void moneyDeposit200Tile_Click(object sender, EventArgs e)
-        {
-            NoHighlight();
-        }
-
-        private void moneyDeposit500Tile_Click(object sender, EventArgs e)
-        {
-            NoHighlight();
-        }
-
-        private void moneyDeposit1000Tile_Click(object sender, EventArgs e)
-        {
-            NoHighlight();
-        }
-
-        private void moneyDeposti5000Tile_Click(object sender, EventArgs e)
-        {
-            NoHighlight();
-        }
-
-        private void moneyDepositCustomTile_Click(object sender, EventArgs e)
-        {
-            NoHighlight();
-        }
-
         private void moneyDepositBack_Click(object sender, EventArgs e)
         {
             NoHighlight();
-            HideAllExcept(mainPage);
+            string h = comunicator.HandleCommandRequest(ServerComunicator.Command.GetMoneyAmount, new List<string>() { });
+            if (h.Contains("i1"))
+            {
+                HideAllExcept(mainPage);
+                mainPageBalance.Text = $"{resources.GetString("mainPageBalance")}: {h.Split(',')[1].Replace(encoding.GetString(new byte[1] { 0 }), encoding.GetString(new byte[1] { 32 })).Trim().Dotted()} Kč";
+            }
         }
 
         #endregion
 
         #region Money Withdrawal
 
+        private void MoneyWithdrawlSuccess()
+        {
+            DialogResult dr = MetroMessageBox.Show(this, resources.GetString("WithdrawlSuccessMessage"),
+                resources.GetString("WithdrawlSuccessMessageTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (dr == DialogResult.OK)
+            {
+                moneyWithdrawlCustomValue.Text = "";
+                string h = comunicator.HandleCommandRequest(ServerComunicator.Command.GetMoneyAmount, new List<string>() { });
+                if (h.Contains("i1"))
+                {
+                    HideAllExcept(mainPage);
+                    mainPageBalance.Text = $"{resources.GetString("mainPageBalance")}: {h.Split(',')[1].Replace(encoding.GetString(new byte[1] { 0 }), encoding.GetString(new byte[1] { 32 })).Trim().Dotted()} Kč";
+                }
+            }
+        }
+        
+        private void MoneyWithdrawlFail()
+        {
+            DialogResult dr = MetroMessageBox.Show(this, resources.GetString("WithdrawlFailMessage"),
+                resources.GetString("WithdrawlFailMessageTitle"),MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+        }
+
         private void moneyWithdrawlBack_Click(object sender, EventArgs e)
         {
             NoHighlight();
-            HideAllExcept(mainPage);
+            moneyWithdrawlCustomValue.Text = "";
+            string h = comunicator.HandleCommandRequest(ServerComunicator.Command.GetMoneyAmount, new List<string>() { });
+            if (h.Contains("i1"))
+            {
+                HideAllExcept(mainPage);
+                mainPageBalance.Text = $"{resources.GetString("mainPageBalance")}: {h.Split(',')[1].Replace(encoding.GetString(new byte[1] { 0 }), encoding.GetString(new byte[1] { 32 })).Trim().Dotted()} Kč";
+            }
         }
 
         private void moneyWithdrawl200Tile_Click(object sender, EventArgs e)
         {
             NoHighlight();
-            MoneyManipulator.Withdrawl(200m, comunicator);
-            MoneyWithdrawlSuccess();
+            if(MoneyManipulator.Withdrawl(200m, comunicator))
+            {
+                MoneyWithdrawlSuccess();
+            }
+            else
+            {
+                MoneyWithdrawlFail();
+            }
         }
 
         private void moneyWithdrawl500Tile_Click(object sender, EventArgs e)
         {
             NoHighlight();
-            MoneyManipulator.Withdrawl(500m, comunicator);
-            MoneyWithdrawlSuccess();
+            if(MoneyManipulator.Withdrawl(500m, comunicator))
+            {
+                MoneyWithdrawlSuccess();
+            }
+            else
+            {
+                MoneyWithdrawlFail();
+            }
         }
 
         private void moneyWithdrawl1000Tile_Click(object sender, EventArgs e)
         {
             NoHighlight();
-            MoneyManipulator.Withdrawl(1000m, comunicator);
-            MoneyWithdrawlSuccess();
+            if(MoneyManipulator.Withdrawl(1000m, comunicator))
+            {
+                MoneyWithdrawlSuccess();
+            }
+            else
+            {
+                MoneyWithdrawlFail();
+            }
         }
 
         private void moneyWithdrawl5000Tile_Click(object sender, EventArgs e)
         {
             NoHighlight();
-            MoneyManipulator.Withdrawl(5000m, comunicator);
-            MoneyWithdrawlSuccess();
+            if(MoneyManipulator.Withdrawl(5000m, comunicator))
+            {
+                MoneyWithdrawlSuccess();
+            }
+            else
+            {
+                MoneyWithdrawlFail();
+            }
         }
 
         private void moneyWithdrawlCustomTile_Click(object sender, EventArgs e)
         {
             NoHighlight();
-            MoneyManipulator.Withdrawl(MoneyManipulator.DivideByNotes(Convert.ToDecimal(moneyWithdrawlCustomValue.Text)),
-                Convert.ToDecimal(moneyWithdrawlCustomValue.Text), comunicator);
-            MoneyWithdrawlSuccess();
+            if(MoneyManipulator.Withdrawl(MoneyManipulator.DivideByNotes(Convert.ToDecimal(moneyWithdrawlCustomValue.Text)),
+                Convert.ToDecimal(moneyWithdrawlCustomValue.Text), comunicator))
+            {
+                MoneyWithdrawlSuccess();
+            }
+            else
+            {
+                MoneyWithdrawlFail();
+            }
         }
 
         private void moneyWithdrawlCustomValue_Leave(object sender, EventArgs e)
@@ -903,47 +970,89 @@ namespace PSBNebesky
 
         #endregion
 
-        #region Transaction History
+        #region Transaction History 
         private void transactionHistoryBack_Click(object sender, EventArgs e)
         {
             NoHighlight();
-            HideAllExcept(mainPage);
+            string h = comunicator.HandleCommandRequest(ServerComunicator.Command.GetMoneyAmount, new List<string>() { });
+            if (h.Contains("i1"))
+            {
+                HideAllExcept(mainPage);
+                mainPageBalance.Text = $"{resources.GetString("mainPageBalance")}: {h.Split(',')[1].Replace(encoding.GetString(new byte[1] { 0 }), encoding.GetString(new byte[1] { 32 })).Trim().Dotted()} Kč";
+            }
         }
 
-        #endregion
+        #endregion //TODO - Content loading
 
-        #region New Transaction
+        #region New Transaction  
+
+        private void NewTransactionSuccess()
+        {
+            DialogResult dr = MetroMessageBox.Show(this, resources.GetString("TransactionSuccessMessage"),
+                resources.GetString("TransactionSuccessMessageTitle"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (dr == DialogResult.OK)
+            {
+                transactionAccountTextBox.Text = "";
+                transactionAmountTextBox.Text = "";
+                string h = comunicator.HandleCommandRequest(ServerComunicator.Command.GetMoneyAmount, new List<string>() { });
+                if (h.Contains("i1"))
+                {
+                    HideAllExcept(mainPage);
+                    mainPageBalance.Text = $"{resources.GetString("mainPageBalance")}: {h.Split(',')[1].Replace(encoding.GetString(new byte[1] { 0 }), encoding.GetString(new byte[1] { 32 })).Trim().Dotted()} Kč";
+                }
+            }
+        }
+
+        private void NewTransactionFail()
+        {
+            DialogResult dr = MetroMessageBox.Show(this, resources.GetString("TransactionFailMessage"),
+                resources.GetString("TransactionFailMessageTitle"), MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+        }
 
         private void transactionNewBack_Click(object sender, EventArgs e)
         {
             NoHighlight();
-            HideAllExcept(mainPage);
+            transactionAccountTextBox.Text = "";
+            transactionAmountTextBox.Text = "";
+            string h = comunicator.HandleCommandRequest(ServerComunicator.Command.GetMoneyAmount, new List<string>() { });
+            if (h.Contains("i1"))
+            {
+                HideAllExcept(mainPage);
+                mainPageBalance.Text = $"{resources.GetString("mainPageBalance")}: {h.Split(',')[1].Replace(encoding.GetString(new byte[1] { 0 }), encoding.GetString(new byte[1] { 32 })).Trim().Dotted()} Kč";
+            }
         }
+
         private void transactionSendNewTile_Click(object sender, EventArgs e)
         {
-            if (transactionAccountTextBox.Text.Length == 10 && transactionAmountTextBox.Text.Length > 0)
+            if (transactionAccountTextBox.Text.Length == 8 && transactionAmountTextBox.Text.Length > 0)
             {
-                comunicator.HandleCommandRequest(ServerComunicator.Command.UserNewTransaction,new List<string>() {transactionAccountTextBox.Text, transactionAmountTextBox.Text });
-                NewTransactionSuccess();
+                if(comunicator.HandleCommandRequest(ServerComunicator.Command.UserNewTransaction,new List<string>() {transactionAccountTextBox.Text, transactionAmountTextBox.Text }).Contains("i4,b1"))
+                {
+                    NewTransactionSuccess();
+                }
+                else
+                {
+                    NewTransactionFail();
+                }
             }
-            else if(transactionAccountTextBox.Text.Length < 10)
+            else if(transactionAccountTextBox.Text.Length < 8 && transactionAmountTextBox.Text.Length < 1)
+            {
+                DialogResult dr = MetroMessageBox.Show(this, resources.GetString("TransactionErrorMissingBoth"),
+                    resources.GetString("TransactionErrorMissingBothTitle"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if(transactionAccountTextBox.Text.Length < 8)
             {
                 DialogResult dr = MetroMessageBox.Show(this, resources.GetString("TransactionErrorMissingAccount"),
-                    resources.GetString("TransactionErrorMissingAccountTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    resources.GetString("TransactionErrorMissingAccountTitle"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else if(transactionAmountTextBox.Text.Length < 1)
             {
                 DialogResult dr = MetroMessageBox.Show(this, resources.GetString("TransactionErrorMissingAmount"),
-                    resources.GetString("TransactionErrorMissingAmountTitle"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                DialogResult dr = MetroMessageBox.Show(this, resources.GetString("TransactionErrorMissingBoth"),
-                    resources.GetString("TransactionErrorMissingBoth"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    resources.GetString("TransactionErrorMissingAmountTitle"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
-        #endregion
+        #endregion //TODO - Message box text
 
         private void debugCleanWallet_Click(object sender, EventArgs e)
         {

@@ -103,33 +103,34 @@ namespace PSBNebesky.Classes
             return list;
         }
 
-        public static void Withdrawl(List<decimal> list,decimal value, ServerComunicator comunicator)
+        public static bool Withdrawl(List<decimal> list,decimal value, ServerComunicator comunicator)
         {
             Money m;
             int val = 0;
-            comunicator.HandleCommandRequest(ServerComunicator.Command.UserMoneyWithdrawal, new List<string>() { value.ToString() });
-            for (int i = 0; i < list.Count; i++)
+            if(comunicator.HandleCommandRequest(ServerComunicator.Command.UserMoneyWithdrawal, new List<string>() { value.ToString() }).Contains("i3,b1"))
             {
-                if (i == 0)
+                for (int i = 0; i < list.Count; i++)
                 {
-                    val = 5000;
-                }
-                else if (i == 1)
-                {
-                    val = 2000;
-                }
-                else if (i == 2)
-                {
-                    val = 1000;
-                }
-                else if (i == 3)
-                {
-                    val = 500;
-                }
-                else if (i == 4)
-                {
-                    val = 200;
-                }
+                    if (i == 0)
+                    {
+                        val = 5000;
+                    }
+                    else if (i == 1)
+                    {
+                        val = 2000;
+                    }
+                    else if (i == 2)
+                    {
+                        val = 1000;
+                    }
+                    else if (i == 3)
+                    {
+                        val = 500;
+                    }
+                    else if (i == 4)
+                    {
+                        val = 200;
+                    }
                     for (int ii = 0; ii < list[i]; ii++)
                     {
                         Thread.Sleep(100);
@@ -137,21 +138,35 @@ namespace PSBNebesky.Classes
                         m.value = Convert.ToInt32(val);
                         File.WriteAllText($"./Money/{val}_{DateTime.Now.Ticks.ToString()}.json", JsonConvert.SerializeObject(m));
                     }
-            }
-        }
-
-        public static void Withdrawl(decimal number, ServerComunicator comunicator)
-        {
-            Money m = new Money();
-            m.value = Convert.ToInt32(number);
-            
-            if(File.Exists($"./Money/{number}.json"))
-            {
-                File.WriteAllText($"./Money/{number}_{DateTime.Now.Ticks.ToString()}.json", JsonConvert.SerializeObject(m));
+                }
+                return true;
             }
             else
             {
-                File.WriteAllText($"./Money/{number}.json", JsonConvert.SerializeObject(m));
+                return false;
+            }
+        }
+
+        public static bool Withdrawl(decimal number, ServerComunicator comunicator)
+        {
+            Money m = new Money();
+            m.value = Convert.ToInt32(number);
+
+            if (comunicator.HandleCommandRequest(ServerComunicator.Command.UserMoneyWithdrawal, new List<string>() { number.ToString() }).Contains("i3,b1"))
+            {
+                if (File.Exists($"./Money/{number}.json"))
+                {
+                    File.WriteAllText($"./Money/{number}_{DateTime.Now.Ticks.ToString()}.json", JsonConvert.SerializeObject(m));
+                }
+                else
+                {
+                    File.WriteAllText($"./Money/{number}.json", JsonConvert.SerializeObject(m));
+                }
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

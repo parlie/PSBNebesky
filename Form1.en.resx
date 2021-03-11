@@ -139,6 +139,9 @@ deposit</value>
   <data name="signInDropDown.Text" xml:space="preserve">
     <value>Tap with your card</value>
   </data>
+  <data name="signInDropDown.Text.Alternative" xml:space="preserve">
+    <value>Enter PIN</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="signInLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>1130, 170</value>
@@ -211,6 +214,78 @@ please insert banknotes.</value>
     <value>Exit simulator</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1546, 727</value>
+    <value>981, 727</value>
+  </data>
+  <data name="mainPageBalance" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="MoneyDepositFail" xml:space="preserve">
+    <value>There was an error durring depositing of Your funds.
+Repeat transaction again or contact our customer service.</value>
+  </data>
+  <data name="MoneyDepositFailTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="MoneyDepositMessage" xml:space="preserve">
+    <value>Please check that the shown amount corresponds to Your deposited funds.  </value>
+  </data>
+  <data name="MoneyDepositMessageTitle" xml:space="preserve">
+    <value>Deposit summary</value>
+  </data>
+  <data name="MoneyDepositSuccess" xml:space="preserve">
+    <value>Your funds has been successfuly deposited into your account.
+To return to Dashboard click on the "Ok" button.</value>
+  </data>
+  <data name="MoneyDepositSuccessTitle" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="TransactionErrorMissingAccount" xml:space="preserve">
+    <value>No account was entered or the format isn't valid.
+Check account format and try again. If the problem persists contact our customer support.</value>
+  </data>
+  <data name="TransactionErrorMissingAccountTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="TransactionErrorMissingAmount" xml:space="preserve">
+    <value>No amount was entered or the format isn't valid.
+Check amount format and try again. If the problem persists contact our customer support.</value>
+  </data>
+  <data name="TransactionErrorMissingAmountTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="TransactionErrorMissingBoth" xml:space="preserve">
+    <value>No account or amount was entered or the format isn't valid.
+Check both fields and try again. If the problem persists contact our customer support.</value>
+  </data>
+  <data name="TransactionErrorMissingBothTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="TransactionFailMessage" xml:space="preserve">
+    <value>There has been error during transaction.
+Repeat transaction again or contact our customer service.</value>
+  </data>
+  <data name="TransactionFailMessageTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="TransactionSuccessMessage" xml:space="preserve">
+    <value>Transaction has been successful.
+To return to Dashboard click on the "Ok" button.</value>
+  </data>
+  <data name="TransactionSuccessMessageTitle" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="WithdrawlFailMessage" xml:space="preserve">
+    <value>There was an error during withdrawal of Your funds.
+Repeat transaction again or contact our customer service.</value>
+  </data>
+  <data name="WithdrawlFailMessageTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="WithdrawlSuccessMessage" xml:space="preserve">
+    <value>Withdrawal was successful.
+To return to Dashboard click on the "Ok" button.</value>
+  </data>
+  <data name="WithdrawlSuccessMessageTitle" xml:space="preserve">
+    <value>Success</value>
   </data>
 </root>

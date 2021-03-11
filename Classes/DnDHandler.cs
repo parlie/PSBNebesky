@@ -21,7 +21,7 @@ namespace PSBNebesky.Classes
             foreach(var item in values)
             {
                 s = File.ReadAllText(item);
-                Console.WriteLine(item);
+                //Console.WriteLine(item);
                 if(JsonConvert.DeserializeObject(s).GetObjectType() == Type.Money)
                 {
                     localValues.Add(item);
@@ -29,7 +29,7 @@ namespace PSBNebesky.Classes
             }
             foreach(var item in localValues)
             {
-                Console.WriteLine(item);
+                //Console.WriteLine(item);
                 s = File.ReadAllText(item);
                 m = JsonConvert.DeserializeObject<Money>(s);
                 value += m.value;

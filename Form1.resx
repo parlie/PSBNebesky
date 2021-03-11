@@ -140,6 +140,30 @@
   <data name="&gt;&gt;boxLog.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="mainPageBalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 53</value>
+  </data>
+  <data name="mainPageBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>778, 118</value>
+  </data>
+  <data name="mainPageBalance.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="mainPageBalance.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;mainPageBalance.Name" xml:space="preserve">
+    <value>mainPageBalance</value>
+  </data>
+  <data name="&gt;&gt;mainPageBalance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainPageBalance.Parent" xml:space="preserve">
+    <value>mainPage</value>
+  </data>
+  <data name="&gt;&gt;mainPageBalance.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="buttonLeave.Location" type="System.Drawing.Point, System.Drawing">
     <value>1009, 497</value>
   </data>
@@ -169,7 +193,7 @@
     <value>mainPage</value>
   </data>
   <data name="&gt;&gt;buttonLeave.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="metroPanel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -241,7 +265,7 @@
     <value>4</value>
   </data>
   <data name="buttonWith.Text" xml:space="preserve">
-    <value>Výběr peněz</value>
+    <value>Výběr hotovosti</value>
   </data>
   <data name="&gt;&gt;buttonWith.Name" xml:space="preserve">
     <value>buttonWith</value>
@@ -304,7 +328,7 @@
     <value>mainPage</value>
   </data>
   <data name="&gt;&gt;metroPanel1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="buttonLanguage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -328,7 +352,7 @@
     <value>mainPage</value>
   </data>
   <data name="&gt;&gt;buttonLanguage.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="mainPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 38</value>
@@ -353,6 +377,216 @@
   </data>
   <data name="&gt;&gt;mainPage.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="transactionNewBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1009, 497</value>
+  </data>
+  <data name="transactionNewBack.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="transactionNewBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 54</value>
+  </data>
+  <data name="transactionNewBack.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="transactionNewBack.Text" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="transactionNewBack.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;transactionNewBack.Name" xml:space="preserve">
+    <value>transactionNewBack</value>
+  </data>
+  <data name="&gt;&gt;transactionNewBack.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;transactionNewBack.Parent" xml:space="preserve">
+    <value>newTransactionPage</value>
+  </data>
+  <data name="&gt;&gt;transactionNewBack.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="metroPanel2.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="transactionSendNewTile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 4</value>
+  </data>
+  <data name="transactionSendNewTile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="transactionSendNewTile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>990, 190</value>
+  </data>
+  <data name="transactionSendNewTile.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="transactionSendNewTile.Text" xml:space="preserve">
+    <value>Provést transakci</value>
+  </data>
+  <data name="&gt;&gt;transactionSendNewTile.Name" xml:space="preserve">
+    <value>transactionSendNewTile</value>
+  </data>
+  <data name="&gt;&gt;transactionSendNewTile.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;transactionSendNewTile.Parent" xml:space="preserve">
+    <value>metroPanel2</value>
+  </data>
+  <data name="&gt;&gt;transactionSendNewTile.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="metroPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 356</value>
+  </data>
+  <data name="metroPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="metroPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1000, 200</value>
+  </data>
+  <data name="metroPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.Name" xml:space="preserve">
+    <value>metroPanel2</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.Parent" xml:space="preserve">
+    <value>newTransactionPage</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="transactionAmountLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="transactionAmountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 187</value>
+  </data>
+  <data name="transactionAmountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 70</value>
+  </data>
+  <data name="transactionAmountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="transactionAmountLabel.Text" xml:space="preserve">
+    <value>Částka</value>
+  </data>
+  <data name="&gt;&gt;transactionAmountLabel.Name" xml:space="preserve">
+    <value>transactionAmountLabel</value>
+  </data>
+  <data name="&gt;&gt;transactionAmountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;transactionAmountLabel.Parent" xml:space="preserve">
+    <value>newTransactionPage</value>
+  </data>
+  <data name="&gt;&gt;transactionAmountLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="transactionAccountLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="transactionAccountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 10</value>
+  </data>
+  <data name="transactionAccountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 70</value>
+  </data>
+  <data name="transactionAccountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="transactionAccountLabel.Text" xml:space="preserve">
+    <value>Účet</value>
+  </data>
+  <data name="&gt;&gt;transactionAccountLabel.Name" xml:space="preserve">
+    <value>transactionAccountLabel</value>
+  </data>
+  <data name="&gt;&gt;transactionAccountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;transactionAccountLabel.Parent" xml:space="preserve">
+    <value>newTransactionPage</value>
+  </data>
+  <data name="&gt;&gt;transactionAccountLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="transactionAmountTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 260</value>
+  </data>
+  <data name="transactionAmountTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="transactionAmountTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>993, 20</value>
+  </data>
+  <data name="transactionAmountTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;transactionAmountTextBox.Name" xml:space="preserve">
+    <value>transactionAmountTextBox</value>
+  </data>
+  <data name="&gt;&gt;transactionAmountTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;transactionAmountTextBox.Parent" xml:space="preserve">
+    <value>newTransactionPage</value>
+  </data>
+  <data name="&gt;&gt;transactionAmountTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="transactionAccountTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 83</value>
+  </data>
+  <data name="transactionAccountTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="transactionAccountTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>993, 20</value>
+  </data>
+  <data name="transactionAccountTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;transactionAccountTextBox.Name" xml:space="preserve">
+    <value>transactionAccountTextBox</value>
+  </data>
+  <data name="&gt;&gt;transactionAccountTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;transactionAccountTextBox.Parent" xml:space="preserve">
+    <value>newTransactionPage</value>
+  </data>
+  <data name="&gt;&gt;transactionAccountTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="newTransactionPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="newTransactionPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1121, 558</value>
+  </data>
+  <data name="newTransactionPage.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="newTransactionPage.Text" xml:space="preserve">
+    <value>NewTransaction</value>
+  </data>
+  <data name="&gt;&gt;newTransactionPage.Name" xml:space="preserve">
+    <value>newTransactionPage</value>
+  </data>
+  <data name="&gt;&gt;newTransactionPage.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;newTransactionPage.Parent" xml:space="preserve">
+    <value>mainControl</value>
+  </data>
+  <data name="&gt;&gt;newTransactionPage.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="moneyDepositDropDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 209</value>
@@ -458,7 +692,7 @@ vložte bankovky.</value>
     <value>mainControl</value>
   </data>
   <data name="&gt;&gt;moneyIntakePage.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="signInPIN.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 5</value>
@@ -908,7 +1142,7 @@ vložte bankovky.</value>
     <value>-5, 14</value>
   </data>
   <data name="signInLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1130, 198</value>
+    <value>981, 198</value>
   </data>
   <data name="signInLabel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -951,7 +1185,7 @@ vložte bankovky.</value>
     <value>mainControl</value>
   </data>
   <data name="&gt;&gt;signInPage.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="moneyWithdrawlBack.Location" type="System.Drawing.Point, System.Drawing">
     <value>999, 301</value>
@@ -1236,216 +1470,6 @@ vložte bankovky.</value>
     <value>mainControl</value>
   </data>
   <data name="&gt;&gt;moneyWithdrawlPage.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="transactionNewBack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1009, 497</value>
-  </data>
-  <data name="transactionNewBack.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="transactionNewBack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 54</value>
-  </data>
-  <data name="transactionNewBack.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="transactionNewBack.Text" xml:space="preserve">
-    <value>Zpět</value>
-  </data>
-  <data name="transactionNewBack.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;transactionNewBack.Name" xml:space="preserve">
-    <value>transactionNewBack</value>
-  </data>
-  <data name="&gt;&gt;transactionNewBack.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;transactionNewBack.Parent" xml:space="preserve">
-    <value>newTransactionPage</value>
-  </data>
-  <data name="&gt;&gt;transactionNewBack.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="metroPanel2.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="transactionSendNewTile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 4</value>
-  </data>
-  <data name="transactionSendNewTile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="transactionSendNewTile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>990, 190</value>
-  </data>
-  <data name="transactionSendNewTile.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="transactionSendNewTile.Text" xml:space="preserve">
-    <value>Provést transakci</value>
-  </data>
-  <data name="&gt;&gt;transactionSendNewTile.Name" xml:space="preserve">
-    <value>transactionSendNewTile</value>
-  </data>
-  <data name="&gt;&gt;transactionSendNewTile.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;transactionSendNewTile.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;transactionSendNewTile.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="metroPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 356</value>
-  </data>
-  <data name="metroPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="metroPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 200</value>
-  </data>
-  <data name="metroPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;metroPanel2.Name" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;metroPanel2.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroPanel2.Parent" xml:space="preserve">
-    <value>newTransactionPage</value>
-  </data>
-  <data name="&gt;&gt;metroPanel2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="transactionAmountLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="transactionAmountLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 187</value>
-  </data>
-  <data name="transactionAmountLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 70</value>
-  </data>
-  <data name="transactionAmountLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="transactionAmountLabel.Text" xml:space="preserve">
-    <value>Částka</value>
-  </data>
-  <data name="&gt;&gt;transactionAmountLabel.Name" xml:space="preserve">
-    <value>transactionAmountLabel</value>
-  </data>
-  <data name="&gt;&gt;transactionAmountLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;transactionAmountLabel.Parent" xml:space="preserve">
-    <value>newTransactionPage</value>
-  </data>
-  <data name="&gt;&gt;transactionAmountLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="transactionAccountLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="transactionAccountLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 10</value>
-  </data>
-  <data name="transactionAccountLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 70</value>
-  </data>
-  <data name="transactionAccountLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="transactionAccountLabel.Text" xml:space="preserve">
-    <value>Účet</value>
-  </data>
-  <data name="&gt;&gt;transactionAccountLabel.Name" xml:space="preserve">
-    <value>transactionAccountLabel</value>
-  </data>
-  <data name="&gt;&gt;transactionAccountLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;transactionAccountLabel.Parent" xml:space="preserve">
-    <value>newTransactionPage</value>
-  </data>
-  <data name="&gt;&gt;transactionAccountLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="transactionAmountTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 260</value>
-  </data>
-  <data name="transactionAmountTextBox.MaxLength" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="transactionAmountTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>993, 20</value>
-  </data>
-  <data name="transactionAmountTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;transactionAmountTextBox.Name" xml:space="preserve">
-    <value>transactionAmountTextBox</value>
-  </data>
-  <data name="&gt;&gt;transactionAmountTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;transactionAmountTextBox.Parent" xml:space="preserve">
-    <value>newTransactionPage</value>
-  </data>
-  <data name="&gt;&gt;transactionAmountTextBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="transactionAccountTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 83</value>
-  </data>
-  <data name="transactionAccountTextBox.MaxLength" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="transactionAccountTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>993, 20</value>
-  </data>
-  <data name="transactionAccountTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;transactionAccountTextBox.Name" xml:space="preserve">
-    <value>transactionAccountTextBox</value>
-  </data>
-  <data name="&gt;&gt;transactionAccountTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;transactionAccountTextBox.Parent" xml:space="preserve">
-    <value>newTransactionPage</value>
-  </data>
-  <data name="&gt;&gt;transactionAccountTextBox.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="newTransactionPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="newTransactionPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1121, 558</value>
-  </data>
-  <data name="newTransactionPage.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="newTransactionPage.Text" xml:space="preserve">
-    <value>NewTransaction</value>
-  </data>
-  <data name="&gt;&gt;newTransactionPage.Name" xml:space="preserve">
-    <value>newTransactionPage</value>
-  </data>
-  <data name="&gt;&gt;newTransactionPage.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;newTransactionPage.Parent" xml:space="preserve">
-    <value>mainControl</value>
-  </data>
-  <data name="&gt;&gt;newTransactionPage.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="transactionHistoryTableName.Text" xml:space="preserve">
@@ -1676,9 +1700,9 @@ vložte bankovky.</value>
   <data name="&gt;&gt;testServer.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>17, 17</value>
-  </metadata>
+  </data>
   <data name="menuStripSignIn.Size" type="System.Drawing.Size, System.Drawing">
     <value>173, 22</value>
   </data>
@@ -1787,12 +1811,12 @@ vložte bankovky.</value>
   <data name="&gt;&gt;debugCleanWallet.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  </data>
+  <data name="$this.TrayHeight" type="System.Int32, mscorlib">
     <value>25</value>
-  </metadata>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 13</value>
   </data>
@@ -1888,5 +1912,78 @@ vložte bankovky.</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="mainPageBalance" xml:space="preserve">
+    <value>Zůstatek</value>
+  </data>
+  <data name="MoneyDepositMessage" xml:space="preserve">
+    <value>Zkontrolujte si prosím bankovky,
+souhlasí zobrazená částka s vloženou hotovostí?</value>
+  </data>
+  <data name="MoneyDepositMessageTitle" xml:space="preserve">
+    <value>Kontrola vkladu</value>
+  </data>
+  <data name="MoneyDepositSuccess" xml:space="preserve">
+    <value>Hotovost byla úspěšně vložena na Váš bankovní účet,
+pro návrat do hlavní nabídky, stiskněte tlačítko "Ok".</value>
+  </data>
+  <data name="MoneyDepositFail" xml:space="preserve">
+    <value>Při vkládání hotovosti nastala chyba.
+Zkuste operaci opakovat, při přetrvávajících potížích prosím kontaktujte zákaznickou linku.</value>
+  </data>
+  <data name="MoneyDepositFailTitle" xml:space="preserve">
+    <value>Chyba při transakci!</value>
+  </data>
+  <data name="MoneyDepositSuccessTitle" xml:space="preserve">
+    <value>Úspěch</value>
+  </data>
+  <data name="TransactionErrorMissingAccount" xml:space="preserve">
+    <value>Nebyl zadán protiúčet, či neodpovídá požadovanému formátu.
+Opakujte operaci, případně kontaktujte zákaznickou linku.</value>
+  </data>
+  <data name="TransactionErrorMissingAccountTitle" xml:space="preserve">
+    <value>Chybně zadané údaje</value>
+  </data>
+  <data name="TransactionErrorMissingAmount" xml:space="preserve">
+    <value>Nebyla zadaná částka, či neodpovídá požadovanému formátu.
+Opakujte operaci, případně kontaktujte zákaznickou linku.</value>
+  </data>
+  <data name="TransactionErrorMissingAmountTitle" xml:space="preserve">
+    <value>Chybně zadané údaje</value>
+  </data>
+  <data name="TransactionErrorMissingBoth" xml:space="preserve">
+    <value>Nebyla zadán protiúčet ani částka, nebo neodpovídají požadovanému formátu.
+Opakujte operaci, případně kontaktujte zákaznickou linku.</value>
+  </data>
+  <data name="TransactionErrorMissingBothTitle" xml:space="preserve">
+    <value>Chybně zadané údaje</value>
+  </data>
+  <data name="TransactionFailMessage" xml:space="preserve">
+    <value>Při provádění transakce nastala chyba.
+Zkuste operaci opakovat, při přetrvávajících potížích prosím kontaktujte zákaznickou linku.</value>
+  </data>
+  <data name="TransactionFailMessageTitle" xml:space="preserve">
+    <value>Chyba při transakci!</value>
+  </data>
+  <data name="TransactionSuccessMessage" xml:space="preserve">
+    <value>Transakce byla úspěšně provedena.
+Pro návrat do hlavní nabídky stiskněte tlačítko "Ok".</value>
+  </data>
+  <data name="TransactionSuccessMessageTitle" xml:space="preserve">
+    <value>Transakce byla úspěšná</value>
+  </data>
+  <data name="WithdrawlFailMessage" xml:space="preserve">
+    <value>Při výběru hotovosti nastala chyba.
+Zkuste operaci opakovat, při přetrvávajících potížích prosím kontaktujte zákaznickou linku.</value>
+  </data>
+  <data name="WithdrawlFailMessageTitle" xml:space="preserve">
+    <value>Chyba při transakci!</value>
+  </data>
+  <data name="WithdrawlSuccessMessage" xml:space="preserve">
+    <value>Výběr hotovosti proběhl úspěšně.
+Pro návrat do hlavní nabídky stiskněte tlačítko "Ok".</value>
+  </data>
+  <data name="WithdrawlSuccessMessageTitle" xml:space="preserve">
+    <value>Úspěch</value>
   </data>
 </root>

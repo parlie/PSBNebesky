@@ -10,21 +10,11 @@ using System.Threading;
 
 namespace PSBNebesky
 {
-    public class ServerComunicator
+    public partial class ServerComunicator
     {
         public ComponentResourceManager resources = new ComponentResourceManager(typeof(Form1));
         Socket socket = new Socket(AddressFamily.InterNetwork,SocketType.Stream,ProtocolType.Tcp);
         Encoding e = Encoding.ASCII;
-
-        public enum Command
-        {
-            GetUserValidation,
-            GetMoneyAmount,
-            UserMoneyDeposit,
-            UserMoneyWithdrawal,
-            UserNewTransaction,
-            UserTransactionHistory
-        };
 
         public void Validate(object form)
         {
@@ -66,34 +56,38 @@ namespace PSBNebesky
             }
         }
 
-        public bool HandleCommandRequest(Command command, List<string> list)
+        public string HandleCommandRequest(Command command, List<string> list)
         {
             string commandString = "";
             switch (command)
             {
                 case Command.GetUserValidation:
                     commandString = string.Empty;
-                    commandString = $"0,{list[0]},{list[1]}"; //ID,CardNumber,PIN
+                    commandString = $"i0,{list[0]},{list[1]}"; //ID,CardNumber,PIN
                     break;
                 case Command.GetMoneyAmount:
                     commandString = string.Empty;
-                    commandString = "1"; //ID
+                    commandString = "i1"; //ID
                     break;
                 case Command.UserMoneyDeposit:
                     commandString = string.Empty;
-                    commandString = $"2,{list[0]}"; //ID,Amount
+                    commandString = $"i2,{list[0]}"; //ID,Amount
                     break;
                 case Command.UserMoneyWithdrawal:
                     commandString = string.Empty;
-                    commandString = $"3,{list[0]}"; //ID,Amount
+                    commandString = $"i3,{list[0]}"; //ID,Amount
                     break;
                 case Command.UserNewTransaction:
                     commandString = string.Empty;
-                    commandString = $"4,{list[0]},{list[1]}"; //ID,Account,Amount
+                    commandString = $"i4,{list[0]},{list[1]}"; //ID,Account,Amount
                     break;
                 case Command.UserTransactionHistory:
                     commandString = string.Empty;
-                    commandString = $"5"; //ID
+                    commandString = $"i5"; //ID
+                    break;
+                case Command.UserInvalidate:
+                    commandString = string.Empty;
+                    commandString = $"i6";
                     break;
                 default:
                     break;
@@ -101,11 +95,13 @@ namespace PSBNebesky
             return HandleCommand(commandString);
         }
 
-        private bool HandleCommand(string data)
+        private string HandleCommand(string data)
         {
-            Console.WriteLine(data);
+            //Console.WriteLine(data);
             socket.Send(e.GetBytes(data));
-            return true;
+            Byte[] b = new byte[255];
+            socket.Receive(b,SocketFlags.None);
+            return e.GetString(b);
         }    
 
         public void TestConnection()

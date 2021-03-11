@@ -32,5 +32,39 @@ namespace PSBNebesky.Classes
                 return Type.Fail;
             }
         }
+
+        public static int Count(this char[] charar, char ch)
+        {
+            int count = 0;
+            foreach (char item in charar)
+            {
+                if (item == ch)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public static string Dotted(this string hold)
+        {
+            string s = hold;
+            if(s.Length > 3 && s.Length < 7)
+            {
+                s = s.Insert(s.Length-3,".");
+            }
+            else if(s.Length > 6 && s.Length < 10)
+            {
+                s = s.Insert(s.Length - 6, ".");
+                s = s.Insert(s.Length - 3, ".");
+            }
+            else if(s.Length > 9)
+            {
+                s = s.Insert(s.Length - 9, ".");
+                s = s.Insert(s.Length - 6, ".");
+                s = s.Insert(s.Length - 3, ".");
+            }
+            return s;
+        }
     }
 }
